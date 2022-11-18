@@ -1,0 +1,15 @@
+footer {
+  margin-top: auto;
+  min-height: 200px;
+  color: #fff;
+  background-color: var(--color-tertiary);
+  padding: var(--small-screen-padding);
+
+  * {
+    color: inherit;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

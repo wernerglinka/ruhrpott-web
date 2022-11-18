@@ -1,0 +1,67 @@
+.sanity-image-wrapper {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: var(--color-caption-background);
+    color: var(--color-white);
+    font-size: 1.2rem;
+    line-height: 1.2;
+
+    p, a {
+      color: inherit;
+      margin: 0;
+    }
+  }
+
+  .image-credit {
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+
+    * {
+      font-size: 1.2rem;
+    }
+  }
+
+  .low-res {
+    transition: opacity 0.4s ease-in-out;
+    width: 100%;
+    height: auto;
+  }
+
+  .high-res {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  // the hi-res image may have a sligly different height. That may be due to the low-res
+  // image size being restricked to fewer steps when generating the image. To avoid the
+  // low-res showing under the high-res image, the low-res will be faded out as the high
+  // res is faded in
+  &.done {
+    .high-res {
+      opacity: 1;
+    }
+    .low-res {
+      opacity: 0;
+    }
+  }
+}

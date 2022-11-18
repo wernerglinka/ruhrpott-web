@@ -1,0 +1,21 @@
+{% macro cta(info) %}
+
+  <div class="cta">
+    {% set classString = "" %}
+    {% if info.kind === 'button' %}
+      {% set classString = classString ~ " button" %}
+    {% else %}
+      {% set classString = classString ~ " text-link" %}
+    {% endif %}
+    {% if info.linkType %}
+      {% set classString = classString ~ " " ~ info.linkType %}
+    {% endif %}
+    {% if info.isExternal %}
+       <a href="{{ info.externalLink }}" class="{{ classString }}" target="_blank" rel="noopener noreferrer">
+    {% else %}
+      <a href="{{ info.internalLink }}" class="{{ classString }}">
+    {% endif %}
+      {{ info.title}}
+    </a>
+  </div>
+{% endmacro %}

@@ -1,0 +1,71 @@
+@use "../variables" as *;
+
+.header-wrapper {
+  position: relative;
+  z-index: 1000;
+  height: 0;
+  margin: 0;
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 90px;
+    padding: 20px 0;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  .container {
+    max-width: $max-content-width;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1520px) {
+      max-width: 100%;
+      padding: 0 40px;
+    }
+    @media (max-width: 500px) {
+      padding: 0 20px;
+    }
+  }  
+}
+
+.has-full-height-image .header-wrapper {
+  height: 0;
+  margin: 0;
+}
+
+.is-scrolling .header-wrapper header {
+  transition: background-color 0.5s ease-in-out;
+  background-color: var(--color-header-background);
+  box-shadow: var(--default-box-shadow);
+}
+
+.brand {
+  position: relative;
+  z-index: 3;
+
+  a {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+  }
+
+  svg {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+/* home link on home page */
+[pagename="home"] .brand a {
+  pointer-events: none;
+  cursor: default;
+}

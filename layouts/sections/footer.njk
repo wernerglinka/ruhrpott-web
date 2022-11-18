@@ -1,0 +1,12 @@
+<footer>
+  <div class="container">
+    {% if stats.atime %}
+    <p>Last site build: {{ stats.atime | UTCdate }}</p>
+    {% endif %}
+    <p>Metalsmith version: {{ msVersion }}</p>
+    <p>Node version: {{ nodeVersion }}</p>
+    <p class="copyright">
+      © 2022 - Build with Metalsmith
+    </p>
+  </div>
+</footer>

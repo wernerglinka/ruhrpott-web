@@ -1,0 +1,41 @@
+@use "../variables" as *;
+
+.section-wrapper {
+  &.inContainer {
+    max-width: $max-content-width;
+    margin: 0 auto;
+
+    @media (max-width: ($max-content-width + (2 * $large-screen-padding))) {
+      max-width: 100%;
+      padding: 0 var(--large-screen-padding);
+    }
+    @media (max-width: $small-screen) {
+      padding: 0 var(--small-screen-padding);
+    }
+  }
+  &.marginTop {
+    margin-top: 100px;
+  }
+  &.marginBottom {
+    margin-bottom: 100px;
+  }
+
+  .columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .column {
+      flex: 1 1 100%;
+      max-width: 100%;
+      align-self: stretch;
+    }
+
+    &.cols2 .column {
+      flex: 1 0 50%;
+    }
+    &.cols3 .column {
+      flex: 1 0 33.333333%;
+    }
+  }
+}

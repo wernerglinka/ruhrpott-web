@@ -1,0 +1,5 @@
+{% from "../partials/icon.njk" import icon %}
+
+{% macro scrollTo(targetID) %}
+  <a class="scroll-to js-scroll-to" href="#{{targetID}}">{{ icon("arrow-down") }}</a>
+{% endmacro %}

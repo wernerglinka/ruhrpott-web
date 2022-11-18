@@ -1,0 +1,67 @@
+.blog-header {
+  .columns.cols1 {
+    .column {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  h1, .sub-title {
+    text-align: center;
+  }
+  h1 + .sub-title {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  .authors-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // construct the author and date string
+    // By author, author and author on date
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+
+      &:before {
+        content: "By";
+      }
+      li {
+        // all author names get a comma before them
+        &:before {
+          content: ",";
+          padding-right: 0.2rem;
+        }
+        // except the first one
+        &.first:before {
+          content: "";
+        }
+        // and the last one
+        &.last:before {
+          content: "and";
+          padding-left: 0.2rem;
+        }
+      }
+    }
+    // and the on before the date
+    time:before {
+      content: "on";
+      padding: 0 0.2rem;
+    }
+  }
+  figure {
+    margin-bottom: 3rem;
+  }
+}
+.blog-content {
+  .columns.cols1 {
+    .column {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+}

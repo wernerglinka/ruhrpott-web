@@ -1,0 +1,6 @@
+{#
+  renderBlock is a generic nunjucks macro that uses the name parameter to compose the path of the target block macro. Since Nunjucks doesn't support dynamic macro names, we have to use a helper function to do this.
+#}
+{% macro renderBlock(name, params, data) %} 
+  {% include "../blocks/" + name + ".njk" ignore missing %}
+{% endmacro %}

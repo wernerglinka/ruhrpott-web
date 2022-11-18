@@ -1,0 +1,250 @@
+@use "../variables" as *;
+
+.slides-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.slides-nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  li {
+    height: 50px;
+    display: flex;
+    justify-content: lext-end;
+    align-items: center;
+    
+    a {
+      display: block;
+      height: 100%;
+      width: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        // make li extend to the left
+        width: 70px;
+
+        span {
+          background-color: var(--color-link-hover);
+        }
+      }
+      &.active {
+        // make li extend to the left
+        width: 70px;
+        cursor : default;
+        pointer-events: none;
+
+        span {
+          background-color: var(--color-highlight);
+        }
+      }
+
+      
+      span {
+        display: block;
+        width: 100%;
+        margin-top: 24px;
+        height: 2px;
+        background-color: var(--color-white);
+        pointer-events: none;
+      }
+    } 
+  }
+}
+
+.slides {
+  width: 100vw;
+  height: 100vh;
+
+  li {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    
+    &.initial {
+      z-index: 3;
+    }
+
+    &.active {
+      z-index: 3;
+      animation: slide 1s 1;
+    }
+    &:not(.active) {
+      animation: hidden 1s 1;
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0%);
+      }
+    }
+    
+    @keyframes hidden {
+      0% {
+        z-index: 2;
+      }
+      100% {
+        z-index: 2;
+      }
+    }
+  
+    .sanity-image-wrapper {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      padding: 0 !important;
+      overflow: hidden;
+      
+  
+      img {
+        object-fit: cover;
+        object-position: center;
+        width: 100vw;
+        height: 100vh;
+      }
+  
+      figcaption {
+        display: inline-block;
+        width: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 20px;
+        background: var(--color-caption-background);
+        color: var(--color-white);
+        font-size: 1.2rem;
+        line-height: 1;
+        text-shadow: var(--default-text-shadow);
+
+        @media (max-width: $small-screen) {
+          background: none;
+        }
+      }
+    }
+  
+    .slide-content {
+      position: absolute;
+      top: 30%;
+      left: 0;
+      width: 60vw;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      background-color: var(--color-caption-background);
+      backdrop-filter: blur(5px);
+      padding: 100px;
+      opacity: 0;
+      transform: translateY(-30px);
+      transition: all 2s ease-in-out;
+
+      @media (max-width: $mid-sized-screen) {
+        padding: 10vw;
+      }
+      @media (max-width: $ipad-pro-width-portrait) {
+        width: 75vw;
+        padding: 6vw;
+      }
+      @media (max-width: $small-screen) {
+        padding: 40px 40px 60px;
+      }
+      @media (max-width: $very-small-screen) {
+        top: auto;
+        bottom: 0;
+        padding: 20px 20px 60px;
+      }
+  
+      h1 {
+        font-size: 5vw;
+        font-weight: 700;
+        color: var(--color-white);;
+        margin:  0 0 0.5em;
+
+        @media (max-width: $mid-sized-screen) {
+          font-size: 6rem;
+        }
+        @media (max-width: $small-screen) {
+          font-size: 4rem;
+        }
+        @media (max-width: $very-small-screen) {
+          font-size: 3rem;
+        }
+      }
+  
+      p {
+        font-size: 1.5vw;
+        line-height: 1.5;
+        color: var(--color-white);;
+        margin: 0;
+        
+        @media (max-width: $mid-sized-screen) {
+          font-size: 1.8rem;
+        }
+        @media (max-width: $ipad-width-portrait) {
+          font-size: 1.8rem;
+        }
+        @media (max-width: $small-screen) {
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    &.active .slide-content,
+    &.initial .slide-content {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    .scroll-to {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1000;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+  
+      .icon-wrapper {
+        pointer-events: none;
+      }
+  
+      svg {
+        width: 30px;
+        height: 30px;
+        pointer-events: none;
+  
+        * {
+          stroke: var(--color-white);
+        }
+      }
+      
+      &:hover {
+        svg {
+          * {
+            stroke: var(--color-highlight);
+          }
+        }
+      }
+    }
+  }
+}
+
+

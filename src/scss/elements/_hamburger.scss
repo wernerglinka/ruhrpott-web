@@ -1,0 +1,70 @@
+@use "../variables" as *;
+
+$button-size: 30px;
+
+#hamburger {
+  position: relative;
+  z-index: 3;
+  width: $button-size;
+  height: $button-size;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-left: auto;
+
+  &:focus {
+    outline: 0;
+  }
+
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    height: calc($button-size / 10);
+    width: $button-size;
+    background-color: #000;
+    position: absolute;
+    top: calc($button-size / 2);
+    left: 0;
+    display: block;
+    content: "";
+    transition: all 0.3s ease-in-out;
+  }
+  span:before {
+    top: -(calc($button-size / 4));
+  }
+  span:after {
+    top: auto;
+    bottom: -(calc($button-size / 4));
+  }
+  &:hover {
+    span,
+    span:before,
+    span:after {
+      background: var(--color-link-hover);
+    }
+  }
+}
+
+.menu-active #hamburger {
+  span {
+    background-color: transparent;
+  }
+  span:before,
+  span:after {
+    top: 0;
+    background-color: var(--color-highlight);
+  }
+  span:before {
+    transform: rotate(45deg);
+  }
+  span:after {
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    span:before,
+    span:after {
+      background-color: var(--color-link-hover);
+    }
+  }
+}

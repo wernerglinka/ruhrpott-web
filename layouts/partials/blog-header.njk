@@ -1,0 +1,35 @@
+{% from "../partials/image.njk" import image %}
+
+{% macro blogHeader(info) %}
+
+  {% if info.title %}
+    <h1>{{ info.title }}</h1>
+  {% endif %}
+
+  {% if info.subTitle %}
+    <p class="sub-title">{{ info.subTitle }}</p>
+  {% endif %}
+
+  <div class="authors-date">
+    <ul>
+    {% if info.authors %}
+      {% set length = info.authors | length %}
+      {% for author in info.authors %}
+        <li
+          {% if (loop.index === 1) and (loop.index === length) %}class="first"{% endif %} 
+          {% if (loop.index === 1) and (loop.index !== length) %}class="first"{% endif %}
+          {% if (loop.index !== 1) and (loop.index === length) %}class="last"{% endif %}
+        ><a href="{{ author.slug }}">{{ author.name }}</a></li>
+      {% endfor %}
+    {% endif %}
+    </ul>
+    {% if info.published %}
+      <time datetime="{{ info.published }}">{{ info.published | blogDate }}</time>
+    {% endif %}
+  </div>
+
+  {% if info.image %}
+    {{ image(info.image) }}
+  {% endif %}
+  
+{% endmacro %}

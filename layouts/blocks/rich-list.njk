@@ -1,0 +1,56 @@
+{% from "../partials/responsive-image.njk" import responsiveImage %}
+
+<div class="block block-rich-list">
+  
+  {# sourceList contains all available sources #}
+  {% set sourceList = metadata[params.source ] %}
+  {# selections contain all selected source items #}
+  {% set selections = params.selections %}
+  
+  {# build a unique filter list from all sourceItem categories #}
+  {# categories are defined in a string for each item #}
+  {% set filterString = "" %}
+  {% for item in selections %}
+    {% for sourceItem in sourceList %}
+      {% if sourceItem.name === item %}
+        {% set filterString = filterString + sourceItem.categories + " " %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  {# create a filter Array by applying the toArray filter to the categories string #}
+  {% set filterArray = filterString | toArray %}
+
+  <ul class="list-filters js-list-filters">
+    <li data-filter="*">all</li>
+    {% for filterItem in filterArray %}
+    <li data-filter=".{{ filterItem }}">{{ filterItem }}</li>
+    {% endfor %}
+  </ul>
+  
+  
+  <ul class="flip-cards-list js-rich-list grid">
+    {% for item in selections %}
+      {% for sourceItem in sourceList %}
+        {% if sourceItem.name === item %}
+          {% set imageSource = metadata.site.imagePrefix ~ sourceItem.thumbnail %}
+          <li class="grid-item {{ sourceItem.categories }} {{ sourceItem.name | lower | replace(' ', '-') }}" data-categories="{{ sourceItem.categories }}">
+            <div class="flip-card-wrapper">
+              <div class="flip-card" style="background-image: url('{{ imageSource }}');">
+                <p>{{ sourceItem.name }}</p>
+              </div> <!-- .flip-card -->
+              
+              <div class="flip-card-back">
+                {# site is in scope, was passed via the component macro #}
+                <div class="wappen">{{ responsiveImage(sourceItem.wappen, metadata) }}</div>
+                <a href="{{ sourceItem.web }}">Read more about {{ sourceItem.name }}</a>
+                <a href="{{ sourceItem.wikipedia }}">Read more about {{ sourceItem.name }} on Wikipedia</a>
+              </div> <!-- end flip-card-back -->
+
+            </div> <!-- end flip-card-wrapper -->
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</div>

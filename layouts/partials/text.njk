@@ -1,0 +1,31 @@
+{% from "../partials/cta.njk" import cta %}
+
+{% macro text(info) %}
+
+  {% if info.titlePrefix %}
+    <p class="prefix">{{ info.titlePrefix }}</p>
+  {% endif %}
+
+  {% if info.title %}
+    {% if info.headerType === "h1" %}
+      <h1 class="page-heading">{{ info.title }}</h1>
+    {% elif info.headerType === "h2" %}
+      <h2 class="section-heading">{{ info.title }}</h2>
+    {% else %}
+      <h3 class="section-heading">{{ info.title }}</h3>
+    {% endif %}
+  {% endif %}
+
+  {% if info.subTitle %}
+    <p class="sub-title">{{ info.subTitle }}</p>
+  {% endif %}
+
+  {% if info.body %}
+    <div>{{ info.body | mdToHTML | safe }}</div>
+  {% endif %}
+  
+  {% if info.cta %}
+    {{ cta(info.cta) }}
+  {% endif %}
+
+{% endmacro %}

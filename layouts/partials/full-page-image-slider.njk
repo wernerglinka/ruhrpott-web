@@ -1,0 +1,41 @@
+{% from "../partials/image.njk" import image %}
+{% from "../partials/text.njk" import text %}
+{% from "../partials/scroll-to.njk" import scrollTo %}
+
+{% macro imageSlider(info, data) %}
+
+  {% set images = info.images %}
+  {% set imageCount = images | length %}
+  {% set imageWidth = 100 / imageCount %}
+  {% set imageHeight = 100 / imageCount %}
+  
+  <div class="slides-container">
+    <ul class="slides">
+    {% for slide in info.slides %}
+      <li 
+        id="slide{{ loop.index}}"
+        class="slide js-slide {%  if loop.last %}initial{% endif %}"
+      >
+        {# site is in scope, was passed via the component macro #}
+        {{ image(slide.image, data) }}
+        <div class="slide-content">
+          {{ text(slide.text) }}
+          {{ scrollTo(slide.scrollTarget) }}
+        </div>
+      </li>  
+    {% endfor %}
+    </ul> <!-- .slides -->
+
+    <ul class="slides-nav">
+      {% for slide in info.slides %}
+      <li>
+        <a class="js-slide-trigger {%  if loop.first %}active{% endif %}" data-slide-id="#slide{{ loop.length - loop.index0}}">
+          <span></span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul> <!-- .slides-nav -->
+ 
+  </div> <!-- .slides-container -->  
+  
+{% endmacro %}

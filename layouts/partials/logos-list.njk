@@ -1,0 +1,58 @@
+{% from "../partials/image.njk" import image %}
+{% from "../partials/cta.njk" import cta %}
+
+{% macro logosList(info, data) %}
+  {# we need two copies so the auto scroll works properly #}
+  {% set copies = 2 %}
+
+  {# is scope is set to all we will show all logos that are available in data[info.listSource] #}
+  {% if info.scope === "all" %}
+    {% set logosList = data[info.listSource] %}
+  {% endif %}
+  {# filter the whole list which is available in data[info.listSource] with the list item ids which is available in info.selections. #}
+  {% if info.scope === "selections" %}
+    {% set logosList = data[info.listSource] | filterList(info.selections) %}
+  {% endif %}
+
+  {% set logoWidth = info.logoWidth %}
+  {% set logosListLength = logosList | length  *  logoWidth ~ "px" %}
+
+  {% if info.title %}
+    {% if info.headerType === "h1" %}
+      <h1 class="page-heading">{{ info.title }}</h1>
+    {% elif info.headerType === "h2" %}
+      <h2 class="section-heading">{{ info.title }}</h2>
+    {% else %}
+      <h3 class="section-heading">{{ info.title }}</h3>
+    {% endif %}
+  {% endif %}
+
+  {% if info.subTitle %}
+    <p class="sub-title">{{ info.subTitle }}</p>
+  {% endif %}
+
+  {% if info.body %}
+    <div>{{ info.body | mdToHTML | safe }}</div>
+  {% endif %}
+
+  <div class="marquee" style="--list-width: {{ logosListLength }}">
+    <div class="logos-wrapper">
+
+      {% for i in range(0, copies) -%}
+      <ul class="logos js-logos-list">
+      {% for item in logosList %}
+
+        <li>
+          <a href="{{ item.link.url }}" {% if item.link.isExternal %} target="_blank" rel="nofollow noopener" {% endif %}>
+            {{ image(item.logo, data) }}
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+      {% endfor %}
+    </div> <!-- marquee-inner -->
+  </div> <!-- marquee -->
+
+  {{ cta(info.cta) }}
+  
+{% endmacro %}
