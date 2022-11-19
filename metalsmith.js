@@ -127,7 +127,7 @@ Metalsmith(__dirname)
 
   .use(files => console.log(Object.keys(files))) 
 
-  .use(files => console.log(files['index.md']))
+  .use(files => console.log(JSON.stringify(files["index.md"], null, 4)))
 
   .use(markdown())
 

@@ -54,32 +54,6 @@ img {
   height: auto;
 }
 
-.columns {
-  display: flex;
-  justify-content: flex-start;
-
-  .prose {
-    padding-right: 50px;
-
-    @media (max-width: 767px) {
-      padding: 0;
-    }
-  }
-
-  &.reverse {
-    flex-direction: row-reverse;
-
-    .prose {
-      padding-right: 0;
-      padding-left: 50px;
-
-      @media (max-width: 767px) {
-        padding: 0;
-      }
-    }
-  }
-}
-
 .caption {
   font-size: 0.8em;
   font-style: italic;

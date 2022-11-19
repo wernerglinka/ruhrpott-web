@@ -1,6 +1,6 @@
 {% from "../partials/cta.njk" import cta %}
 
-{% macro text(info) %}
+{% macro media(info) %}
 
   {% if info.titlePrefix %}
     <p class="prefix">{{ info.titlePrefix }}</p>
@@ -18,6 +18,18 @@
 
   {% if info.subTitle %}
     <p class="sub-title">{{ info.subTitle }}</p>
+  {% endif %}
+
+  {% if info.mediaImage.imageURL %}
+    <figure class="sanity-image-wrapper js-sanity-image-wrapper" >
+      {# get image source for LRIP #}
+      {% set lowResImagesrc = info.mediaImage.imageURL ~ '?w=200&blur=50' %}
+
+      <img class="low-res" src="{{ lowResImagesrc }}" alt="{{ info.alt }}"/>
+      <img class="high-res" src="" alt="{{ info.alt }}" data-source="{{ info.mediaImage.imageURL }}"/>
+      {% if info.caption %}<figcaption>{{ info.caption | mdToHTML | safe }}</figcaption>{% endif %}
+      {% if info.credits %}<div class="image-credit">{{ info.credits | mdToHTML | safe }}</div>{% endif %}
+    </figure>
   {% endif %}
 
   {% if info.portableTextBody %}
