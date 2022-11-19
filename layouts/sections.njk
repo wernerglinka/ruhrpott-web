@@ -1,0 +1,74 @@
+{% extends "layout.njk" %}
+
+{% from "./blocks/block.njk" import renderBlock %}
+
+{% block body %}
+  {% for section in sections %}
+    {# build the sections class string #}
+    {% set sectionClasses = "section-wrapper" %}
+    {% if section.containerClass %}
+      {% set sectionClasses = sectionClasses ~ " " ~ section.containerClass %}
+    {% endif %}
+    {% if section.inContainer %}
+      {% set sectionClasses = sectionClasses ~ " inContainer" %}
+    {% endif %}
+    {% if section.margin.top %}
+      {% set sectionClasses = sectionClasses ~ " marginTop" %}
+    {% endif %}
+    {% if section.margin.bottom %}
+      {% set sectionClasses = sectionClasses ~ " marginBottom" %}
+    {% endif %}
+    {% if section.padding.top %}
+      {% set sectionClasses = sectionClasses ~ " paddingTop" %}
+    {% endif %}
+    {% if section.padding.bottom %}
+      {% set sectionClasses = sectionClasses ~ " paddingBottom" %}
+    {% endif %}
+    {% if section.background.isDark %}
+      {% set sectionClasses = sectionClasses ~ " isDark" %}
+    {% endif %}
+
+    {# get the sections id string #}
+    {% if section.containerId %}
+      {% set sectionId = section.containerId %}
+    {% else %}
+      {% set sectionId = "" %}
+    {% endif %}
+
+    {# build the section inline styles string #}
+    {% set sectionStyles = "" %}
+    {% if section.background.color %}
+      {% set sectionStyles = sectionStyles ~ "background-color:" ~ section.background.color ~ ";" %}
+    {% endif %}
+    {% if section.background.image %}
+      {% set sectionStyles = sectionStyles ~ "background-image: url(" ~ section.background.image ~ ");" %}
+    {% endif %}
+
+    {{ section | dump   }}
+    
+    {# section || article || aside #}
+    <{{section.htmlTag}} 
+      class="{{ sectionClasses }}" 
+      {% if sectionId %} id="{{ sectionId }}" {% endif %} 
+      {% if sectionStyles %} style="{{ sectionStyles }}" {% endif %}
+    >
+      <div class="columns cols{{ section.columns | length }}">
+        {# render the section columns #}
+        {% for column in section.columns %}
+
+          {# render individual columns and their respective blocks #}
+          <div class="column">  
+            
+              {% set name = column.name %}
+              {% set params = column %}
+
+              {# name determines which block is rendered #}
+              {{ renderBlock(name, params, data) }}
+            
+          </div>
+        {% endfor %}
+      </div>   
+    </{{section.htmlTag}}>
+
+  {% endfor %}
+{% endblock %}

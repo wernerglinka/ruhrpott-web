@@ -48,38 +48,57 @@ function initSanitySource(options) {
     // initialize Sanity client
     const client = sanityClient(options);
 
+    // function to normalize Sanity json to markdown and resolve references
+    const iterate = obj => {
+      Object.keys(obj).forEach(key => {
+  
+        // transform Portable Text to Markdown
+        if(key === "portableTextBody"){
+          obj[key] = BlocksToMarkdown(obj[key], {
+            serializers: getSerializers(client),
+            projectId: options.projectId,
+            dataset: options.dataset,
+          });
+        }
+
+        // transform image reference to image url
+        if(key == "asset" && obj[key]._ref.startsWith("image-")){
+          const imageBuilder = imageUrl(client);
+          const image = imageBuilder.image(obj[key]);
+          obj["imageURL"] = image.url();
+        }
+    
+        if (typeof obj[key] === 'object' && obj[key] !== null) {
+          iterate(obj[key])
+        }
+      })
+    };
+
     /*
      * Fetch all content types from Sanity
      */
     const rawContentTypes = client.fetch(queries.allPages);
     let contentTypes = await rawContentTypes;
 
-    const iterate = obj => {
-      Object.keys(obj).forEach(key => {
-  
-      console.log(`key: ${key}, value: ${obj[key]}`);
+    // normalize Sanity json to markdown and resolve references for each page
+    contentTypes.forEach(contentType => {
+      iterate(contentType);
 
-      if(key === "blogContent"){
-        obj[key] = BlocksToMarkdown(obj[key], {
-          serializers: getSerializers(client),
-          projectId: options.projectId,
-          dataset: options.dataset,
-        });
-      }
-  
-      if (typeof obj[key] === 'object' && obj[key] !== null) {
-              iterate(obj[key])
-          }
-      })
-    };
+      if ( contentType.isPage ) {
+        // add to page Metalsmith need the contents to be there
+        contentType.contents = Buffer.from('');
+        contentType.mode = '0644';
+        contentType.stats = {};
 
-    iterate(contentTypes[0]);
-
-   
+        // add page to files object
+        const fileKey = contentType.slug.current + '.md';
+        files[fileKey] = contentType
+      } 
+    });
 
 
 
-    console.log(JSON.stringify(contentTypes, null, 4));
+    //console.log(JSON.stringify(contentTypes, null, 4));
     //console.log(contentTypes);
     done();
   }

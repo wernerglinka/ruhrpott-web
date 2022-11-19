@@ -93,7 +93,7 @@ Metalsmith(__dirname)
       token:'skBZ9yDZX8BXBSlvGkoediG80ICbD5C5V9aSm5yaVw69GhTx5o7Ja1snxVFNIUJJDVzjRKWmo20MCCCvibbzOpUxfjQ4u4zHs4Q5CJcBoxoaCjhFwJp5wVm6oVBZ0NPwq8lpshlJXd6MBgzmHvgIvPHaMlsIM0Ca7JsMqobdgw1mtTW4ioeS'
     })
   )
-
+/*
   .use(
     getSanity({
       // Config object for the @sanity/client package
@@ -104,7 +104,7 @@ Metalsmith(__dirname)
       token:'skBZ9yDZX8BXBSlvGkoediG80ICbD5C5V9aSm5yaVw69GhTx5o7Ja1snxVFNIUJJDVzjRKWmo20MCCCvibbzOpUxfjQ4u4zHs4Q5CJcBoxoaCjhFwJp5wVm6oVBZ0NPwq8lpshlJXd6MBgzmHvgIvPHaMlsIM0Ca7JsMqobdgw1mtTW4ioeS'
     })
   )
-
+*/
   .use(when(isProduction, drafts()))
 
   .use(
@@ -124,6 +124,10 @@ Metalsmith(__dirname)
       },
     })
   )
+
+  .use(files => console.log(Object.keys(files))) 
+
+  .use(files => console.log(files['index.md']))
 
   .use(markdown())
 
