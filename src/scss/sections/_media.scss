@@ -1,67 +1,96 @@
+@use "../variables" as *;
+
 [data-section-composition-type="media"] {
   
-  background: #f5f5f5;
+  &.inContainer .blocks {
+    max-width: 1440px;
+    margin: 0 auto;
 
-  .blocks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .block {
-      flex: 0 0 50%;
+    @media (max-width: 1520px) {
+      max-width: 100%;
+      padding: 0 40px;
     }
-
-    &.cols3 {
-      .block {
-        flex: 0 0 33.333333%;
-      }
-    }
-    &.cols4 {
-      .block {
-        flex: 0 0 25%;
-      }
+    @media (max-width: 500px) {
+      padding: 0 20px;
     }
   }
 
-  .block-text {
-    padding: 40px 40px 40px 0;
+  .blocks {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
-    .prefix,
-    .page-heading,
-    .section-heading,
-    .sub-title {
-      margin-top: 0;
-    }
-    .prefix {
-      margin-bottom: 0;
-      font-weight: 500;
-      color: var(--color-highlight);
-    }
+    .block {
+      flex: 0 0 50%;  
+      padding: 40px 40px 40px 0;
 
-    .page-heading + .sub-title,
-    .section-heading + .sub-title {
-      margin-top: -20px;
-      font-style: italic;
-      font-size: 2.2rem;
-    }
+      @media (max-width: $ipad-width-portrait) {
+        flex: 0 0 100%;
+        padding: 40px 0;
+      }
 
-    li {
-      position: relative;
-      padding: 0 0 0 20px;
+      .prefix,
+      .page-heading,
+      .section-heading,
+      .sub-title {
+        margin-top: 0;
+      }
+      .prefix {
+        margin-bottom: 0;
+        font-weight: 500;
+        color: var(--color-highlight);
+      }
 
-      &:before {
-        content: "";
+      .page-heading + .sub-title,
+      .section-heading + .sub-title {
+        margin-top: -20px;
+        font-style: italic;
+        font-size: 2.2rem;
+      }
+
+      li {
+        position: relative;
+        padding: 0 0 0 20px;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 0;
+          height: 0;
+          border: 6px solid transparent;
+          border-left-color:  var(--color-primary);
+        }
+      }
+
+      /*
+        Note: There is a low-res and a high-res image in this figure. The low-res image is used as a placeholder for the high-res image. The high-res image is loaded in the background and is made visible once the image enters the viewport. The two image positions and opacity is managed in /blocks/_sanity-image.scss
+
+        This style only defines the resp[onsive image sizing. 
+      */
+      figure {
         position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 0;
-        height: 0;
-        border: 6px solid transparent;
-        border-left-color:  var(--color-primary);
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+
+        @media (max-width: $ipad-width-portrait) {
+          position: relative;
+          left: 0;
+          width: 100%;
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        } 
       }
     }
-
     .cta {
       margin: 30px 0;
     }

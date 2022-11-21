@@ -1,4 +1,5 @@
 {% from "../partials/cta.njk" import cta %}
+{% from "../partials/image.njk" import image %}
 
 {% macro media(info) %}
 
@@ -21,15 +22,7 @@
   {% endif %}
 
   {% if info.mediaImage.imageURL %}
-    <figure class="sanity-image-wrapper js-sanity-image-wrapper" >
-      {# get image source for LRIP #}
-      {% set lowResImagesrc = info.mediaImage.imageURL ~ '?w=200&blur=50' %}
-
-      <img class="low-res" src="{{ lowResImagesrc }}" alt="{{ info.alt }}"/>
-      <img class="high-res" src="" alt="{{ info.alt }}" data-source="{{ info.mediaImage.imageURL }}"/>
-      {% if info.caption %}<figcaption>{{ info.caption | mdToHTML | safe }}</figcaption>{% endif %}
-      {% if info.credits %}<div class="image-credit">{{ info.credits | mdToHTML | safe }}</div>{% endif %}
-    </figure>
+    {{ image(info.mediaImage) }}
   {% endif %}
 
   {% if info.portableTextBody %}
