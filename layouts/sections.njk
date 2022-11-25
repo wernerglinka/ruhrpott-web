@@ -28,6 +28,9 @@
       {% if section.background.isDark %}
         {% set sectionClasses = sectionClasses ~ " isDark" %}
       {% endif %}
+      {% if section.background.cssBg %}
+        {% set sectionClasses = sectionClasses ~ " " ~ section.background.cssBg %}
+      {% endif %}
 
       {# get the sections id string #}
       {% if section.containerId %}

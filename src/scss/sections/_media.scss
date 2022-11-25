@@ -2,95 +2,37 @@
 
 [data-section-composition-type="media"] {
   
-  &.inContainer .blocks {
-    max-width: 1440px;
-    margin: 0 auto;
-
-    @media (max-width: 1520px) {
-      max-width: 100%;
-      padding: 0 40px;
-    }
-    @media (max-width: 500px) {
-      padding: 0 20px;
-    }
-  }
-
   .blocks {
     position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
-    .block {
-      flex: 0 0 50%;  
-      padding: 40px 40px 40px 0;
+    /*
+      Note: There is a low-res and a high-res image in a figure. The low-res image is used as a placeholder for the high-res image. The high-res image is loaded in the background and is made visible once the image enters the viewport. The two image positions and opacity is managed in /blocks/_sanity-image.scss
+
+      This style only defines the resp[onsive image sizing. 
+    */
+    figure {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 100%;
 
       @media (max-width: $ipad-width-portrait) {
-        flex: 0 0 100%;
-        padding: 40px 0;
-      }
-
-      .prefix,
-      .page-heading,
-      .section-heading,
-      .sub-title {
-        margin-top: 0;
-      }
-      .prefix {
-        margin-bottom: 0;
-        font-weight: 500;
-        color: var(--color-highlight);
-      }
-
-      .page-heading + .sub-title,
-      .section-heading + .sub-title {
-        margin-top: -20px;
-        font-style: italic;
-        font-size: 2.2rem;
-      }
-
-      li {
         position: relative;
-        padding: 0 0 0 20px;
-
-        &:before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: 0;
-          transform: translateY(-50%);
-          width: 0;
-          height: 0;
-          border: 6px solid transparent;
-          border-left-color:  var(--color-primary);
-        }
+        left: 0;
+        width: 100%;
       }
 
-      /*
-        Note: There is a low-res and a high-res image in this figure. The low-res image is used as a placeholder for the high-res image. The high-res image is loaded in the background and is made visible once the image enters the viewport. The two image positions and opacity is managed in /blocks/_sanity-image.scss
-
-        This style only defines the resp[onsive image sizing. 
-      */
-      figure {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 50%;
+      img {
         height: 100%;
-
-        @media (max-width: $ipad-width-portrait) {
-          position: relative;
-          left: 0;
-          width: 100%;
-        }
-
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-        } 
-      }
+        width: 100%;
+        object-fit: cover;
+      } 
     }
+
     .cta {
       margin: 30px 0;
     }

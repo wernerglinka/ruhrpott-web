@@ -20,8 +20,13 @@
   li {
     height: 50px;
     display: flex;
-    justify-content: lext-end;
+    justify-content: flex-end;
     align-items: center;
+    padding: 0;
+
+    &:before {
+      border: none;
+    }
     
     a {
       display: block;
@@ -69,6 +74,7 @@
   li {
     width: 100vw;
     height: 100vh;
+    padding: 0;
     position: absolute;
     z-index: 1;
     
@@ -115,25 +121,6 @@
         object-position: center;
         width: 100vw;
         height: 100vh;
-      }
-  
-      figcaption {
-        display: inline-block;
-        width: auto;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: 1000;
-        padding: 20px;
-        background: var(--color-caption-background);
-        color: var(--color-white);
-        font-size: 1.2rem;
-        line-height: 1;
-        text-shadow: var(--default-text-shadow);
-
-        @media (max-width: $small-screen) {
-          background: none;
-        }
       }
     }
   

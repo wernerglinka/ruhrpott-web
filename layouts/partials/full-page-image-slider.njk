@@ -3,11 +3,6 @@
 {% from "../partials/scroll-to.njk" import scrollTo %}
 
 {% macro imageSlider(info, data) %}
-
-  {% set images = info.images %}
-  {% set imageCount = images | length %}
-  {% set imageWidth = 100 / imageCount %}
-  {% set imageHeight = 100 / imageCount %}
   
   <div class="slides-container">
     <ul class="slides">
@@ -17,9 +12,9 @@
         class="slide js-slide {%  if loop.last %}initial{% endif %}"
       >
         {# site is in scope, was passed via the component macro #}
-        {{ image(slide.image, data) }}
+        {{ image(slide.slideImage, data) }}
         <div class="slide-content">
-          {{ text(slide.text) }}
+          {{ text(slide.slideText) }}
           {{ scrollTo(slide.scrollTarget) }}
         </div>
       </li>  

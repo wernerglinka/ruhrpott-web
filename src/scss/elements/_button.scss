@@ -1,43 +1,42 @@
 .button {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: .25rem;
-  color: var(--color-white);
+  border-radius: .5rem;
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
-  justify-content: center;
   line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(2rem - 1px);
-  position: relative;
+  padding: calc(1rem - 1px) calc(3rem - 1px);
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
 
   &.primary {
     background-color: var(--color-primary);
     border-color: var(--color-primary);
+    color: var(--color-white);
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+      box-shadow: var(--default-box-shadow);
+    }
   }
 
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-    box-shadow: var(--default-box-shadow);
-  }
+  &.secondary {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: var(--color-white);
 
-  &:hover {
-    transform: translateY(-1px);
-  }
-
-  &:active {
-    box-shadow: var(--default-box-shadow);
-    transform: translateY(0);
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      border-color: var(--color-secondary);
+      color: var(--color-secondary) !important;
+      box-shadow: var(--default-box-shadow);
+    }
   }
 }

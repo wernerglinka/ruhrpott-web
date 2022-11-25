@@ -1,12 +1,24 @@
 @use "../variables" as *;
 
 .section-wrapper {
+  &.pattern1 {
+    background-image: var(--background1);
+  }
+  &.pattern2 {
+    background-image: var(--background2);
+  }
+  &.pattern3 {
+    background-image: var(--background3);
+  }
+  &.pattern4 {
+    background-image: var(--background4);
+  }
+  &.pattern5 {
+    background-image: var(--background5);
+  }
+  
   &:first-of-type {
     margin-top: 120px;
-
-    &.inContainer {
-      margin-top: 120px;
-    }
   }
 
   &.inContainer .blocks{
@@ -26,5 +38,16 @@
   }
   &.marginBottom {
     margin-bottom: 100px;
+  }
+  &.paddingTop {
+    padding-top: 60px;
+  }
+  &.paddingBottom {
+    padding-bottom: 60px;
+  }
+  &.isDark {
+    h1, h2, h3, h4, p {
+      color: var(--color-white);
+    }
   }
 }

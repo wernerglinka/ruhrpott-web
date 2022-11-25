@@ -1,0 +1,16 @@
+@use "../variables" as *;
+
+[data-section-composition-type="text"] {
+
+  .blocks {
+    .block {
+      text-align: center;
+
+      @media (max-width: $ipad-width-portrait) {
+        padding: 20px 0;
+      }
+    }
+  }
+}
+
+      

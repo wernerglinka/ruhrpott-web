@@ -1,3 +1,5 @@
+{% from "../partials/icon.njk" import icon %}
+
 {% macro image(info) %}
 
   <figure class="sanity-image-wrapper js-sanity-image-wrapper" >
@@ -6,8 +8,11 @@
 
     <img class="low-res" src="{{ lowResImagesrc }}" alt="{{ info.alt }}"/>
     <img class="high-res" src="" alt="{{ info.alt }}" data-source="{{ info.imageURL }}"/>
-    {% if info.caption %}<figcaption>{{ info.caption | mdToHTML | safe }}</figcaption>{% endif %}
-    {% if info.credits %}<div class="image-credit">{{ info.credits | mdToHTML | safe }}</div>{% endif %}
+    <span class="image-info-icon">{{ icon("info") }}</span>
+    <div class="image-info">
+      {% if info.caption %}<figcaption>{{ info.caption | mdToHTML | safe }}</figcaption>{% endif %}
+      {% if info.credits %}<div class="image-credit">{{ info.credits | mdToHTML | safe }}</div>{% endif %}
+    </div>
   </figure>    
   
 {% endmacro %}
