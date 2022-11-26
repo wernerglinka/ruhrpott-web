@@ -18,9 +18,7 @@
     height: 30px;
     padding: 0 0 30px 30px;
     overflow: hidden;
-    animation: expandWrapper 500ms ease-in-out forwards;
-    transform-origin: bottom left;
-    cursor: pointer;
+    cursor: help;
 
     svg {
       position: absolute;
@@ -33,13 +31,13 @@
   }
 
   .image-info {
-    width: 100%;
+    width: 400px;
+    height: auto;
     padding: 20px;
-    animation: expandWrapper 500ms ease-in-out forwards;
-    transform-origin: bottom left;
     background-color: var(--color-caption-background);
     backdrop-filter: blur(5px);
-    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
     
     * {
       color: var(--color-white);
@@ -50,9 +48,9 @@
   .image-info-icon:hover {
     width: 450px;
     height: auto;
-    
+
     .image-info {
-      display: block;
+      opacity: 1;
     }
   }
 
