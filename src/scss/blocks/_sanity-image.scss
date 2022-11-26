@@ -13,27 +13,55 @@
     position: absolute;
     left: 20px;
     bottom: 20px;
+    z-index: 10;
     width: 30px;
     height: 30px;
+    padding: 0 0 30px 30px;
+    overflow: hidden;
+    animation: expandWrapper 500ms ease-in-out forwards;
+    transform-origin: bottom left;
     cursor: pointer;
 
     svg {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 30px;
+      height: 30px;
       stroke: var(--color-white);
     } 
   }
 
   .image-info {
-    position: absolute;
-    left: 50px;
-    bottom: 50px;
-    z-index: 10;
+    width: 100%;
+    padding: 20px;
+    animation: expandWrapper 500ms ease-in-out forwards;
+    transform-origin: bottom left;
     background-color: var(--color-caption-background);
     backdrop-filter: blur(5px);
-    padding: 20px;
-
+    display: none;
+    
     * {
       color: var(--color-white);
       font-size: 1rem;
+    }
+  }
+
+  .image-info-icon:hover {
+    width: 450px;
+    height: auto;
+    
+    .image-info {
+      display: block;
+    }
+  }
+
+  @keyframes expandWrapper {
+    0% {
+        transform: scale(0, 0)
+    }
+    100% {
+        transform: scale(1, 1)
     }
   }
 

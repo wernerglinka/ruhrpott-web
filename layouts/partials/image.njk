@@ -8,10 +8,12 @@
 
     <img class="low-res" src="{{ lowResImagesrc }}" alt="{{ info.alt }}"/>
     <img class="high-res" src="" alt="{{ info.alt }}" data-source="{{ info.imageURL }}"/>
-    <span class="image-info-icon">{{ icon("info") }}</span>
-    <div class="image-info">
-      {% if info.caption %}<figcaption>{{ info.caption | mdToHTML | safe }}</figcaption>{% endif %}
-      {% if info.credits %}<div class="image-credit">{{ info.credits | mdToHTML | safe }}</div>{% endif %}
+    <div class="image-info-icon">
+      {{ icon("info") }}
+      <div class="image-info">
+        {% if info.caption %}<figcaption>{{ info.caption | mdToHTML | safe }}</figcaption>{% endif %}
+        {% if info.credits %}<div class="image-credit">{{ info.credits | mdToHTML | safe }}</div>{% endif %}
+      </div>
     </div>
   </figure>    
   
