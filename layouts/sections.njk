@@ -70,6 +70,8 @@
             {% set name = sectionBlock._type %}
             {% set params = sectionBlock %}
 
+            {{ data.cities | dump }}
+
             {# name determines which block is rendered #}
             {{ renderBlock(name, params, data) }}
           {% endfor %}

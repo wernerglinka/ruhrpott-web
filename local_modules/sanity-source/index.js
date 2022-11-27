@@ -77,15 +77,17 @@ function initSanitySource(options) {
     /*
      * Fetch all content types from Sanity
      */
-    const rawContentTypes = client.fetch(queries.allPages);
+    const rawContentTypes = client.fetch(queries.allContent);
     let contentTypes = await rawContentTypes;
+
+    const data = [];
 
     // normalize Sanity json to markdown and resolve references for each page
     contentTypes.forEach(contentType => {
       iterate(contentType);
 
       if ( contentType.isPage ) {
-        // add to page Metalsmith need the contents to be there
+        // add to page, Metalsmith need the contents to be there
         contentType.contents = Buffer.from('');
         contentType.mode = '0644';
         contentType.stats = {};
@@ -93,13 +95,25 @@ function initSanitySource(options) {
         // add page to files object
         const fileKey = contentType.slug.current + '.md';
         files[fileKey] = contentType
-      } 
+      } else {
+        // add to metadata
+
+        // if a contentType._type array is not already in data, add it
+        if ( !data[contentType._type] ) {
+          data[contentType._type] = [];
+          // add this contentType of type contentType._type to the array
+          data[contentType._type].push(contentType);
+        } else {
+          // if an contentType._type array is already in data, push the contentType object to it
+          data[contentType._type].push(contentType);
+        }
+      }
     });
 
-
-
-    //console.log(JSON.stringify(contentTypes, null, 4));
-    //console.log(contentTypes);
+    // merge data object with existing metadata
+    const metadata = metalsmith.metadata();
+    metadata.data = data;
+    
     done();
   }
 }

@@ -7,6 +7,7 @@ const queries = {
   contentTypes: groq`array::unique(*[!(_type match ["system.*"] || _type match ["sanity.*"])]._type)`,
   allPages: groq`*[discoverable == true && isPage == true]`,
   allData: groq`*[discoverable == true]`,
+  allContent: groq`*[discoverable == true]`,
   home: groq`*[_type == "home"]`,
   discover: groq`array::unique(*[discoverable == true]._type)`,
 }

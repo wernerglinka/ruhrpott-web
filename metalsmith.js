@@ -83,6 +83,15 @@ Metalsmith(__dirname)
     nodeVersion: process.version,
   })
 
+  //.use(when(isProduction, drafts()))
+
+  .use(
+    metadata({
+      site: "src/content/data/site.json",
+      nav: "src/content/data/navigation.json",
+    })
+  )
+
   .use(
     sanitySource({
       // Config object for the @sanity/client package
@@ -93,26 +102,8 @@ Metalsmith(__dirname)
       token:'skBZ9yDZX8BXBSlvGkoediG80ICbD5C5V9aSm5yaVw69GhTx5o7Ja1snxVFNIUJJDVzjRKWmo20MCCCvibbzOpUxfjQ4u4zHs4Q5CJcBoxoaCjhFwJp5wVm6oVBZ0NPwq8lpshlJXd6MBgzmHvgIvPHaMlsIM0Ca7JsMqobdgw1mtTW4ioeS'
     })
   )
-/*
-  .use(
-    getSanity({
-      // Config object for the @sanity/client package
-      // See https://www.npmjs.com/package/@sanity/client
-      projectId: '349a1vg2', // required, else will throw
-      dataset: 'production', // defaults to 'production'
-      apiVersion: 'v2022-11-17', // use a UTC date string
-      token:'skBZ9yDZX8BXBSlvGkoediG80ICbD5C5V9aSm5yaVw69GhTx5o7Ja1snxVFNIUJJDVzjRKWmo20MCCCvibbzOpUxfjQ4u4zHs4Q5CJcBoxoaCjhFwJp5wVm6oVBZ0NPwq8lpshlJXd6MBgzmHvgIvPHaMlsIM0Ca7JsMqobdgw1mtTW4ioeS'
-    })
-  )
-*/
-  .use(when(isProduction, drafts()))
 
-  .use(
-    metadata({
-      site: "src/content/data/site.json",
-      nav: "src/content/data/navigation.json",
-    })
-  )
+  .use((files, metalsmith) => console.log(metalsmith.metadata())) 
 
   .use(
     collections({
@@ -124,10 +115,6 @@ Metalsmith(__dirname)
       },
     })
   )
-
-  .use(files => console.log(Object.keys(files))) 
-
-  .use(files => console.log(JSON.stringify(files["index.md"], null, 4)))
 
   .use(markdown())
 
