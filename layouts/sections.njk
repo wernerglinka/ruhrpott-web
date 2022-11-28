@@ -4,6 +4,7 @@
 
 {% block body %}
   {% for section in sections %}
+
     {% if not section.disabled %}
       {# build the sections class string #}
       {% set sectionClasses = "section-wrapper" %}
@@ -31,7 +32,9 @@
       {% if section.background.cssBg %}
         {% set sectionClasses = sectionClasses ~ " " ~ section.background.cssBg %}
       {% endif %}
-
+      {% if section.sectionBlocks[0].blockOrder == "imageLeft" %}
+        {% set sectionClasses = sectionClasses ~ " imageLeft" %}
+      {% endif %}
       {# get the sections id string #}
       {% if section.containerId %}
         {% set sectionId = section.containerId %}
@@ -69,8 +72,6 @@
             {# render individual blocks #}
             {% set name = sectionBlock._type %}
             {% set params = sectionBlock %}
-
-            {{ data.cities | dump }}
 
             {# name determines which block is rendered #}
             {{ renderBlock(name, params, data) }}

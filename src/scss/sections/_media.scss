@@ -37,4 +37,27 @@
       margin: 30px 0;
     }
   }
+
+  &.imageLeft {
+    .blocks {
+      flex-direction: row-reverse;
+
+      .block {
+        padding: 40px 0 40px 40px;
+
+        @media (max-width: $ipad-width-portrait) {
+          padding: 40px 0;
+        }
+      }
+
+      figure {
+        left: 0;
+        width: 50%;
+
+        @media (max-width: $ipad-width-portrait) {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

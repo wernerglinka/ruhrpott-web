@@ -92,6 +92,7 @@ Metalsmith(__dirname)
     })
   )
 
+  // the sanitySource plugin MUST be placed after metadata plugin other wise metadata will overwrite the sanity data
   .use(
     sanitySource({
       // Config object for the @sanity/client package
@@ -102,8 +103,6 @@ Metalsmith(__dirname)
       token:'skBZ9yDZX8BXBSlvGkoediG80ICbD5C5V9aSm5yaVw69GhTx5o7Ja1snxVFNIUJJDVzjRKWmo20MCCCvibbzOpUxfjQ4u4zHs4Q5CJcBoxoaCjhFwJp5wVm6oVBZ0NPwq8lpshlJXd6MBgzmHvgIvPHaMlsIM0Ca7JsMqobdgw1mtTW4ioeS'
     })
   )
-
-  .use((files, metalsmith) => console.log(metalsmith.metadata())) 
 
   .use(
     collections({

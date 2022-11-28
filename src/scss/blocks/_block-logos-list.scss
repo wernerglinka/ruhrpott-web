@@ -37,6 +37,10 @@
 
   li {
     padding: 0 var(--logo-padding);
+
+    &:before {
+      border: none;
+    }
   }
 
   a {
