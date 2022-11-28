@@ -48,7 +48,7 @@
         {% set sectionStyles = sectionStyles ~ "background-color:" ~ section.background.color ~ ";" %}
       {% endif %}
       {% if section.background.image %}
-        {% set sectionStyles = sectionStyles ~ "background-image: url(" ~ section.background.image ~ ");" %}
+        {% set sectionStyles = sectionStyles ~ "background-image: url(" ~ section.background.image.imageURL ~ ");" %}
       {% endif %}
 
       {# build the section compoosition string #}

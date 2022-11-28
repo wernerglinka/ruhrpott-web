@@ -1,0 +1,39 @@
+@use "../variables" as *;
+
+[data-section-composition-type="text"] {
+
+  &.imageBanner {
+    margin-top: -40px !important;
+    min-height: 400px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .blocks {
+      position: relative;
+      z-index: 1;
+      min-height: 400px;
+    }
+
+    .block-text {
+      position: absolute;
+      left: 0;
+      bottom: 40px;
+      padding: 0;
+
+      @media (max-width: $max-content-width-and-padding) {
+        left: 40px;
+      }
+      @media (max-width: $small-screen) {
+        left: 20px;
+      }
+    }
+
+    h1 {
+      margin: 0;
+    }
+  }
+}
+
+      

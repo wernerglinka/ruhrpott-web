@@ -44,3 +44,5 @@ $very-small-screen: 360px;
 
 $large-screen-padding: 40px;
 $small-screen-padding: 20px;
+
+$max-content-width-and-padding: $max-content-width + $large-screen-padding * 2;

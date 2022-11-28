@@ -26,11 +26,11 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 1520px) {
+    @media (max-width: $max-content-width-and-padding) {
       max-width: 100%;
       padding: 0 40px;
     }
-    @media (max-width: 500px) {
+    @media (max-width: $small-screen) {
       padding: 0 20px;
     }
   }  

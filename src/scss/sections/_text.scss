@@ -1,0 +1,26 @@
+@use "../variables" as *;
+
+[data-section-composition-type="text"] {
+
+  &.twoCol {
+    .block-text {
+      padding: 40px 0;
+
+      .prose {
+        text-align: left;
+        column-count: 2;
+        column-gap: 40px;
+
+        @media (max-width: $small-screen) {
+          column-count: 1;
+        }
+
+        p {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+      

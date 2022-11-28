@@ -87,6 +87,8 @@ function initSanitySource(options) {
       iterate(contentType);
 
       if ( contentType.isPage ) {
+        console.log(JSON.stringify(contentType,null, 4));
+        
         // add to page, Metalsmith need the contents to be there
         contentType.contents = Buffer.from('');
         contentType.mode = '0644';
