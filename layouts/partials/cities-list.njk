@@ -3,8 +3,47 @@
 
 {% macro citiesList(info, data) %}
 
-  <h2>Here is the list</h2>
+  {# is scope is set to all we will show all logos that are available in data[info.listSource] #}
+  {% if info.scope === "all" %}
+    {% set citiesList = data[info.listSource] %}
+  {% endif %}
+  {# filter the whole list which is available in data[info.listSource] with the list item ids which is available in info.selections. #}
+  {% if info.scope === "selections" %}
+    {% set citiesList = data[info.listSource] | filterList(info.cityCards) %}
+  {% endif %}
 
-  {{ info | dump }}
+  {# build a unique filter list from all sourceItem categories #}
+  {# categories are defined in a string for each item #}
+  {% set filterString = "" %}
+    
+  {% for city in citiesList %}
+    {% set filterString = filterString + city.size + " " %}
+  {% endfor %}
+
+  {# create a filter Array by applying the toArray filter to the categories string #}
+  {% set filterArray = filterString | toArray %}
+
+  <ul class="list-filters js-list-filters">
+    <li data-filter="*">all</li>
+    {% for filterItem in filterArray %}
+    <li data-filter=".{{ filterItem }}">{{ filterItem }}</li>
+    {% endfor %}
+  </ul>
+  <p class="filter-note">Filter by size, sorted by greater than one hundred thousands citizens</p>
+
+  <ul class="cities-list js-cities-list grid">
+    {% for city in citiesList %}
+      <li class="grid-item {{ city.size }}">
+        <p class="city-name">{{ city.name }}</p>
+        <a href="{{ city.websiteLink.href }}">
+          {{ image(city.image, data) }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  
+
+  
   
 {% endmacro %}

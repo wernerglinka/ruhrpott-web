@@ -80,14 +80,14 @@ function initSanitySource(options) {
     const rawContentTypes = client.fetch(queries.allContent);
     let contentTypes = await rawContentTypes;
 
-    const data = [];
+    const data = {};
 
     // normalize Sanity json to markdown and resolve references for each page
     contentTypes.forEach(contentType => {
       iterate(contentType);
 
       if ( contentType.isPage ) {
-        console.log(JSON.stringify(contentType,null, 4));
+        //console.log(JSON.stringify(contentType,null, 4));
         
         // add to page, Metalsmith need the contents to be there
         contentType.contents = Buffer.from('');
@@ -114,7 +114,8 @@ function initSanitySource(options) {
 
     // merge data object with existing metadata
     const metadata = metalsmith.metadata();
-    metadata.data = data;
+    metadata['data'] = data;
+    metalsmith.metadata(metadata);
     
     done();
   }

@@ -1,0 +1,71 @@
+[data-section-composition-type="citiesList"] {
+  .list-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    li {
+      border: 1px solid var(--color-primary);
+      padding: 10px;
+      margin-right: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:before {
+        border: none;
+      }
+
+      &.active {
+        background-color: #ccc;
+        border-color: #ccc;
+        color: var(--color-white);
+        pointer-events: none;
+        cursor: default;
+      }
+
+      &:hover {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+      }
+    }
+  }
+
+  .filter-note {
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+.cities-list {
+  li {
+    position: relative;
+    padding: 20px;
+
+    &:before {
+      border: none; 
+    }
+
+    .city-name {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      z-index: 1;
+      color: var(--color-white);
+      text-shadow: var(--default-text-shadow);
+      font-size: 3rem;
+      margin: 0;
+    }
+  }
+  .grid-item {
+    width: 33.33%;
+    aspect-ratio: 1/0.5625;
+    overflow: hidden;
+
+    a, figure {
+      display: block;
+      height: 100%;
+    }
+  }
+}

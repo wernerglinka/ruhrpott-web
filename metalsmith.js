@@ -43,7 +43,7 @@ const filterList = (list, selections) => {
   const filterredList = [];
   for (let i = 0; i < list.length; i++) {
     for (let j = 0; j < selections.length; j++) {
-      if (list[i].id === selections[j]) {
+      if (list[i]._id === selections[j]._ref) {
         filterredList.push(list[i]);
       }
     }
@@ -51,7 +51,7 @@ const filterList = (list, selections) => {
   return filterredList;
 };
 
-// turn a string of words into a unique array of words. Used to create a unique list of categories in rich-list.njk
+// turn a string of words into a unique array of words. Used to create a unique list of categories in cities-list.njk
 const toArray = (string) => {
   return [...new Set(string.trim().split(" "))].sort();
 };
@@ -103,6 +103,12 @@ Metalsmith(__dirname)
       token:'skBZ9yDZX8BXBSlvGkoediG80ICbD5C5V9aSm5yaVw69GhTx5o7Ja1snxVFNIUJJDVzjRKWmo20MCCCvibbzOpUxfjQ4u4zHs4Q5CJcBoxoaCjhFwJp5wVm6oVBZ0NPwq8lpshlJXd6MBgzmHvgIvPHaMlsIM0Ca7JsMqobdgw1mtTW4ioeS'
     })
   )
+
+  //.use( (files, metalsmith, done) => {
+  //  console.log(metalsmith.metadata());
+  //  done();
+  //})
+
 
   .use(
     collections({

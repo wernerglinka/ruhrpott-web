@@ -12,6 +12,7 @@ import updatePageNameAttribute from "./modules/update-page-location";
 import loadSanityImage from "./modules/load-sanity-image";
 import slides from "./modules/slides";
 import logos from "./modules/logos";
+import citiesListIsotope from "./modules/cities-list-isotope";
 
 function initPage() {
   barba.init({
@@ -44,7 +45,7 @@ function initPage() {
   loadSanityImage.init();
   slides.init();
   logos.init();
-  
+  citiesListIsotope.init();
 }
 
 window.addEventListener("load", function() {
