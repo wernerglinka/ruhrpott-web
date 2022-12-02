@@ -88,7 +88,6 @@ Metalsmith(__dirname)
   .use(
     metadata({
       site: "src/content/data/site.json",
-      nav: "src/content/data/navigation.json",
     })
   )
 
@@ -104,10 +103,10 @@ Metalsmith(__dirname)
     })
   )
 
-  //.use( (files, metalsmith, done) => {
-  //  console.log(metalsmith.metadata());
-  //  done();
-  //})
+  .use( (files, metalsmith, done) => {
+    console.log(metalsmith.metadata());
+    done();
+  })
 
 
   .use(

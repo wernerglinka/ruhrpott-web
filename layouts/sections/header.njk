@@ -1,24 +1,35 @@
+{% from "../partials/icon.njk" import icon %}
+
 <div class="header-wrapper js-header">
   <header>
     <div class="container">
       <div class="brand">
         <a class="js-home-link home-link" href="/"><img src="/assets/images/ruhrpott-logo.svg" alt="Ruhrpott POC website"/></a>
       </div>
-      
+
       <button id="hamburger" class="js-hamburger"><span></span></button>
 
       <div id="main-menu" class="js-main-menu">
         <ul>
-          {% for menuItem in nav.menu %}
+          {% for menuItem in data.navigation[0].menuLinks %}
             <li>
               <div>
-                {% if menuItem.url === "/" %}
+                {% if menuItem.linkURL === "/" %}
                   {% set path = "home" %}
                 {% else %}
-                  {% set path = menuItem.url %}
+                  {% set path = menuItem.linkURL %}
                 {% endif %}
-                <a href={{ menuItem.url}} class="{{ path | trimSlashes }}">{{ menuItem.label }}</a>
+                <a href={{ menuItem.linkURL}} class="{{ menuItem.linkClass }}">{{ icon(menuItem.linkIcon) }}{{ menuItem.label }}</a>
               </div>
+              {% if menuItem.hasChildren %}
+                <ul>
+                  {% for child in menuItem.links %}
+                    <li>
+                      <a href={{ child.linkURL}} class="{{ child.linkClass }}">{{ child.label }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
             </li>
           {% endfor %}
         </ul>

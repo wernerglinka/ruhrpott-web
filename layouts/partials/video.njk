@@ -1,0 +1,12 @@
+{% from "./image.njk" import image %}
+{% from "../partials/image.njk" import image %}
+{% from "../partials/icon.njk" import icon %}
+
+{% macro video(info, data) %}
+    <div class="video" >
+      <button class="js-modal-video" data-videoid={{ info.videoID }} data-videosrc={{ info.videoSource }}>
+        {{ icon("play") }}
+        {{ image(info.videoThumbnail) }}
+      </button>
+    </div> 
+{% endmacro %}

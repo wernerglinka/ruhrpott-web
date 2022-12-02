@@ -1,0 +1,36 @@
+@use "../variables" as *;
+
+[data-section-composition-type="video"] {
+
+  .block-video {
+    padding: 40px 0;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    position: relative;
+    cursor: pointer;
+
+    svg {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+      stroke: var(--color-white);
+
+      transition: stroke 0.3s ease-in-out;
+    }
+
+    &:hover {
+      svg {
+        stroke: var(--color-highlight);
+      }
+    }
+  }
+}
