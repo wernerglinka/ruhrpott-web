@@ -8,7 +8,7 @@ const msBuild = require('../metalsmith');
 (async function firstRun() {
   await msBuild();
   chokidar
-    .watch(['src', 'layouts'], {
+    .watch(['src', 'lib'], {
       ignoreInitial: true,
       awaitWriteFinish: { pollInterval: 1000 }
     })
@@ -26,6 +26,6 @@ const msBuild = require('../metalsmith');
       await msBuild();
       setTimeout(() => {
         browserSync.reload();
-      }, 5000);
+      }, 2000);
     });
 })();
