@@ -103,12 +103,12 @@ function msBuild() {
         token:'skBZ9yDZX8BXBSlvGkoediG80ICbD5C5V9aSm5yaVw69GhTx5o7Ja1snxVFNIUJJDVzjRKWmo20MCCCvibbzOpUxfjQ4u4zHs4Q5CJcBoxoaCjhFwJp5wVm6oVBZ0NPwq8lpshlJXd6MBgzmHvgIvPHaMlsIM0Ca7JsMqobdgw1mtTW4ioeS'
       })
     )
-
+/*
     .use( (files, metalsmith, done) => {
       console.log(metalsmith.metadata());
       done();
     })
-
+*/
 
     .use(
       collections({
