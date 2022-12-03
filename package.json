@@ -62,10 +62,7 @@
     "metalsmith-metadata": "^0.0.4",
     "metalsmith-prism": "^4.1.0",
     "metalsmith-static-files": "^0.2.0",
-    "postcss-preset-env": "^7.8.2",
-    "pump": "^3.0.0",
-    "split2": "^4.1.0",
-    "through2": "^4.0.2"
+    "postcss-preset-env": "^7.8.2"
   },
   "engines": {
     "node": ">=16.0.0"
