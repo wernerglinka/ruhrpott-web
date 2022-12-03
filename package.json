@@ -1,10 +1,11 @@
 {
-  "name": "metalsmith-blog-starter",
+  "name": "Ruhrpott",
   "version": "0.1.0",
-  "description": "A simple Metalsmith blog starter",
+  "description": "A POC Metalsmith website with Sanity CMS integration",
   "keywords": [
-    "metalsmith",
-    "starter"
+    "Metalsmith",
+    "Sanity CMS",
+    "Starter"
   ],
   "author": "werner@glinka.co",
   "license": "MIT",
@@ -14,13 +15,6 @@
     "serve": "browser-sync start --server 'build'",
     "lint": "eslint --fix .",
     "test": "nodemon "
-  },
-  "nodemonConfig": {
-    "watch": [
-      "src/*",
-      "layouts/*"
-    ],
-    "ext": "js scss njk json html md"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",

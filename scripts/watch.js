@@ -24,6 +24,8 @@ const msBuild = require('../metalsmith');
     })
     .on('all', async () => {
       await msBuild();
-      browserSync.reload();
+      setTimeout(() => {
+        browserSync.reload();
+      }, 4000);
     });
 })();
