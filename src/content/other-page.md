@@ -10,4 +10,4 @@ seo:
 ---
 # Just another page
 
-Nothing here... fill in the blanks
+Nothing here... fill in the blanks...

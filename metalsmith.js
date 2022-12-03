@@ -74,96 +74,104 @@ const templateConfig = {
   },
 };
 
-Metalsmith(__dirname)
-  .source("./src/content")
-  .destination("./build")
-  .clean(true)
-  .metadata({
-    msVersion: dependencies.metalsmith,
-    nodeVersion: process.version,
-  })
-
-  //.use(when(isProduction, drafts()))
-
-  .use(
-    metadata({
-      site: "src/content/data/site.json",
+function msBuild() {
+  Metalsmith(__dirname)
+    .source("./src/content")
+    .destination("./build")
+    .clean(true)
+    .metadata({
+      msVersion: dependencies.metalsmith,
+      nodeVersion: process.version,
     })
-  )
 
-  // the sanitySource plugin MUST be placed after metadata plugin other wise metadata will overwrite the sanity data
-  .use(
-    sanitySource({
-      // Config object for the @sanity/client package
-      // See https://www.npmjs.com/package/@sanity/client
-      projectId: '349a1vg2', // required, else will throw
-      dataset: 'production', // defaults to 'production'
-      apiVersion: 'v2022-11-17', // use a UTC date string
-      token:'skBZ9yDZX8BXBSlvGkoediG80ICbD5C5V9aSm5yaVw69GhTx5o7Ja1snxVFNIUJJDVzjRKWmo20MCCCvibbzOpUxfjQ4u4zHs4Q5CJcBoxoaCjhFwJp5wVm6oVBZ0NPwq8lpshlJXd6MBgzmHvgIvPHaMlsIM0Ca7JsMqobdgw1mtTW4ioeS'
+    //.use(when(isProduction, drafts()))
+
+    .use(
+      metadata({
+        site: "src/content/data/site.json",
+      })
+    )
+
+    // the sanitySource plugin MUST be placed after metadata plugin other wise metadata will overwrite the sanity data
+    .use(
+      sanitySource({
+        // Config object for the @sanity/client package
+        // See https://www.npmjs.com/package/@sanity/client
+        projectId: '349a1vg2', // required, else will throw
+        dataset: 'production', // defaults to 'production'
+        apiVersion: 'v2022-11-17', // use a UTC date string
+        token:'skBZ9yDZX8BXBSlvGkoediG80ICbD5C5V9aSm5yaVw69GhTx5o7Ja1snxVFNIUJJDVzjRKWmo20MCCCvibbzOpUxfjQ4u4zHs4Q5CJcBoxoaCjhFwJp5wVm6oVBZ0NPwq8lpshlJXd6MBgzmHvgIvPHaMlsIM0Ca7JsMqobdgw1mtTW4ioeS'
+      })
+    )
+
+    .use( (files, metalsmith, done) => {
+      console.log(metalsmith.metadata());
+      done();
     })
-  )
-
-  .use( (files, metalsmith, done) => {
-    console.log(metalsmith.metadata());
-    done();
-  })
 
 
-  .use(
-    collections({
-      blog: {
-        pattern: "blog/*.md",
-        sortBy: "date",
-        reverse: true,
-        limit: 10,
-      },
-    })
-  )
+    .use(
+      collections({
+        blog: {
+          pattern: "blog/*.md",
+          sortBy: "date",
+          reverse: true,
+          limit: 10,
+        },
+      })
+    )
 
-  .use(markdown())
+    .use(markdown())
 
-  .use(permalinks())
+    .use(permalinks())
 
-  .use(layouts(templateConfig))
+    .use(layouts(templateConfig))
 
-  .use(
-    prism({
-      lineNumbers: true,
-      decode: true,
-    })
-  )
+    .use(
+      prism({
+        lineNumbers: true,
+        decode: true,
+      })
+    )
 
-  .use(
-    assets({
-      source: "src/assets/",
-      destination: "assets/",
-    })
-  )
+    .use(
+      assets({
+        source: "src/assets/",
+        destination: "assets/",
+      })
+    )
 
-  .use(
-    sass({
-      entries: {
-        "src/scss/styles.scss": "assets/styles.css",
-      },
-    })
-  )
-  .use(postcss({ plugins: ["postcss-preset-env", "autoprefixer", "cssnano"], map: !isProduction }))
+    .use(
+      sass({
+        entries: {
+          "src/scss/styles.scss": "assets/styles.css",
+        },
+      })
+    )
+    .use(postcss({ plugins: ["postcss-preset-env", "autoprefixer", "cssnano"], map: !isProduction }))
 
-  .use(
-    esbuild({
-      bundle: true,
-      minify: false,
-      sourcemap: true,
-      drop: [],
-      entries: {
-        "assets/scripts": "src/js/main.js",
-      },
-    })
-  )
+    .use(
+      esbuild({
+        bundle: true,
+        minify: false,
+        sourcemap: true,
+        drop: [],
+        entries: {
+          "assets/scripts": "src/js/main.js",
+        },
+      })
+    )
 
-  .use(when(isProduction, htmlMinifier()))
-  .build((err) => {
-    if (err) {
-      throw err;
-    }
-  });
+    .use(when(isProduction, htmlMinifier()))
+    .build((err) => {
+      if (err) {
+        throw err;
+      }
+    });
+}
+
+if (require.main === module) {
+  msBuild();
+} else {
+  module.exports = msBuild;
+}
