@@ -1,0 +1,1177 @@
+{
+    "sanityData": [
+        {
+            "_createdAt": "2022-12-02T16:51:57Z",
+            "_id": "0a6bedc6-c9a8-4718-aeb3-d66cb8954ca3",
+            "_rev": "C7rctcfX2rVQiEHDjBY1nW",
+            "_type": "navigation",
+            "_updatedAt": "2022-12-02T19:12:13Z",
+            "discoverable": true,
+            "menuLinks": [
+                {
+                    "_key": "e9615a312c57",
+                    "_type": "menuLink",
+                    "hasChildren": false,
+                    "label": "Home",
+                    "linkClass": "home",
+                    "linkIcon": "home",
+                    "linkURL": "/"
+                },
+                {
+                    "_key": "c67d328054e7",
+                    "_type": "menuLink",
+                    "hasChildren": true,
+                    "label": "Ruhrpott Cities",
+                    "linkClass": "cities",
+                    "linkIcon": "globe",
+                    "linkURL": "/cities",
+                    "links": [
+                        {
+                            "_key": "30e985b9a316",
+                            "_type": "menuLink",
+                            "hasChildren": false,
+                            "label": "Gelsenkirchen",
+                            "linkClass": "city",
+                            "linkURL": "/gelsenkirchen"
+                        }
+                    ]
+                },
+                {
+                    "_key": "71dd18390f3b",
+                    "_type": "menuLink",
+                    "hasChildren": false,
+                    "label": "Blog",
+                    "linkClass": "blog",
+                    "linkIcon": "file-text",
+                    "linkURL": "/blog"
+                }
+            ],
+            "name": "Main Navigation",
+            "title": "Main Navigation"
+        },
+        {
+            "_createdAt": "2022-11-26T18:58:00Z",
+            "_id": "0d661b46-2c52-42bc-9281-674e415ebe93",
+            "_rev": "hFQWABArhH17rnPCCmsRos",
+            "_type": "cities",
+            "_updatedAt": "2022-11-29T21:50:25Z",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "alt": "Gelsenkirchen Musiktheater im Revier",
+                "asset": {
+                    "_ref": "image-5e2332ea30fec5af4c3659a32872c8ffb37ff430-800x533-jpg",
+                    "_type": "reference"
+                },
+                "caption": "Gelsenkirchen Musiktheater im Revier"
+            },
+            "logo": {
+                "_type": "image",
+                "alt": "Gelsenkirchen Logo",
+                "asset": {
+                    "_ref": "image-b22620d1c17e5df8ced394676b10a7e0dd6b55ae-242x220-jpg",
+                    "_type": "reference"
+                }
+            },
+            "name": "Gelsenkirchen",
+            "size": "two",
+            "wappen": {
+                "_type": "image",
+                "alt": "Gelsenkirchen COA",
+                "asset": {
+                    "_ref": "image-5a79f8ffe984132e2630f8574bd9841b2cfec5e3-1920x2408-png",
+                    "_type": "reference"
+                }
+            },
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://www.gelsenkirchen.de/de/default.aspx",
+                "isExternal": true,
+                "linkLabel": "Read more about Gelsenkirchen"
+            }
+        },
+        {
+            "_createdAt": "2022-11-26T18:49:03Z",
+            "_id": "11a335d3-45cc-461d-a079-e4ae5c2f8b32",
+            "_rev": "mO4iUSsmI97FbWpGiI9uXb",
+            "_type": "cities",
+            "_updatedAt": "2022-11-29T21:46:38Z",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "alt": "Herne Schlosskapelle Strünkede",
+                "asset": {
+                    "_ref": "image-1be3906ee7984054da673eb964200044935a68b1-2880x2160-jpg",
+                    "_type": "reference"
+                },
+                "caption": "Herne Schlosskapelle Strünkede"
+            },
+            "logo": {
+                "_type": "image",
+                "alt": "Herne  Logo",
+                "asset": {
+                    "_ref": "image-c17e2f2563de2643cfdc848ae1c333b37ce90a76-1380x251-jpg",
+                    "_type": "reference"
+                }
+            },
+            "name": "Herne",
+            "size": "one",
+            "wappen": {
+                "_type": "image",
+                "alt": "Herne COA",
+                "asset": {
+                    "_ref": "image-76548576db57125882eeb0140339f9f7c7d738be-2560x3030-png",
+                    "_type": "reference"
+                }
+            },
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://www.herne.de/",
+                "isExternal": true,
+                "linkLabel": "Read more about Herne"
+            }
+        },
+        {
+            "_createdAt": "2022-12-02T22:09:59Z",
+            "_id": "21a64446-5562-4d8c-b923-d2fa9bc10191",
+            "_rev": "Cl390o3VFZFCLlrDCB8tTk",
+            "_type": "page",
+            "_updatedAt": "2022-12-04T19:52:01Z",
+            "description": "Gelsenkirchen is a city in Germany in the state of North Rhine-Westphalia. It is about 63 kilometres (39.1 miles) north of Cologne in the so-called Ruhr Area. About 269,000 people live there. In the past it was dominated by coal mining and steel industry. The city is famous for its football club FC Schalke 04.",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "asset": {
+                    "_ref": "image-c2808346f72ca290d655c4a50d4cc4e10882e0ae-1000x562-jpg",
+                    "_type": "reference"
+                }
+            },
+            "isPage": true,
+            "layout": "sections.njk",
+            "sections": [
+                {
+                    "_key": "80e34093d41c",
+                    "_type": "section",
+                    "background": {
+                        "image": {
+                            "_type": "image",
+                            "asset": {
+                                "_ref": "image-c2808346f72ca290d655c4a50d4cc4e10882e0ae-1000x562-jpg",
+                                "_type": "reference"
+                            }
+                        },
+                        "isDark": true
+                    },
+                    "containerClass": "imageBanner",
+                    "disabled": false,
+                    "hasBackground": true,
+                    "htmlTag": "section",
+                    "inContainer": false,
+                    "sectionBlocks": [
+                        {
+                            "_key": "668886019900",
+                            "_type": "textBlock",
+                            "headerType": "h1",
+                            "portableTextBody": [
+                                {
+                                    "_key": "7b69c3a046be",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "52b4b2ff2a150",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Gelsenkirchen, like neighboring cities, is refining its image to promote its industrial culture. Old refineries have been remodeled into event halls and ice skating rinks. Beautiful bike paths now lie where old rail lines ran. Art from old machines is a source of artistic expression."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                }
+                            ],
+                            "title": "Gelsenkirchen"
+                        }
+                    ],
+                    "sectionType": "text"
+                }
+            ],
+            "slug": {
+                "_type": "slug",
+                "current": "cities/gelsenkirchen"
+            },
+            "title": "Gelsenkirchen"
+        },
+        {
+            "_createdAt": "2022-11-18T20:19:09Z",
+            "_id": "35435220-92c7-4eff-9f95-8309efef67b3",
+            "_rev": "Cl390o3VFZFCLlrDC0LcKi",
+            "_type": "page",
+            "_updatedAt": "2022-12-03T23:13:12Z",
+            "description": "Home page description",
+            "discoverable": true,
+            "isPage": true,
+            "layout": "sections.njk",
+            "sections": [
+                {
+                    "_key": "49574dc0a907",
+                    "_type": "section",
+                    "addSpacing": false,
+                    "disabled": false,
+                    "hasBackground": false,
+                    "htmlTag": "section",
+                    "inContainer": false,
+                    "sectionBlocks": [
+                        {
+                            "_key": "aacd704183d4",
+                            "_type": "imageSliderBlock",
+                            "slides": [
+                                {
+                                    "_key": "74046ab5634b",
+                                    "_type": "imageSlide",
+                                    "scrollTarget": "section1",
+                                    "slideImage": {
+                                        "_type": "imageBlock",
+                                        "alt": "Essen - Zeche Zollverein UNESCO Weltkulturerbe",
+                                        "asset": {
+                                            "_ref": "image-9888bb69c056401d821c5f074352ae0253ce4fe3-3452x2540-jpg",
+                                            "_type": "reference"
+                                        },
+                                        "caption": "Essen - Zeche Zollverein UNESCO Weltkulturerbe",
+                                        "credits": "Image by [Daniel Mennerich](https://www.flickr.com/photos/danielmennerich/). Licensed under [Creative Commons](https://creativecommons.org/licenses/by-nc-nd/2.0/)"
+                                    },
+                                    "slideText": {
+                                        "_type": "textBlock",
+                                        "cta": {
+                                            "_type": "cta",
+                                            "isExternal": false
+                                        },
+                                        "headerType": "h1",
+                                        "portableTextBody": [
+                                            {
+                                                "_key": "0a52715bdf68",
+                                                "_type": "block",
+                                                "children": [
+                                                    {
+                                                        "_key": "007444629cf30",
+                                                        "_type": "span",
+                                                        "marks": [],
+                                                        "text": "Geologically, the region is defined by coal-bearing layers from the upper Carboniferous period. The coal seams reach the surface in a strip along the river Ruhr and dip downward from the river to the north. Beneath the Lippe, the coal seams lie at a depth of 2,000 to 2,600 ft."
+                                                    }
+                                                ],
+                                                "markDefs": [],
+                                                "style": "normal"
+                                            }
+                                        ],
+                                        "title": "Ruhrpott"
+                                    }
+                                },
+                                {
+                                    "_key": "79879b32ef74",
+                                    "_type": "imageSlide",
+                                    "scrollTarget": "section1",
+                                    "slideImage": {
+                                        "_type": "imageBlock",
+                                        "alt": "Gelsenkirchen - Horst - Zeche Nordstern",
+                                        "asset": {
+                                            "_ref": "image-13f00f38fd3b09f655c4cad681a5814abe293497-1600x1067-jpg",
+                                            "_type": "reference"
+                                        },
+                                        "caption": "Gelsenkirchen - Horst - Zeche Nordstern",
+                                        "credits": "Image by [Daniel Mennerich](https://www.flickr.com/photos/danielmennerich/). Licensed under [Creative Commons](https://creativecommons.org/licenses/by-nc-nd/2.0/)"
+                                    },
+                                    "slideText": {
+                                        "_type": "textBlock",
+                                        "headerType": "h1",
+                                        "portableTextBody": [
+                                            {
+                                                "_key": "03d359f63f42",
+                                                "_type": "block",
+                                                "children": [
+                                                    {
+                                                        "_key": "c212501dcb230",
+                                                        "_type": "span",
+                                                        "marks": [],
+                                                        "text": "Once known for its belching steelworks and filthy coal mines, the Ruhrgebiet – a sprawling post-industrial region of 53 cities – is considered part of the larger Rhine-Ruhr metropolitan region, which is among the largest in Europe, behind only London and Paris."
+                                                    }
+                                                ],
+                                                "markDefs": [],
+                                                "style": "normal"
+                                            }
+                                        ],
+                                        "title": "Ruhrpott"
+                                    }
+                                },
+                                {
+                                    "_key": "38da4431c1e4",
+                                    "_type": "imageSlide",
+                                    "scrollTarget": "section1",
+                                    "slideImage": {
+                                        "_type": "imageBlock",
+                                        "alt": "Dortmund - Zeche Gneisenau",
+                                        "asset": {
+                                            "_ref": "image-9a161bba4117af5707f0a2b3b5342b077dcbaad7-1024x767-jpg",
+                                            "_type": "reference"
+                                        },
+                                        "caption": "Dortmund - Zeche Gneisenau",
+                                        "credits": "Image by [Daniel Mennerich](https://www.flickr.com/photos/danielmennerich/). Licensed under [Creative Commons](https://creativecommons.org/licenses/by-nc-nd/2.0/)"
+                                    },
+                                    "slideText": {
+                                        "_type": "textBlock",
+                                        "headerType": "h1",
+                                        "portableTextBody": [
+                                            {
+                                                "_key": "1680784fb16d",
+                                                "_type": "block",
+                                                "children": [
+                                                    {
+                                                        "_key": "d3f7d7ca35c70",
+                                                        "_type": "span",
+                                                        "marks": [],
+                                                        "text": "The Ruhrpott is a former industrial area centrally located in North Rhine Westphalia. The region takes its name partly from the river Ruhr and the word “Pott” which comes from “Kohlenpott” (meaning “coal pot”) alluding to the area’s coal-mining past."
+                                                    }
+                                                ],
+                                                "markDefs": [],
+                                                "style": "normal"
+                                            }
+                                        ],
+                                        "title": "Ruhrpott"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "sectionType": "imageSlider"
+                },
+                {
+                    "_key": "95c9d7e89194",
+                    "_type": "section",
+                    "addSpacing": true,
+                    "containerId": "section1",
+                    "disabled": false,
+                    "hasBackground": false,
+                    "htmlTag": "aside",
+                    "inContainer": true,
+                    "margin": {
+                        "bottom": true,
+                        "top": true
+                    },
+                    "padding": {
+                        "bottom": false,
+                        "top": false
+                    },
+                    "sectionBlocks": [
+                        {
+                            "_key": "8679b22f56db",
+                            "_type": "logosListBlock",
+                            "cta": {
+                                "_type": "cta",
+                                "internalLink": "/ciites",
+                                "isExternal": false,
+                                "kind": "button",
+                                "linkType": "primary",
+                                "title": "Learn more bout the Ruhrpott cities"
+                            },
+                            "headerType": "h3",
+                            "listSource": "cities",
+                            "logoWidth": 150,
+                            "logosCity": [
+                                {
+                                    "_key": "c9aa28f1dc04",
+                                    "_ref": "c4e042e5-26e0-43df-a5e6-cb80a7fd54f2",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "7870fb2dfe14",
+                                    "_ref": "35ddc5d7-0284-46a0-8d7b-ecef2ed0aa34",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "9123fed17f33",
+                                    "_ref": "45da4531-6958-4fb6-a06d-2114e38bc603",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "cc9f13e30a81",
+                                    "_ref": "66951b78-a197-4169-9781-91a2d61a4c65",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "59e975d9aabf",
+                                    "_ref": "0d661b46-2c52-42bc-9281-674e415ebe93",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "7249ab0a4073",
+                                    "_ref": "11a335d3-45cc-461d-a079-e4ae5c2f8b32",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "625833dece54",
+                                    "_ref": "49447c8e-e42e-4d47-83ec-8df5be71588a",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "bd1c6a161eeb",
+                                    "_ref": "99568473-514f-47ad-b9f0-fa2e40d50df1",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "db49374d314a",
+                                    "_ref": "9873dc53-7094-46b9-a8ca-92b22e9b449f",
+                                    "_type": "reference"
+                                }
+                            ],
+                            "scope": "all",
+                            "subTitle": "Not all of them, just the larger ones",
+                            "title": "Ruhrpott cities"
+                        }
+                    ],
+                    "sectionType": "logosList"
+                },
+                {
+                    "_key": "e062d237f8a8",
+                    "_type": "section",
+                    "disabled": false,
+                    "htmlTag": "article",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "cc22d56a4dae",
+                            "_type": "mediaBlock",
+                            "blockOrder": "imageRight",
+                            "cta": {
+                                "_type": "cta",
+                                "externalLink": "https://cranger-kirmes.de/",
+                                "isExternal": true,
+                                "kind": "button",
+                                "linkType": "primary",
+                                "title": "Learn More"
+                            },
+                            "headerType": "h2",
+                            "mediaImage": {
+                                "_type": "imageBlock",
+                                "alt": "Cranger Kirmes Folk Festival Fair",
+                                "asset": {
+                                    "_ref": "image-02a7429bfb4ee3ae930f0d487ee16a058a06353e-1280x939-jpg",
+                                    "_type": "reference"
+                                },
+                                "caption": "Cranger Kirmes Folk Festival Fair"
+                            },
+                            "portableTextBody": [
+                                {
+                                    "_key": "88d504bf7d13",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "ec2768208f780",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Cranger Kirmes in Herne stands out with the 500-odd showmen and their roller coasters, ghost trains, games, and curios spread out over an 111,000-square-meter space. Originally founded in the 15th century as a horse market, Cranger Kirmes soon evolved into an entertainment event replete with jugglers and magicians. Today, the colorful funfair welcomes about 4 million visitors over 10 days starting the first Friday of August."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                }
+                            ],
+                            "subTitle": "Every first Friday of August, every year.",
+                            "title": "Cranger Kirmes",
+                            "titlePrefix": "Upcoming Event"
+                        }
+                    ],
+                    "sectionType": "media"
+                },
+                {
+                    "_key": "f3e046c0c904",
+                    "_type": "section",
+                    "disabled": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "02b2cc10ebc5",
+                            "_type": "mediaBlock",
+                            "blockOrder": "imageLeft",
+                            "cta": {
+                                "_type": "cta",
+                                "externalLink": "https://medium.com/german-city-profiles/ruhrpott-the-former-industrial-region-is-a-popular-destination-for-visitors-c5fd6fa1ffba",
+                                "isExternal": true,
+                                "kind": "button",
+                                "linkType": "primary",
+                                "title": "Read this Medium Article"
+                            },
+                            "headerType": "h2",
+                            "mediaImage": {
+                                "_type": "imageBlock",
+                                "alt": "The Ruhrpott's Industrial Past",
+                                "asset": {
+                                    "_ref": "image-5663e7aa6091bc43df9856599dd1fd87750fd33d-520x422-jpg",
+                                    "_type": "reference"
+                                }
+                            },
+                            "portableTextBody": [
+                                {
+                                    "_key": "5d7cf103e82e",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "351bcb20e498",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "In the past, the coal-dust-covered center of German industry, the Ruhrpott has undergone a transformation into a melting pot of cultures and making the area a popular destination for visitors. This reinvention led to the Ruhr area becoming the first region to be named a European Capital of Culture in 2010. The Ruhrpott cities and communities form one vibrant and diverse metropolis today, with numerous historical and cultural attractions for visitors to enjoy."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                }
+                            ],
+                            "title": "The Industrial Center of Germany",
+                            "titlePrefix": "The Ruhrpott's past"
+                        }
+                    ],
+                    "sectionType": "media"
+                },
+                {
+                    "_key": "1c91a68bdfcc",
+                    "_type": "section",
+                    "addSpacing": true,
+                    "disabled": false,
+                    "hasBackground": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "margin": {
+                        "bottom": true
+                    },
+                    "sectionBlocks": [
+                        {
+                            "_key": "711571eabafc",
+                            "_type": "mediaBlock",
+                            "blockOrder": "imageRight",
+                            "cta": {
+                                "_type": "cta",
+                                "externalLink": "https://www.dw.com/en/the-ruhr-valley-touring-germanys-industrial-past/a-1081956",
+                                "isExternal": true,
+                                "kind": "button",
+                                "linkType": "primary",
+                                "title": "Read More on dw.com"
+                            },
+                            "headerType": "h2",
+                            "mediaImage": {
+                                "_type": "imageBlock",
+                                "alt": "Gelsenkirchen-Horst Nordstern Park",
+                                "asset": {
+                                    "_ref": "image-8240985481ee3eb4957dc3e45eab3fcb5cc58afc-800x602-jpg",
+                                    "_type": "reference"
+                                },
+                                "caption": "Gelsenkirchen-Horst Nordstern Park"
+                            },
+                            "portableTextBody": [
+                                {
+                                    "_key": "2a5522d0bcb5",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "8d6a6beae66e0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "After its mining and steel industries fell into decline in the 1970s, the Ruhr Valley decided on an unusual strategy for economic renewal: turning the dying industrial landscape into a giant history and technology museum, as well as a top recreation destination."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "cb3704fd2180",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "d106df12eae00",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "The gambit appears to have worked. With its mixture of museums, parks, and unique historic industrial sites, The Industrial Heritage route, which officially opened in 1999, helped attract some three million visitors to the Ruhr Valley in 2001, with the numbers on the rise, according to tourism authorities."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                }
+                            ],
+                            "title": "A Mecca of History and Culture",
+                            "titlePrefix": "The Ruhrpott Present and Future"
+                        }
+                    ],
+                    "sectionType": "media"
+                },
+                {
+                    "_key": "52bc88f48afe",
+                    "_type": "section",
+                    "addSpacing": true,
+                    "background": {
+                        "color": "#707070",
+                        "cssBg": "pattern2",
+                        "isDark": true
+                    },
+                    "containerClass": "cta-banner",
+                    "disabled": false,
+                    "hasBackground": true,
+                    "htmlTag": "aside",
+                    "inContainer": false,
+                    "padding": {
+                        "bottom": true,
+                        "top": true
+                    },
+                    "sectionBlocks": [
+                        {
+                            "_key": "44a9db60f593",
+                            "_type": "textBlock",
+                            "cta": {
+                                "_type": "cta",
+                                "externalLink": "https://en.wikipedia.org/wiki/Ruhr",
+                                "isExternal": true,
+                                "kind": "button",
+                                "linkType": "secondary",
+                                "title": "To Wikipedia"
+                            },
+                            "headerType": "h3",
+                            "subTitle": "More interesting details",
+                            "title": "Checkout the \"Ruhrgebiet\" Wikipedia Page"
+                        }
+                    ],
+                    "sectionType": "text"
+                },
+                {
+                    "_key": "4225009ef917",
+                    "_type": "section",
+                    "disabled": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "2fb746e90626",
+                            "_type": "videoBlock",
+                            "videoID": "h2EdyvFazzk",
+                            "videoSource": "youtube",
+                            "videoThumbnail": {
+                                "_type": "imageBlock",
+                                "alt": "Ruhrgebiet Video",
+                                "asset": {
+                                    "_ref": "image-2a361f4bdc3cb9617666f76fc59caf832257dd58-1600x1066-jpg",
+                                    "_type": "reference"
+                                }
+                            }
+                        }
+                    ],
+                    "sectionType": "video"
+                }
+            ],
+            "slug": {
+                "_type": "slug",
+                "current": "index"
+            },
+            "title": "Home"
+        },
+        {
+            "_createdAt": "2022-11-26T18:56:35Z",
+            "_id": "35ddc5d7-0284-46a0-8d7b-ecef2ed0aa34",
+            "_rev": "mO4iUSsmI97FbWpGiI88Ml",
+            "_type": "cities",
+            "_updatedAt": "2022-11-29T21:45:51Z",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "alt": "Dortmund's Union Brewery",
+                "asset": {
+                    "_ref": "image-6f89cc8aa89e6c8047428eda16890f6ce876ea50-2880x1922-jpg",
+                    "_type": "reference"
+                },
+                "caption": "Dortmund's Union Brewery"
+            },
+            "logo": {
+                "_type": "image",
+                "alt": "Dortmund's Logo",
+                "asset": {
+                    "_ref": "image-0b67d9ba359ee1c5a7fbbd024829034c9c3edaf0-400x220-jpg",
+                    "_type": "reference"
+                }
+            },
+            "name": "Dortmund",
+            "size": "five",
+            "wappen": {
+                "_type": "image",
+                "alt": "Dortmund's COA",
+                "asset": {
+                    "_ref": "image-51f13da8e5e7680b11b52b6df26c93ef2b91ec5d-2560x2560-png",
+                    "_type": "reference"
+                }
+            },
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://www.dortmund.de/de/index.html",
+                "isExternal": true,
+                "linkLabel": "Read more about Dortmund"
+            }
+        },
+        {
+            "_createdAt": "2022-11-26T18:53:15Z",
+            "_id": "45da4531-6958-4fb6-a06d-2114e38bc603",
+            "_rev": "mO4iUSsmI97FbWpGiIE7nH",
+            "_type": "cities",
+            "_updatedAt": "2022-11-29T21:49:25Z",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "alt": "Duisburg Inner Harbor",
+                "asset": {
+                    "_ref": "image-d57463ce5c88aee67f38879f7cba1bd374fb0f03-2880x1712-jpg",
+                    "_type": "reference"
+                },
+                "caption": "Duisburg Inner Harbor"
+            },
+            "logo": {
+                "_type": "image",
+                "alt": "Duisburg Logo",
+                "asset": {
+                    "_ref": "image-7b04734605e2f367c3ad5e02cdf0807a8c7fd92d-1063x1063-jpg",
+                    "_type": "reference"
+                }
+            },
+            "name": "Duisburg",
+            "size": "five",
+            "wappen": {
+                "_type": "image",
+                "alt": "Duisburg COA",
+                "asset": {
+                    "_ref": "image-6c0ef436bc6de2d61444d15017a382b5aa26f3b9-2560x2793-png",
+                    "_type": "reference"
+                }
+            },
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://www.duisburg.de/",
+                "isExternal": true,
+                "linkLabel": "Read more about Duisburg"
+            }
+        },
+        {
+            "_createdAt": "2022-11-26T18:54:50Z",
+            "_id": "49447c8e-e42e-4d47-83ec-8df5be71588a",
+            "_rev": "mO4iUSsmI97FbWpGiIEb4M",
+            "_type": "cities",
+            "_updatedAt": "2022-11-29T21:50:51Z",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "alt": "Mühlheim Styrumer Bridge",
+                "asset": {
+                    "_ref": "image-8752b124a3a36412de59e737c06c8ef3b58009f8-2880x2084-jpg",
+                    "_type": "reference"
+                },
+                "caption": "Mühlheim Styrumer Bridge"
+            },
+            "logo": {
+                "_type": "image",
+                "alt": "Mühlheim Logo",
+                "asset": {
+                    "_ref": "image-8d8759575144f9b8d456725f924320ba6d6fd3b6-400x220-jpg",
+                    "_type": "reference"
+                }
+            },
+            "name": "Muehlheim an der Ruhr",
+            "size": "one",
+            "wappen": {
+                "_type": "image",
+                "alt": "Mühlheim COA",
+                "asset": {
+                    "_ref": "image-4d121c3afd8b787abf4e613f007cea8d381730f4-1920x3094-png",
+                    "_type": "reference"
+                }
+            },
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://www.muelheim-ruhr.de/cms/index.php",
+                "isExternal": true,
+                "linkLabel": "Read more about Mühlheim an der Ruhr"
+            }
+        },
+        {
+            "_createdAt": "2022-11-26T18:41:36Z",
+            "_id": "66951b78-a197-4169-9781-91a2d61a4c65",
+            "_rev": "mO4iUSsmI97FbWpGiI49Sj",
+            "_type": "cities",
+            "_updatedAt": "2022-11-29T21:39:10Z",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "alt": "Essen Inner City",
+                "asset": {
+                    "_ref": "image-eba7f4e2ed7aa2e3e49fcefa1b79c342bfb3c148-1435x957-jpg",
+                    "_type": "reference"
+                },
+                "caption": "Essen Inner City"
+            },
+            "logo": {
+                "_type": "image",
+                "alt": "Essen Logo",
+                "asset": {
+                    "_ref": "image-4df9efe833728da28c7ff63b40a8c89f51a421fd-400x220-jpg",
+                    "_type": "reference"
+                }
+            },
+            "name": "Essen",
+            "size": "five",
+            "wappen": {
+                "_type": "image",
+                "alt": "Essen COA",
+                "asset": {
+                    "_ref": "image-efe458537f2d7cdc006f0f1832229f8005be14ac-2560x2365-png",
+                    "_type": "reference"
+                }
+            },
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://www.essen.de/aktuell.de.html",
+                "isExternal": true,
+                "linkLabel": "Read more about Essen"
+            }
+        },
+        {
+            "_createdAt": "2022-12-02T16:49:36Z",
+            "_id": "7f5f8e34-d254-46fd-afdc-8389698e52c7",
+            "_rev": "Cl390o3VFZFCLlrDBqyKuI",
+            "_type": "siteSettings",
+            "_updatedAt": "2022-12-02T16:49:36Z",
+            "description": "A Metalsmith website to demonstrate a Sanity.io integration",
+            "discoverable": true,
+            "social": [
+                {
+                    "_key": "a108bb2f9cee",
+                    "name": "twitter",
+                    "url": "https://twitter.com/search?q=%23ruhrpott"
+                }
+            ],
+            "title": "Ruhrpott"
+        },
+        {
+            "_createdAt": "2022-11-28T17:02:28Z",
+            "_id": "8b65c14d-c659-4623-b373-74b6b5ebd146",
+            "_rev": "Cl390o3VFZFCLlrDBsUFug",
+            "_type": "page",
+            "_updatedAt": "2022-12-02T20:13:10Z",
+            "description": "The Ruhrpott cities are, from west to east: Duisburg, Oberhausen, Bottrop, Mülheim an der Ruhr, Essen, Gelsenkirchen, Bochum, Herne, Hagen, Dortmund, Lünen, Bergkamen, Hamm and the districts of Wesel, Recklinghausen, Unna, and Ennepe-Ruhr-Kreis. The most populous cities are Dortmund (with a population of approximately 588,000), Essen (about 583,000), and Duisburg (about 497,000).",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "asset": {
+                    "_ref": "image-863b0cef63569a368d978a329db73eb72ac4c361-1000x593-png",
+                    "_type": "reference"
+                }
+            },
+            "isPage": true,
+            "layout": "sections.njk",
+            "sections": [
+                {
+                    "_key": "ba92e7730535",
+                    "_type": "section",
+                    "background": {
+                        "image": {
+                            "_type": "image",
+                            "asset": {
+                                "_ref": "image-d6dfa54e69a3464ac43c776aa500cdf81030c847-4533x2272-jpg",
+                                "_type": "reference"
+                            }
+                        },
+                        "isDark": true
+                    },
+                    "containerClass": "imageBanner",
+                    "disabled": false,
+                    "hasBackground": true,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "b25e4641ce36",
+                            "_type": "textBlock",
+                            "headerType": "h1",
+                            "title": "Ruhrpott Cities"
+                        }
+                    ],
+                    "sectionType": "text"
+                },
+                {
+                    "_key": "71e17f21ac19",
+                    "_type": "section",
+                    "addSpacing": false,
+                    "containerClass": "twoCol",
+                    "disabled": false,
+                    "hasBackground": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "dde9b065571e",
+                            "_type": "textBlock",
+                            "portableTextBody": [
+                                {
+                                    "_key": "56b1365cb62d",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "d565a8b4b06f0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Formerly Germany's coal-mining region, the Ruhrpott's cities such as Bochum, Dortmund, Duisburg, Essen, and Oberhausen have grown together to form a large urban area."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "19f95aef2f1d",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "3ee988011ecc0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "All towns and cities in the Ruhrpott have one thing in common: They have successfully transitioned from industry to culture. What has emerged is Europe's densest cultural landscape with 1,000 industrial monuments, 200 museums, 250 festivals, 120 theatres, and three musical theatres. Major international events, such as the Ruhrtriennale arts and music festival, take place across the region and feature some of the most exciting performances currently found on stages and in concert halls anywhere. Visitors traveling through the area will be met with a down-to-earth warmth unlike anywhere else."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "831f1c6d2d76",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "32413fa7c49e0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Although coal is no longer mined here, blast furnaces, gasometers, and winding towers still dominate the landscape of the Ruhrpott and serve as venues for theatre, music, painting, dance, performance, sport, relaxation, and more. They can be explored in Duisburg-Nord Industrial Landscape Park and along the Route of Industrial Heritage, a 400-km circuit through the Ruhrgebiet that takes in 54 striking monuments to Germany's industrial past and present. One of these monuments is the Zollverein Coal Mine Industrial Complex, a UNESCO World Heritage Site in Essen, which was named the European Green Capital in 2017. Nature thrives between the many monuments and cultural highlights – proof if ever it was needed, that there are very few metropolises as surprising as the Ruhrpott."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                }
+                            ]
+                        }
+                    ],
+                    "sectionType": "text"
+                },
+                {
+                    "_key": "7c31e8eba801",
+                    "_type": "section",
+                    "containerClass": "citiesList",
+                    "disabled": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "0e1fb5f704e4",
+                            "_type": "citiesListBlock",
+                            "cityCards": [
+                                {
+                                    "_key": "4579b0e91182",
+                                    "_ref": "0d661b46-2c52-42bc-9281-674e415ebe93",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "01df79239df9",
+                                    "_ref": "11a335d3-45cc-461d-a079-e4ae5c2f8b32",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "812f19b1d109",
+                                    "_ref": "35ddc5d7-0284-46a0-8d7b-ecef2ed0aa34",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "5a19fa0a43bd",
+                                    "_ref": "45da4531-6958-4fb6-a06d-2114e38bc603",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "e432adaac74c",
+                                    "_ref": "49447c8e-e42e-4d47-83ec-8df5be71588a",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "61ccd5e995ae",
+                                    "_ref": "66951b78-a197-4169-9781-91a2d61a4c65",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "dcaae27377df",
+                                    "_ref": "9873dc53-7094-46b9-a8ca-92b22e9b449f",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "1aa324bb5793",
+                                    "_ref": "99568473-514f-47ad-b9f0-fa2e40d50df1",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "b650b71a6f46",
+                                    "_ref": "c4e042e5-26e0-43df-a5e6-cb80a7fd54f2",
+                                    "_type": "reference"
+                                }
+                            ],
+                            "listSource": "cities",
+                            "scope": "selections"
+                        }
+                    ],
+                    "sectionType": "citiesList"
+                },
+                {
+                    "_key": "663b2d63d564",
+                    "_type": "section",
+                    "addSpacing": true,
+                    "disabled": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "margin": {
+                        "bottom": true,
+                        "top": true
+                    },
+                    "sectionBlocks": [
+                        {
+                            "_key": "60a8873b594e",
+                            "_type": "imageBlock",
+                            "alt": "Map of the Ruhrpott",
+                            "asset": {
+                                "_ref": "image-863b0cef63569a368d978a329db73eb72ac4c361-1000x593-png",
+                                "_type": "reference"
+                            }
+                        }
+                    ],
+                    "sectionType": "image"
+                }
+            ],
+            "slug": {
+                "_type": "slug",
+                "current": "cities"
+            },
+            "title": "Cities"
+        },
+        {
+            "_createdAt": "2022-11-26T18:51:26Z",
+            "_id": "9873dc53-7094-46b9-a8ca-92b22e9b449f",
+            "_rev": "mO4iUSsmI97FbWpGiIDnfj",
+            "_type": "cities",
+            "_updatedAt": "2022-11-29T21:48:36Z",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "alt": "Recklinghausen Cityhall",
+                "asset": {
+                    "_ref": "image-e4b540e27713da5622b37d4eac11b4cdf4296aeb-2880x2025-jpg",
+                    "_type": "reference"
+                },
+                "caption": "Recklinghausen Cityhall"
+            },
+            "logo": {
+                "_type": "image",
+                "alt": "Recklinghausen Logo",
+                "asset": {
+                    "_ref": "image-f1138e9314463028bc65ccbc688aeb1b2e8756dc-882x507-jpg",
+                    "_type": "reference"
+                }
+            },
+            "name": "Recklinghausen",
+            "size": "two",
+            "wappen": {
+                "_type": "image",
+                "alt": "Recklinghausen COA",
+                "asset": {
+                    "_ref": "image-0a22d9ac533468b6cb89d0e340f52c2cbdbd8d79-1280x2439-png",
+                    "_type": "reference"
+                }
+            },
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://www.recklinghausen.de/Inhalte/Startseite/index.asp",
+                "isExternal": true,
+                "linkLabel": "Read more about Recklinghausen"
+            }
+        },
+        {
+            "_createdAt": "2022-11-26T18:47:23Z",
+            "_id": "99568473-514f-47ad-b9f0-fa2e40d50df1",
+            "_rev": "JNrvo7LIKdqGX7eiLloMKW",
+            "_type": "cities",
+            "_updatedAt": "2022-11-29T21:46:28Z",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "alt": "Oberhausen Gasometer",
+                "asset": {
+                    "_ref": "image-f4a90203b764fd8511b0746e40db3036e69555bd-1600x900-png",
+                    "_type": "reference"
+                },
+                "caption": "Oberhausen Gasometer"
+            },
+            "logo": {
+                "_type": "image",
+                "alt": "Oberhausen Logo",
+                "asset": {
+                    "_ref": "image-4b6d4003af8404129227ec53affe57798f6f7b17-400x220-jpg",
+                    "_type": "reference"
+                }
+            },
+            "name": "Oberhausen",
+            "size": "three",
+            "wappen": {
+                "_type": "image",
+                "alt": "Oberhausen COA",
+                "asset": {
+                    "_ref": "image-ccce7abfce6dedcef52d8e5b80215b467a505885-1920x2914-png",
+                    "_type": "reference"
+                }
+            },
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://www.oberhausen.de/de/index.php",
+                "isExternal": true,
+                "linkLabel": "Read more about Oberhausen"
+            }
+        },
+        {
+            "_createdAt": "2022-11-26T18:59:47Z",
+            "_id": "c4e042e5-26e0-43df-a5e6-cb80a7fd54f2",
+            "_rev": "mO4iUSsmI97FbWpGiIDCET",
+            "_type": "cities",
+            "_updatedAt": "2022-11-29T21:47:57Z",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "alt": "Bochum Mining Museum",
+                "asset": {
+                    "_ref": "image-f156e17b2b4c10ae8e6be47729876a40da21db30-800x533-jpg",
+                    "_type": "reference"
+                },
+                "caption": "Bochum Mining Museum"
+            },
+            "logo": {
+                "_type": "image",
+                "alt": "Bochum Logo",
+                "asset": {
+                    "_ref": "image-e4e803eebcdb339ea83139b0eb0018e444267425-400x220-jpg",
+                    "_type": "reference"
+                }
+            },
+            "name": "Bochum",
+            "size": "three",
+            "wappen": {
+                "_type": "image",
+                "alt": "Bochum COA",
+                "asset": {
+                    "_ref": "image-8f96acbd89b1e148cb0f1c1e9f5f86f68facef99-2560x3072-png",
+                    "_type": "reference"
+                }
+            },
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://www.bochum.de/",
+                "isExternal": true,
+                "linkLabel": "Read more about Bochum"
+            }
+        }
+    ]
+}

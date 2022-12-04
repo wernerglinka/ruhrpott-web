@@ -1,13 +1,12 @@
+
 require('es6-promise/auto');
 const sanityClient = require('@sanity/client');
 const BlocksToMarkdown = require('@sanity/block-content-to-markdown');
 const imageUrl = require('@sanity/image-url');
 const queries = require('./queries');
 const getSerializers = require('./get-serializers');
-
-const merge = require('deepmerge');
-
-
+// node-json-db for caching Sanity content in development
+const { JsonDB, Config } = require('node-json-db');
 
 /**
  * @typedef Options
@@ -19,7 +18,7 @@ const defaults = {
   projectId: '',             // required
   dataset: 'production',  
   apiVersion: '2022-10-19',  // use a UTC date string
-  token: '',                 // required
+  token: '',                 
   useCdn: false,
 };
 
@@ -35,11 +34,18 @@ function normalizeOptions(options) {
 /**
  * A Metalsmith plugin to fetch content from Sanity.io
  *
- * @param {Options} options
+ * @param {Options} option
  * @returns {import('metalsmith').Plugin}
  */
 function initSanitySource(options) {
   options = normalizeOptions(options);
+
+  // Retrieve environmental variables.
+  const dev = process.env.NODE_ENV === 'development';
+  
+  // create a new content cache
+  const cacheFileName = `sanityDB${options.projectId}`;
+  const contentCache = new JsonDB(new Config(cacheFileName, true, true, '/'));
 
   return async function metalsmithSourceSanity(files, metalsmith, done) {
     const debug = metalsmith.debug('metalsmith-source-sanity');
@@ -74,13 +80,38 @@ function initSanitySource(options) {
       })
     };
 
-    /*
-     * Fetch all content types from Sanity
-     */
-    const rawContentTypes = client.fetch(queries.allContent);
-    let contentTypes = await rawContentTypes;
+    let contentTypes;
+
+    //const startTime = new Date().getTime();
+
+    // Try using content cache during development. In production always fetch from Sanity.
+    // NOTE: To delete the cache, delete the file "sanity<projectID>.json"in the project root.
+    if (dev) {
+      // try if the content cache is available
+      try {
+        contentTypes = await contentCache.getData('/sanityData');
+      } catch(error) {
+        // if no content cache then fetch all content types from Sanity
+        const rawContentTypes = client.fetch(queries.allContent);
+        contentTypes = await rawContentTypes;
+
+        // and store in content cache
+        await contentCache.push("/sanityData",contentTypes);
+      };
+    } else {
+      // fetch all content types from Sanity
+      const rawContentTypes = client.fetch(queries.allContent);
+      contentTypes = await rawContentTypes;
+    };
+    
+    //const endTime = new Date().getTime();
+    //const duration = endTime - startTime;
+
+    //console.log(duration);
 
     const data = {};
+
+    console.log(contentTypes);
 
     // normalize Sanity json to markdown and resolve references for each page
     contentTypes.forEach(contentType => {
@@ -95,7 +126,8 @@ function initSanitySource(options) {
         contentType.stats = {};
 
         // add page to files object
-        const fileKey = contentType.slug.current + '.md';
+        const fileKey = `${contentType.slug.current}.md`;
+        console.log(fileKey);
         files[fileKey] = contentType
       } else {
         // add to metadata
