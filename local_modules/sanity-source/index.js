@@ -44,7 +44,7 @@ function initSanitySource(options) {
   const dev = process.env.NODE_ENV === 'development';
   
   // create a new content cache
-  const cacheFileName = `sanityDB${options.projectId}`;
+  const cacheFileName = `sanityContent`;
   const contentCache = new JsonDB(new Config(cacheFileName, true, true, '/'));
 
   return async function metalsmithSourceSanity(files, metalsmith, done) {

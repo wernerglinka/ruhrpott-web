@@ -148,6 +148,137 @@
             }
         },
         {
+            "_createdAt": "2022-12-05T18:35:56Z",
+            "_id": "1fb40275-bbca-4279-8772-5f9d2b1045e2",
+            "_rev": "Cl390o3VFZFCLlrDCM4FrY",
+            "_type": "authors",
+            "_updatedAt": "2022-12-05T18:42:53Z",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "asset": {
+                    "_ref": "image-e1d71e1eb9aaea06aef9c3014afacb786eddcf1d-440x685-jpg",
+                    "_type": "reference"
+                }
+            },
+            "name": "Yogi Berra",
+            "portableTextBody": [
+                {
+                    "_key": "d5544d1df168",
+                    "_type": "block",
+                    "children": [
+                        {
+                            "_key": "0ab2b44898140",
+                            "_type": "span",
+                            "marks": [
+                                "strong"
+                            ],
+                            "text": "Yogi Berra"
+                        },
+                        {
+                            "_key": "0ab2b44898141",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ", by the name of "
+                        },
+                        {
+                            "_key": "0ab2b44898142",
+                            "_type": "span",
+                            "marks": [
+                                "strong"
+                            ],
+                            "text": "Lawrence Peter Berra"
+                        },
+                        {
+                            "_key": "0ab2b44898143",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " (born May 12, 1925, St. Louis, Missouri, U.S.—died September 22, 2015, West Caldwell, New Jersey), was an American professional "
+                        },
+                        {
+                            "_key": "0ab2b44898144",
+                            "_type": "span",
+                            "marks": [
+                                "61cbcfcde3d8"
+                            ],
+                            "text": "baseball"
+                        },
+                        {
+                            "_key": "0ab2b44898145",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " player, manager, and coach who was a key player for the "
+                        },
+                        {
+                            "_key": "0ab2b44898146",
+                            "_type": "span",
+                            "marks": [
+                                "9574a7500566"
+                            ],
+                            "text": "New York Yankees"
+                        },
+                        {
+                            "_key": "0ab2b44898147",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " for 18 years (1946–63), during which he played in a record 14 "
+                        },
+                        {
+                            "_key": "0ab2b44898148",
+                            "_type": "span",
+                            "marks": [
+                                "aa1818f71682"
+                            ],
+                            "text": "World Series"
+                        },
+                        {
+                            "_key": "0ab2b44898149",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " (1947, 1949–53, 1955–58, and 1960–63), winning an unprecedented 10. He also established records (all since broken) for catchers of his era: he held the "
+                        },
+                        {
+                            "_key": "0ab2b448981410",
+                            "_type": "span",
+                            "marks": [
+                                "c57560c0e17f"
+                            ],
+                            "text": "benchmark"
+                        },
+                        {
+                            "_key": "0ab2b448981411",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " for most home runs hit by a catcher (313), most consecutive errorless games (148), and most successive chances handled (950)."
+                        }
+                    ],
+                    "markDefs": [
+                        {
+                            "_key": "61cbcfcde3d8",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/sports/baseball"
+                        },
+                        {
+                            "_key": "9574a7500566",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/topic/New-York-Yankees"
+                        },
+                        {
+                            "_key": "aa1818f71682",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/sports/World-Series"
+                        },
+                        {
+                            "_key": "c57560c0e17f",
+                            "_type": "link",
+                            "href": "https://www.merriam-webster.com/dictionary/benchmark"
+                        }
+                    ],
+                    "style": "normal"
+                }
+            ]
+        },
+        {
             "_createdAt": "2022-12-02T22:09:59Z",
             "_id": "21a64446-5562-4d8c-b923-d2fa9bc10191",
             "_rev": "FXZkYQnlpevlnPWWEWE68y",
@@ -857,6 +988,161 @@
             }
         },
         {
+            "_createdAt": "2022-12-05T18:24:34Z",
+            "_id": "380824f4-5a55-4000-ac7e-d12ccde4f0c6",
+            "_rev": "Cl390o3VFZFCLlrDCM451M",
+            "_type": "authors",
+            "_updatedAt": "2022-12-05T18:42:21Z",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "asset": {
+                    "_ref": "image-78158d2989fbb3a16d3305cda41cca7cae42096f-280x396-png",
+                    "_type": "reference"
+                }
+            },
+            "name": "Albert Einstein",
+            "portableTextBody": [
+                {
+                    "_key": "fcbc932e163a",
+                    "_type": "block",
+                    "children": [
+                        {
+                            "_key": "4a0b3aa63c5c0",
+                            "_type": "span",
+                            "marks": [
+                                "strong"
+                            ],
+                            "text": "Albert Einstein"
+                        },
+                        {
+                            "_key": "4a0b3aa63c5c1",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " (born March 14, 1879, "
+                        },
+                        {
+                            "_key": "4a0b3aa63c5c2",
+                            "_type": "span",
+                            "marks": [
+                                "0ec2a974a2a8"
+                            ],
+                            "text": "Ulm"
+                        },
+                        {
+                            "_key": "4a0b3aa63c5c3",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ", Württemberg, Germany—died April 18, 1955, "
+                        },
+                        {
+                            "_key": "4a0b3aa63c5c4",
+                            "_type": "span",
+                            "marks": [
+                                "55889947fb69"
+                            ],
+                            "text": "Princeton"
+                        },
+                        {
+                            "_key": "4a0b3aa63c5c5",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ", "
+                        },
+                        {
+                            "_key": "4a0b3aa63c5c6",
+                            "_type": "span",
+                            "marks": [
+                                "369893789a76"
+                            ],
+                            "text": "New Jersey"
+                        },
+                        {
+                            "_key": "4a0b3aa63c5c7",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ", U.S.), a German-born physicist who developed the special and general theories of "
+                        },
+                        {
+                            "_key": "4a0b3aa63c5c8",
+                            "_type": "span",
+                            "marks": [
+                                "7c12d0e2e704"
+                            ],
+                            "text": "relativity"
+                        },
+                        {
+                            "_key": "4a0b3aa63c5c9",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " and won the "
+                        },
+                        {
+                            "_key": "4a0b3aa63c5c10",
+                            "_type": "span",
+                            "marks": [
+                                "d7db13d89f86"
+                            ],
+                            "text": "Nobel Prize"
+                        },
+                        {
+                            "_key": "4a0b3aa63c5c11",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " for Physics in 1921 for his explanation of the "
+                        },
+                        {
+                            "_key": "4a0b3aa63c5c12",
+                            "_type": "span",
+                            "marks": [
+                                "727322fa6f61"
+                            ],
+                            "text": "photoelectric effect"
+                        },
+                        {
+                            "_key": "4a0b3aa63c5c13",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ". Einstein is generally considered the most influential physicist of the 20th century."
+                        }
+                    ],
+                    "markDefs": [
+                        {
+                            "_key": "0ec2a974a2a8",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/place/Ulm"
+                        },
+                        {
+                            "_key": "55889947fb69",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/place/Princeton-New-Jersey"
+                        },
+                        {
+                            "_key": "369893789a76",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/place/New-Jersey"
+                        },
+                        {
+                            "_key": "7c12d0e2e704",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/science/relativity"
+                        },
+                        {
+                            "_key": "d7db13d89f86",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/topic/Nobel-Prize"
+                        },
+                        {
+                            "_key": "727322fa6f61",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/science/photoelectric-effect"
+                        }
+                    ],
+                    "style": "normal"
+                }
+            ]
+        },
+        {
             "_createdAt": "2022-11-26T18:53:15Z",
             "_id": "45da4531-6958-4fb6-a06d-2114e38bc603",
             "_rev": "mO4iUSsmI97FbWpGiIE7nH",
@@ -1002,6 +1288,134 @@
                 "isExternal": true,
                 "linkLabel": "Read more about Essen"
             }
+        },
+        {
+            "_createdAt": "2022-12-05T18:37:20Z",
+            "_id": "6e95967e-b644-4690-bcae-5c0e621d3234",
+            "_rev": "C7rctcfX2rVQiEHDjY36pY",
+            "_type": "authors",
+            "_updatedAt": "2022-12-05T18:41:54Z",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "asset": {
+                    "_ref": "image-a26c3ab33d2be81dfd0dd98b48355612d19fe8a0-440x550-jpg",
+                    "_type": "reference"
+                }
+            },
+            "name": "Barack Obama",
+            "portableTextBody": [
+                {
+                    "_key": "7adf312e7a1e",
+                    "_type": "block",
+                    "children": [
+                        {
+                            "_key": "83f253812f0f",
+                            "_type": "span",
+                            "marks": [],
+                            "text": "Barack Obama (born August 4, 1961, in Honolulu, Hawaii, U.S.) is an American politician who served as the 44th "
+                        },
+                        {
+                            "_key": "6813c71fcb95",
+                            "_type": "span",
+                            "marks": [
+                                "5ce155a14733"
+                            ],
+                            "text": "president of the United States"
+                        },
+                        {
+                            "_key": "e625b7a1e53e",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " from 2009 to 2017. A member of the "
+                        },
+                        {
+                            "_key": "bf1b6b3d9eaf",
+                            "_type": "span",
+                            "marks": [
+                                "1f6f71d7c110"
+                            ],
+                            "text": "Democratic Party"
+                        },
+                        {
+                            "_key": "1e747a565994",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ", Obama was the first African-American president of the United States. He previously served as a "
+                        },
+                        {
+                            "_key": "658570e17aa6",
+                            "_type": "span",
+                            "marks": [
+                                "8249f55b451d"
+                            ],
+                            "text": "U.S. senator"
+                        },
+                        {
+                            "_key": "b30d27f1aee6",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " from "
+                        },
+                        {
+                            "_key": "9ec07f735196",
+                            "_type": "span",
+                            "marks": [
+                                "e6f1dd9fdf07"
+                            ],
+                            "text": "Illinois"
+                        },
+                        {
+                            "_key": "06373c900400",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " from 2005 to 2008 and an "
+                        },
+                        {
+                            "_key": "e18321d9ca25",
+                            "_type": "span",
+                            "marks": [
+                                "c5011f26cbf7"
+                            ],
+                            "text": "Illinois state senator"
+                        },
+                        {
+                            "_key": "94c406b56322",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " from 1997 to 2004, and he previously worked as a civil rights lawyer before entering politics."
+                        }
+                    ],
+                    "markDefs": [
+                        {
+                            "_key": "5ce155a14733",
+                            "_type": "link",
+                            "href": "https://en.wikipedia.org/wiki/President_of_the_United_States"
+                        },
+                        {
+                            "_key": "1f6f71d7c110",
+                            "_type": "link",
+                            "href": "https://en.wikipedia.org/wiki/Democratic_Party_(United_States)"
+                        },
+                        {
+                            "_key": "8249f55b451d",
+                            "_type": "link",
+                            "href": "https://en.wikipedia.org/wiki/U.S._senator"
+                        },
+                        {
+                            "_key": "e6f1dd9fdf07",
+                            "_type": "link",
+                            "href": "https://en.wikipedia.org/wiki/Illinois"
+                        },
+                        {
+                            "_key": "c5011f26cbf7",
+                            "_type": "link",
+                            "href": "https://en.wikipedia.org/wiki/Illinois_state_senator"
+                        }
+                    ],
+                    "style": "normal"
+                }
+            ]
         },
         {
             "_createdAt": "2022-12-02T16:49:36Z",
@@ -1470,6 +1884,213 @@
             "title": "football"
         },
         {
+            "_createdAt": "2022-12-05T18:32:58Z",
+            "_id": "c33dc03f-3ef4-48c5-81ef-d3aec7676423",
+            "_rev": "Cl390o3VFZFCLlrDCM4Mr4",
+            "_type": "authors",
+            "_updatedAt": "2022-12-05T18:43:21Z",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "asset": {
+                    "_ref": "image-25e4b67c6fb75c5f941574efe6d1c42c62415196-280x396-jpg",
+                    "_type": "reference"
+                }
+            },
+            "name": "Marie Curie",
+            "portableTextBody": [
+                {
+                    "_key": "780f2b82c699",
+                    "_type": "block",
+                    "children": [
+                        {
+                            "_key": "95e464cd50ad0",
+                            "_type": "span",
+                            "marks": [
+                                "strong"
+                            ],
+                            "text": "Marie Curie"
+                        },
+                        {
+                            "_key": "95e464cd50ad1",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ", née "
+                        },
+                        {
+                            "_key": "95e464cd50ad2",
+                            "_type": "span",
+                            "marks": [
+                                "strong"
+                            ],
+                            "text": "Maria Salomea Skłodowska"
+                        },
+                        {
+                            "_key": "95e464cd50ad3",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ", (born November 7, 1867, "
+                        },
+                        {
+                            "_key": "95e464cd50ad4",
+                            "_type": "span",
+                            "marks": [
+                                "28eed0ad082f"
+                            ],
+                            "text": "Warsaw"
+                        },
+                        {
+                            "_key": "95e464cd50ad5",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ", "
+                        },
+                        {
+                            "_key": "95e464cd50ad6",
+                            "_type": "span",
+                            "marks": [
+                                "76d32357897f"
+                            ],
+                            "text": "Congress Kingdom of Poland"
+                        },
+                        {
+                            "_key": "95e464cd50ad7",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ", Russian Empire—died July 4, 1934, near Sallanches, France), Polish-born French physicist, famous for her work on "
+                        },
+                        {
+                            "_key": "95e464cd50ad8",
+                            "_type": "span",
+                            "marks": [
+                                "d17135672490"
+                            ],
+                            "text": "radioactivity"
+                        },
+                        {
+                            "_key": "95e464cd50ad9",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " and twice a winner of the "
+                        },
+                        {
+                            "_key": "95e464cd50ad10",
+                            "_type": "span",
+                            "marks": [
+                                "453c6324c130"
+                            ],
+                            "text": "Nobel Prize"
+                        },
+                        {
+                            "_key": "95e464cd50ad11",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ". With "
+                        },
+                        {
+                            "_key": "95e464cd50ad12",
+                            "_type": "span",
+                            "marks": [
+                                "c764b3d96345"
+                            ],
+                            "text": "Henri Becquerel"
+                        },
+                        {
+                            "_key": "95e464cd50ad13",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " and her husband, "
+                        },
+                        {
+                            "_key": "95e464cd50ad14",
+                            "_type": "span",
+                            "marks": [
+                                "91d08ffcf2d6"
+                            ],
+                            "text": "Pierre Curie"
+                        },
+                        {
+                            "_key": "95e464cd50ad15",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ", she was awarded the 1903 "
+                        },
+                        {
+                            "_key": "95e464cd50ad16",
+                            "_type": "span",
+                            "marks": [
+                                "81fd40015320"
+                            ],
+                            "text": "Nobel Prize for Physics"
+                        },
+                        {
+                            "_key": "95e464cd50ad17",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ". She was the sole winner of the 1911 "
+                        },
+                        {
+                            "_key": "95e464cd50ad18",
+                            "_type": "span",
+                            "marks": [
+                                "21dfd4b9be0d"
+                            ],
+                            "text": "Nobel Prize for Chemistry"
+                        },
+                        {
+                            "_key": "95e464cd50ad19",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ". She was the first woman to win a Nobel Prize and the only woman to win the award in two different fields."
+                        }
+                    ],
+                    "markDefs": [
+                        {
+                            "_key": "28eed0ad082f",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/place/Warsaw"
+                        },
+                        {
+                            "_key": "76d32357897f",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/place/Congress-Kingdom-of-Poland"
+                        },
+                        {
+                            "_key": "d17135672490",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/science/radioactivity"
+                        },
+                        {
+                            "_key": "453c6324c130",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/topic/Nobel-Prize"
+                        },
+                        {
+                            "_key": "c764b3d96345",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/biography/Henri-Becquerel"
+                        },
+                        {
+                            "_key": "91d08ffcf2d6",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/biography/Pierre-Curie"
+                        },
+                        {
+                            "_key": "81fd40015320",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/topic/Winners-of-the-Nobel-Prize-for-Physics-1856942"
+                        },
+                        {
+                            "_key": "21dfd4b9be0d",
+                            "_type": "link",
+                            "href": "https://www.britannica.com/topic/Winners-of-the-Nobel-Prize-for-Chemistry-1846695"
+                        }
+                    ],
+                    "style": "normal"
+                }
+            ]
+        },
+        {
             "_createdAt": "2022-11-26T18:59:47Z",
             "_id": "c4e042e5-26e0-43df-a5e6-cb80a7fd54f2",
             "_rev": "mO4iUSsmI97FbWpGiIDCET",
@@ -1585,9 +2206,9 @@
         {
             "_createdAt": "2022-12-05T00:23:09Z",
             "_id": "f89b6e6d-6835-4aca-8c01-44d3c92a463d",
-            "_rev": "FXZkYQnlpevlnPWWEWRlL3",
+            "_rev": "Cl390o3VFZFCLlrDCMGhHa",
             "_type": "page",
-            "_updatedAt": "2022-12-05T00:23:09Z",
+            "_updatedAt": "2022-12-05T19:08:39Z",
             "discoverable": true,
             "isPage": true,
             "layout": "sections.njk",
@@ -1616,6 +2237,412 @@
                             "_type": "textBlock",
                             "headerType": "h1",
                             "title": "About this Website"
+                        }
+                    ],
+                    "sectionType": "text"
+                },
+                {
+                    "_key": "acfe431463c5",
+                    "_type": "section",
+                    "addSpacing": true,
+                    "containerClass": "twoCol",
+                    "disabled": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "margin": {
+                        "top": true
+                    },
+                    "sectionBlocks": [
+                        {
+                            "_key": "e894cd70b7b9",
+                            "_type": "textBlock",
+                            "portableTextBody": [
+                                {
+                                    "_key": "93a89e21fcb4",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "4653593543dc",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Ruhrpott is a proof-of-concept website built to demonstrate the use of structured content in a static website created with the Metalsmith Static Site Generator. The Sanity content management system is a perfect match to achieve this objective."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "d711e996abd0",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "ccc70e9d8e89",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "I did not want to use greek text and boring images, so I turned to the place of my youth for inspiration, the Ruhrpott. The photos and text tell little stories about where I grew up, and the website structure and design methodology are all about Metalsmith, Sanity, and structured content."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "945955f6e78c",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "9bcf09c4d669",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Most images used on this website are by "
+                                        },
+                                        {
+                                            "_key": "907abfcb494c",
+                                            "_type": "span",
+                                            "marks": [
+                                                "8cfca94f72e2"
+                                            ],
+                                            "text": "Daniel Mennerich"
+                                        },
+                                        {
+                                            "_key": "e34679e4c242",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ", who makes his art available on "
+                                        },
+                                        {
+                                            "_key": "c3547b6ece0b",
+                                            "_type": "span",
+                                            "marks": [
+                                                "82af782b2284"
+                                            ],
+                                            "text": "Flickr"
+                                        },
+                                        {
+                                            "_key": "2abcabcc7c98",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " under a "
+                                        },
+                                        {
+                                            "_key": "4d52c8ba6539",
+                                            "_type": "span",
+                                            "marks": [
+                                                "1cf8789e964d"
+                                            ],
+                                            "text": "Creative Commons license"
+                                        },
+                                        {
+                                            "_key": "1b5ca1ea6477",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "."
+                                        }
+                                    ],
+                                    "markDefs": [
+                                        {
+                                            "_key": "8cfca94f72e2",
+                                            "_type": "link",
+                                            "href": "https://www.flickr.com/photos/danielmennerich/"
+                                        },
+                                        {
+                                            "_key": "82af782b2284",
+                                            "_type": "link",
+                                            "href": "https://www.flickr.com/photos/danielmennerich/albums/with/72157608365853963"
+                                        },
+                                        {
+                                            "_key": "1cf8789e964d",
+                                            "_type": "link",
+                                            "href": "https://creativecommons.org/licenses/by-nc-nd/2.0/"
+                                        }
+                                    ],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "8c56a4ab09b6",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "2f5722a78c00",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "dace1a871005",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "98613762653d",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "The website is meant for devs who like to explore Metalsmith in general and a Sanity integration in particular. The "
+                                        },
+                                        {
+                                            "_key": "8861fb9330eb",
+                                            "_type": "span",
+                                            "marks": [
+                                                "63485178759a"
+                                            ],
+                                            "text": "website source code"
+                                        },
+                                        {
+                                            "_key": "1ac89794faeb",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " and the "
+                                        },
+                                        {
+                                            "_key": "3870fb201216",
+                                            "_type": "span",
+                                            "marks": [
+                                                "f98c31fa0765"
+                                            ],
+                                            "text": "sanity studio schemas"
+                                        },
+                                        {
+                                            "_key": "fbe110cee831",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " can be found on GitHub."
+                                        }
+                                    ],
+                                    "markDefs": [
+                                        {
+                                            "_key": "63485178759a",
+                                            "_type": "link",
+                                            "href": "https://github.com/wernerglinka/ruhrpott-web"
+                                        },
+                                        {
+                                            "_key": "f98c31fa0765",
+                                            "_type": "link",
+                                            "href": "https://github.com/wernerglinka/ruhrpott-studio"
+                                        }
+                                    ],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "0581237ed823",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "4e3ef41e8d7d",
+                                            "_type": "span",
+                                            "marks": [
+                                                "strong"
+                                            ],
+                                            "text": "Website in bullets:"
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "2f19c3e698ee",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "5532eeb0c92b",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Static Site Generator: "
+                                        },
+                                        {
+                                            "_key": "1d5cb57eb8f5",
+                                            "_type": "span",
+                                            "marks": [
+                                                "4ca59ac299b0"
+                                            ],
+                                            "text": "Metalsmith"
+                                        }
+                                    ],
+                                    "level": 1,
+                                    "listItem": "bullet",
+                                    "markDefs": [
+                                        {
+                                            "_key": "4ca59ac299b0",
+                                            "_type": "link",
+                                            "href": "https://metalsmith.io/"
+                                        }
+                                    ],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "50760fd6f2a8",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "83d3e3e5dc10",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Templating Engine: "
+                                        },
+                                        {
+                                            "_key": "c038eabc3316",
+                                            "_type": "span",
+                                            "marks": [
+                                                "16780e22d5ce"
+                                            ],
+                                            "text": "Nunjucks"
+                                        }
+                                    ],
+                                    "level": 1,
+                                    "listItem": "bullet",
+                                    "markDefs": [
+                                        {
+                                            "_key": "16780e22d5ce",
+                                            "_type": "link",
+                                            "href": "https://mozilla.github.io/nunjucks/"
+                                        }
+                                    ],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "0ea7fe038950",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "5c73de8d54c7",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Page Transitions: "
+                                        },
+                                        {
+                                            "_key": "bdfa16775544",
+                                            "_type": "span",
+                                            "marks": [
+                                                "7a7afb9eb5d4"
+                                            ],
+                                            "text": "BarbaJS"
+                                        }
+                                    ],
+                                    "level": 1,
+                                    "listItem": "bullet",
+                                    "markDefs": [
+                                        {
+                                            "_key": "7a7afb9eb5d4",
+                                            "_type": "link",
+                                            "href": "https://barba.js.org/"
+                                        },
+                                        {
+                                            "_key": "8feeb4f2de05",
+                                            "_type": "link"
+                                        }
+                                    ],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "16818802d153",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "ee9b34308c96",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Fancy List Filters: "
+                                        },
+                                        {
+                                            "_key": "a1b1ff4593b5",
+                                            "_type": "span",
+                                            "marks": [
+                                                "6d91e3407609"
+                                            ],
+                                            "text": "Isotope Layout"
+                                        }
+                                    ],
+                                    "level": 1,
+                                    "listItem": "bullet",
+                                    "markDefs": [
+                                        {
+                                            "_key": "6d91e3407609",
+                                            "_type": "link",
+                                            "href": "https://isotope.metafizzy.co/layout-modes.html"
+                                        }
+                                    ],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "dfef4ade5ef1",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "5b105ae19a38",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Content Management System: "
+                                        },
+                                        {
+                                            "_key": "e899901a0474",
+                                            "_type": "span",
+                                            "marks": [
+                                                "a5f9e82ce903"
+                                            ],
+                                            "text": "Sanity"
+                                        }
+                                    ],
+                                    "level": 1,
+                                    "listItem": "bullet",
+                                    "markDefs": [
+                                        {
+                                            "_key": "a5f9e82ce903",
+                                            "_type": "link",
+                                            "href": "https://www.sanity.io/"
+                                        }
+                                    ],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "3f651ba5d456",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "33a3d9d83415",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "d8ad3c607a6b",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "f03bc7dc26b3",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "The "
+                                        },
+                                        {
+                                            "_key": "12b803cf80fa",
+                                            "_type": "span",
+                                            "marks": [
+                                                "db347a5a2d6a"
+                                            ],
+                                            "text": "blog section "
+                                        },
+                                        {
+                                            "_key": "b9c24db3853a",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "of this website includes several posts that dive a little deeper into implementation details. "
+                                        }
+                                    ],
+                                    "markDefs": [
+                                        {
+                                            "_key": "db347a5a2d6a",
+                                            "_type": "link",
+                                            "href": "/blog"
+                                        }
+                                    ],
+                                    "style": "normal"
+                                }
+                            ]
                         }
                     ],
                     "sectionType": "text"
