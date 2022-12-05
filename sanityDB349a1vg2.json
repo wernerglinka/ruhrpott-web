@@ -3,9 +3,9 @@
         {
             "_createdAt": "2022-12-02T16:51:57Z",
             "_id": "0a6bedc6-c9a8-4718-aeb3-d66cb8954ca3",
-            "_rev": "C7rctcfX2rVQiEHDjBY1nW",
+            "_rev": "FXZkYQnlpevlnPWWEWRxG5",
             "_type": "navigation",
-            "_updatedAt": "2022-12-02T19:12:13Z",
+            "_updatedAt": "2022-12-05T00:24:56Z",
             "discoverable": true,
             "menuLinks": [
                 {
@@ -16,6 +16,22 @@
                     "linkClass": "home",
                     "linkIcon": "home",
                     "linkURL": "/"
+                },
+                {
+                    "_key": "80aa5a1bc468",
+                    "_type": "menuLink",
+                    "label": "About",
+                    "linkClass": "about",
+                    "linkIcon": "help-circle",
+                    "linkURL": "/about"
+                },
+                {
+                    "_key": "71f71a6b5f09",
+                    "_type": "menuLink",
+                    "label": "Football",
+                    "linkClass": "football",
+                    "linkIcon": "dribbble",
+                    "linkURL": "/football"
                 },
                 {
                     "_key": "c67d328054e7",
@@ -31,7 +47,7 @@
                             "_type": "menuLink",
                             "hasChildren": false,
                             "label": "Gelsenkirchen",
-                            "linkClass": "city",
+                            "linkClass": "cities-gelsenkirchen",
                             "linkURL": "/gelsenkirchen"
                         }
                     ]
@@ -134,9 +150,9 @@
         {
             "_createdAt": "2022-12-02T22:09:59Z",
             "_id": "21a64446-5562-4d8c-b923-d2fa9bc10191",
-            "_rev": "Cl390o3VFZFCLlrDCB8tTk",
+            "_rev": "FXZkYQnlpevlnPWWEWE68y",
             "_type": "page",
-            "_updatedAt": "2022-12-04T19:52:01Z",
+            "_updatedAt": "2022-12-04T22:15:16Z",
             "description": "Gelsenkirchen is a city in Germany in the state of North Rhine-Westphalia. It is about 63 kilometres (39.1 miles) north of Cologne in the so-called Ruhr Area. About 269,000 people live there. In the past it was dominated by coal mining and steel industry. The city is famous for its football club FC Schalke 04.",
             "discoverable": true,
             "image": {
@@ -166,7 +182,7 @@
                     "disabled": false,
                     "hasBackground": true,
                     "htmlTag": "section",
-                    "inContainer": false,
+                    "inContainer": true,
                     "sectionBlocks": [
                         {
                             "_key": "668886019900",
@@ -192,6 +208,90 @@
                         }
                     ],
                     "sectionType": "text"
+                },
+                {
+                    "_key": "1c23207b1a16",
+                    "_type": "section",
+                    "containerClass": "twoCol",
+                    "disabled": false,
+                    "htmlTag": "article",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "c17997e27451",
+                            "_type": "textBlock",
+                            "portableTextBody": [
+                                {
+                                    "_key": "f0ae92a9dd75",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "42bdba256a180",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "By the early 20th century, Gelsenkirchen could lay a legitimate claim to being the most important coal mining town in Europe, leading it to be given the nickname “city of a thousand fires.” No coal mines remain in the city, but Gelsenkirchen continues to trade on its industrial heritage. Visit the former industrial park at Nordsternpark to get a sense of this commercial past while also enjoying the varied attractions now on offer, including walking trails along the canal, an open-air theater, rock climbing walls, and a children’s play area. Alternatively, take a trip to the Berge Castle if you head back in time beyond the Industrial Revolution and further into the town's history. Built-in the thirteenth century, the fortification expanded in the 1780s. The castle now hosts various events, such as concerts and a traditional summer festival held every July."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "c100c0fc90e7",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "e05076fed26f0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Popular with families and younger visitors, ZOOM Erlebniswelt is Gelsenkirchen’s interactive zoo, offering a unique experience for all ages. The exhibits are split into three sections—Africa, Asia, and Alaska—and provide a genuine taste of the atmosphere in these habitats. Elsewhere around town, you’ll find a variety of remarkable green spaces, with city parks, playgrounds, gardens, and ponds. In the more built-up town center, you can also stroll through the Revierpark and Stadtgarten. Gelsenkirchen’s favorite professional soccer team, Schalke 04, regularly plays in front of 60,000 fans at the Veltins-Arena. The stadium has become renowned as one of the most modern in Europe since it was opened in 2001. Join the passionate fans in the Nordkurve section on game day, or check the calendar of pop concerts, operas, and motorbike races that also take place there. You can also visit the museum, with exhibits detailing the club's history, and even take a tour through the ground."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "3ac1f9aef067",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "44a0542665400",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "With Gelsenkirchen, the industrial heritage is just part of the story."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                }
+                            ]
+                        }
+                    ],
+                    "sectionType": "text"
+                },
+                {
+                    "_key": "114054f2690b",
+                    "_type": "section",
+                    "disabled": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "95b6b77334b1",
+                            "_type": "videoBlock",
+                            "startTime": 34,
+                            "videoID": "7CJeiXiKUPY",
+                            "videoSource": "youtube",
+                            "videoThumbnail": {
+                                "_type": "imageBlock",
+                                "alt": "Zecho Nordstern in Gelsenkirchen-Horst",
+                                "asset": {
+                                    "_ref": "image-13f00f38fd3b09f655c4cad681a5814abe293497-1600x1067-jpg",
+                                    "_type": "reference"
+                                }
+                            }
+                        }
+                    ],
+                    "sectionType": "video"
                 }
             ],
             "slug": {
@@ -199,6 +299,54 @@
                 "current": "cities/gelsenkirchen"
             },
             "title": "Gelsenkirchen"
+        },
+        {
+            "_createdAt": "2022-12-04T23:29:08Z",
+            "_id": "2d5c1993-3116-472c-8d34-728868b850af",
+            "_rev": "FXZkYQnlpevlnPWWEWK9pE",
+            "_type": "footballClubs",
+            "_updatedAt": "2022-12-04T23:29:08Z",
+            "discoverable": true,
+            "liga": "dritteBundesliga",
+            "logo": {
+                "_type": "image",
+                "alt": "MSV Duisburg",
+                "asset": {
+                    "_ref": "image-7e2e758192b1a1bf7dbfced5ad3cd3f4406033d0-200x200-png",
+                    "_type": "reference"
+                }
+            },
+            "name": "MSV Duisburg",
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://www.msv-duisburg.de/",
+                "isExternal": true,
+                "linkLabel": "Website"
+            }
+        },
+        {
+            "_createdAt": "2022-12-04T23:31:23Z",
+            "_id": "339ba342-a766-49d9-8464-ab3b03cdc25d",
+            "_rev": "Cl390o3VFZFCLlrDCCJuUe",
+            "_type": "footballClubs",
+            "_updatedAt": "2022-12-04T23:31:23Z",
+            "discoverable": true,
+            "liga": "other",
+            "logo": {
+                "_type": "image",
+                "alt": "Westfalia Herne",
+                "asset": {
+                    "_ref": "image-fa67dcea83671d29a3fba29d9d038b68058d2aab-200x200-png",
+                    "_type": "reference"
+                }
+            },
+            "name": "Westfalia Herne",
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://westfalia-herne.de/",
+                "isExternal": true,
+                "linkLabel": "Website"
+            }
         },
         {
             "_createdAt": "2022-11-18T20:19:09Z",
@@ -791,6 +939,30 @@
             }
         },
         {
+            "_createdAt": "2022-12-04T23:34:21Z",
+            "_id": "4c593778-2734-432e-b643-567d92effdaa",
+            "_rev": "FXZkYQnlpevlnPWWEWLQbD",
+            "_type": "footballClubs",
+            "_updatedAt": "2022-12-04T23:34:21Z",
+            "discoverable": true,
+            "liga": "regionalliga",
+            "logo": {
+                "_type": "image",
+                "alt": "SG Wattenscheid 09",
+                "asset": {
+                    "_ref": "image-0217b2fb6bf2d5dea8186ff9f7941d87ec19a4fb-187x187-png",
+                    "_type": "reference"
+                }
+            },
+            "name": "SG Wattenscheid 09",
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://sgwattenscheid09.de/",
+                "isExternal": true,
+                "linkLabel": "Website"
+            }
+        },
+        {
             "_createdAt": "2022-11-26T18:41:36Z",
             "_id": "66951b78-a197-4169-9781-91a2d61a4c65",
             "_rev": "mO4iUSsmI97FbWpGiI49Sj",
@@ -849,11 +1021,35 @@
             "title": "Ruhrpott"
         },
         {
+            "_createdAt": "2022-12-04T23:33:00Z",
+            "_id": "804b0b24-ac7f-4fdd-b47c-8c1cdf882366",
+            "_rev": "FXZkYQnlpevlnPWWEWL5rY",
+            "_type": "footballClubs",
+            "_updatedAt": "2022-12-04T23:33:00Z",
+            "discoverable": true,
+            "liga": "bundesliga",
+            "logo": {
+                "_type": "image",
+                "alt": "Schalke 04",
+                "asset": {
+                    "_ref": "image-6d53972e65dd9cf6fc48314feba7e92e97b25ce9-1200x1200-png",
+                    "_type": "reference"
+                }
+            },
+            "name": "Schalke 04",
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://www.schalke04.de/",
+                "isExternal": true,
+                "linkLabel": "Website"
+            }
+        },
+        {
             "_createdAt": "2022-11-28T17:02:28Z",
             "_id": "8b65c14d-c659-4623-b373-74b6b5ebd146",
-            "_rev": "Cl390o3VFZFCLlrDBsUFug",
+            "_rev": "C7rctcfX2rVQiEHDjR87V2",
             "_type": "page",
-            "_updatedAt": "2022-12-02T20:13:10Z",
+            "_updatedAt": "2022-12-05T00:17:04Z",
             "description": "The Ruhrpott cities are, from west to east: Duisburg, Oberhausen, Bottrop, Mülheim an der Ruhr, Essen, Gelsenkirchen, Bochum, Herne, Hagen, Dortmund, Lünen, Bergkamen, Hamm and the districts of Wesel, Recklinghausen, Unna, and Ennepe-Ruhr-Kreis. The most populous cities are Dortmund (with a population of approximately 588,000), Essen (about 583,000), and Duisburg (about 497,000).",
             "discoverable": true,
             "image": {
@@ -897,12 +1093,15 @@
                 {
                     "_key": "71e17f21ac19",
                     "_type": "section",
-                    "addSpacing": false,
+                    "addSpacing": true,
                     "containerClass": "twoCol",
                     "disabled": false,
                     "hasBackground": false,
                     "htmlTag": "section",
                     "inContainer": true,
+                    "padding": {
+                        "top": true
+                    },
                     "sectionBlocks": [
                         {
                             "_key": "dde9b065571e",
@@ -916,10 +1115,30 @@
                                             "_key": "d565a8b4b06f0",
                                             "_type": "span",
                                             "marks": [],
-                                            "text": "Formerly Germany's coal-mining region, the Ruhrpott's cities such as Bochum, Dortmund, Duisburg, Essen, and Oberhausen have grown together to form a large urban area."
+                                            "text": "Formerly Germany's coal-mining region, the Ruhrpott's cities, such as Bochum, Dortmund, "
+                                        },
+                                        {
+                                            "_key": "605875e87ccf",
+                                            "_type": "span",
+                                            "marks": [
+                                                "a23d64e8f679"
+                                            ],
+                                            "text": "Gelsenkirchen"
+                                        },
+                                        {
+                                            "_key": "325426e0ad74",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ", Duisburg, Essen, and Oberhausen, have grown together to form a large urban area."
                                         }
                                     ],
-                                    "markDefs": [],
+                                    "markDefs": [
+                                        {
+                                            "_key": "a23d64e8f679",
+                                            "_type": "link",
+                                            "href": "/cities/gelsenkirchen"
+                                        }
+                                    ],
                                     "style": "normal"
                                 },
                                 {
@@ -944,7 +1163,7 @@
                                             "_key": "32413fa7c49e0",
                                             "_type": "span",
                                             "marks": [],
-                                            "text": "Although coal is no longer mined here, blast furnaces, gasometers, and winding towers still dominate the landscape of the Ruhrpott and serve as venues for theatre, music, painting, dance, performance, sport, relaxation, and more. They can be explored in Duisburg-Nord Industrial Landscape Park and along the Route of Industrial Heritage, a 400-km circuit through the Ruhrgebiet that takes in 54 striking monuments to Germany's industrial past and present. One of these monuments is the Zollverein Coal Mine Industrial Complex, a UNESCO World Heritage Site in Essen, which was named the European Green Capital in 2017. Nature thrives between the many monuments and cultural highlights – proof if ever it was needed, that there are very few metropolises as surprising as the Ruhrpott."
+                                            "text": "Although coal is no longer mined here, blast furnaces, gasometers, and winding towers still dominate the landscape of the Ruhrpott and serve as venues for theatre, music, painting, dance, performance, sport, relaxation, and more. They can be explored in Duisburg-Nord Industrial Landscape Park and along the Route of Industrial Heritage, a 400-km circuit through the Ruhrgebiet that takes in 54 striking monuments to Germany's industrial past and present. One of these monuments is the Zollverein Coal Mine Industrial Complex, a UNESCO World Heritage Site in Essen named the European Green Capital in 2017. Nature thrives between the many monuments and cultural highlights – proof, if ever it was needed, that there are very few metropolises as surprising as the Ruhrpott."
                                         }
                                     ],
                                     "markDefs": [],
@@ -1133,6 +1352,124 @@
             }
         },
         {
+            "_createdAt": "2022-12-04T23:32:20Z",
+            "_id": "c01d8dda-4e33-4f60-aeac-01d04f60f22a",
+            "_rev": "Cl390o3VFZFCLlrDCCLW72",
+            "_type": "footballClubs",
+            "_updatedAt": "2022-12-04T23:32:20Z",
+            "discoverable": true,
+            "liga": "regionalliga",
+            "logo": {
+                "_type": "image",
+                "alt": "Rot Weiß Oberhausen",
+                "asset": {
+                    "_ref": "image-36115b3af66ff824d6efe792f06fba96af0fb49a-200x200-png",
+                    "_type": "reference"
+                }
+            },
+            "name": "Rot Weiß Oberhausen",
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://rwo-online.de/",
+                "isExternal": true,
+                "linkLabel": "Website"
+            }
+        },
+        {
+            "_createdAt": "2022-12-04T22:26:32Z",
+            "_id": "c3102732-1c67-4057-868b-e5c03f5683a3",
+            "_rev": "Cl390o3VFZFCLlrDCChcoo",
+            "_type": "page",
+            "_updatedAt": "2022-12-05T00:05:19Z",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "asset": {
+                    "_ref": "image-ea6d0988623d5eb4f8539ff915e4f1e6331e12bc-1600x700-jpg",
+                    "_type": "reference"
+                }
+            },
+            "isPage": true,
+            "layout": "sections.njk",
+            "sections": [
+                {
+                    "_key": "8afb92b476f9",
+                    "_type": "section",
+                    "background": {
+                        "image": {
+                            "_type": "image",
+                            "asset": {
+                                "_ref": "image-ea6d0988623d5eb4f8539ff915e4f1e6331e12bc-1600x700-jpg",
+                                "_type": "reference"
+                            }
+                        },
+                        "isDark": true
+                    },
+                    "containerClass": "imageBanner",
+                    "disabled": false,
+                    "hasBackground": true,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "30b42d834944",
+                            "_type": "textBlock",
+                            "headerType": "h1",
+                            "title": "Fußball in the Ruhrpott"
+                        }
+                    ],
+                    "sectionType": "text"
+                },
+                {
+                    "_key": "ffeb5e2a3889",
+                    "_type": "section",
+                    "addSpacing": true,
+                    "disabled": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "margin": {
+                        "bottom": true,
+                        "top": true
+                    },
+                    "sectionBlocks": [
+                        {
+                            "_key": "447e6559d945",
+                            "_type": "logosListBlock",
+                            "headerType": "h2",
+                            "hint": "Click on any logo to go to the associated website",
+                            "listSource": "footballClubs",
+                            "logoWidth": 200,
+                            "portableTextBody": [
+                                {
+                                    "_key": "d3a3aff35fcd",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "78df5d69bca8",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "A total of 16 German championships and eleven titles in the DFB Cup were won by teams from the Ruhr area. In 1937 FC Schalke 04 became the first double winner in Germany, in 1966 Borussia Dortmund was the first German club to win a European Cup and in 1997 Dortmund won the Champions League and FC Schalke 04 the UEFA Cup. A total of seven clubs from the Ruhr area have played in the Bundesliga so far, currently (2022/23) three clubs play in the top division with Schalke, Dortmund and VfL Bochum. In particular, Borussia Dortmund and FC Schalke 04 play an important role in German fußball and are also popular nationwide."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                }
+                            ],
+                            "scope": "all",
+                            "subTitle": "Fußball in the Ruhrpott plays a key role in German Fußball",
+                            "title": "Fußball in the Ruhrpott"
+                        }
+                    ],
+                    "sectionType": "logosList"
+                }
+            ],
+            "slug": {
+                "_type": "slug",
+                "current": "football"
+            },
+            "title": "football"
+        },
+        {
             "_createdAt": "2022-11-26T18:59:47Z",
             "_id": "c4e042e5-26e0-43df-a5e6-cb80a7fd54f2",
             "_rev": "mO4iUSsmI97FbWpGiIDCET",
@@ -1172,6 +1509,123 @@
                 "isExternal": true,
                 "linkLabel": "Read more about Bochum"
             }
+        },
+        {
+            "_createdAt": "2022-12-04T23:27:37Z",
+            "_id": "c7866bda-eebd-460b-96d4-c2c03663c0b5",
+            "_rev": "FXZkYQnlpevlnPWWEWJyzj",
+            "_type": "footballClubs",
+            "_updatedAt": "2022-12-04T23:27:37Z",
+            "discoverable": true,
+            "liga": "bundesliga",
+            "logo": {
+                "_type": "image",
+                "alt": "Borussia Dortmund",
+                "asset": {
+                    "_ref": "image-0ea911c40fbc9f3c2f477c4fd41859664b7f6260-2048x2048-png",
+                    "_type": "reference"
+                }
+            },
+            "name": "Borussia Dortmund",
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://www.bvb.de/",
+                "isExternal": true,
+                "linkLabel": "Website"
+            }
+        },
+        {
+            "_createdAt": "2022-12-04T23:30:18Z",
+            "_id": "c9efca78-99ad-4d9a-8920-f22556f10eed",
+            "_rev": "FXZkYQnlpevlnPWWEWKHRx",
+            "_type": "footballClubs",
+            "_updatedAt": "2022-12-04T23:30:18Z",
+            "discoverable": true,
+            "liga": "dritteBundesliga",
+            "logo": {
+                "_type": "image",
+                "alt": "Rot Weiss Essen",
+                "asset": {
+                    "_ref": "image-b8f9b24854c3ebc20d4f73a31dc22fefb4bab1d9-328x330-png",
+                    "_type": "reference"
+                }
+            },
+            "name": "Rot Weiss Essen",
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://www.rot-weiss-essen.de/",
+                "isExternal": true,
+                "linkLabel": "Website"
+            }
+        },
+        {
+            "_createdAt": "2022-12-04T23:26:42Z",
+            "_id": "dbb1b6ee-2b9a-43bd-afdf-735796f386ad",
+            "_rev": "C7rctcfX2rVQiEHDjQnElI",
+            "_type": "footballClubs",
+            "_updatedAt": "2022-12-04T23:26:42Z",
+            "discoverable": true,
+            "liga": "bundesliga",
+            "logo": {
+                "_type": "image",
+                "alt": "VFL Bochum",
+                "asset": {
+                    "_ref": "image-ce10fa85afb442681856fe0aa70eed377b8634fc-1200x1264-png",
+                    "_type": "reference"
+                }
+            },
+            "name": "VfL Bochum",
+            "websiteLink": {
+                "_type": "link",
+                "href": "https://www.vfl-bochum.de/",
+                "isExternal": true,
+                "linkLabel": "Website"
+            }
+        },
+        {
+            "_createdAt": "2022-12-05T00:23:09Z",
+            "_id": "f89b6e6d-6835-4aca-8c01-44d3c92a463d",
+            "_rev": "FXZkYQnlpevlnPWWEWRlL3",
+            "_type": "page",
+            "_updatedAt": "2022-12-05T00:23:09Z",
+            "discoverable": true,
+            "isPage": true,
+            "layout": "sections.njk",
+            "sections": [
+                {
+                    "_key": "0e3e7334419e",
+                    "_type": "section",
+                    "background": {
+                        "image": {
+                            "_type": "image",
+                            "asset": {
+                                "_ref": "image-8b681163cfbe92301c7b44a2558dc13b9a6fc75a-1600x533-jpg",
+                                "_type": "reference"
+                            }
+                        },
+                        "isDark": true
+                    },
+                    "containerClass": "imageBanner",
+                    "disabled": false,
+                    "hasBackground": true,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "e692447e3d3a",
+                            "_type": "textBlock",
+                            "headerType": "h1",
+                            "title": "About this Website"
+                        }
+                    ],
+                    "sectionType": "text"
+                }
+            ],
+            "slug": {
+                "_type": "slug",
+                "current": "about"
+            },
+            "title": "About this Website"
         }
     ]
 }

@@ -26,6 +26,11 @@
   }
 }
 
+.hint {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
 .marquee:hover .logos-wrapper {
   animation-play-state: paused;
   transition-duration: 0.8s;

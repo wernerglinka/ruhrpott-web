@@ -31,8 +31,8 @@
     <p class="sub-title">{{ info.subTitle }}</p>
   {% endif %}
 
-  {% if info.body %}
-    <div>{{ info.body | mdToHTML | safe }}</div>
+  {% if info.portableTextBody %}
+    <div class="prose">{{ info.portableTextBody | mdToHTML | safe }}</div>
   {% endif %}
 
   <div class="marquee" style="--list-width: {{ logosListLength }}">
@@ -41,9 +41,8 @@
       {% for i in range(0, copies) -%}
       <ul class="logos js-logos-list">
       {% for item in logosList %}
-
         <li>
-          <a href="{{ item.link.url }}" {% if item.link.isExternal %} target="_blank" rel="nofollow noopener" {% endif %}>
+          <a href="{{ item.websiteLink.href }}" {% if item.websiteLink.isExternal %} target="_blank" rel="nofollow noopener" {% endif %}>
             {{ image(item.logo, data) }}
           </a>
         </li>
@@ -52,6 +51,10 @@
       {% endfor %}
     </div> <!-- marquee-inner -->
   </div> <!-- marquee -->
+
+  {% if info.hint %}
+    <p class="hint">{{ info.hint }}</p>
+  {% endif %}
 
   {{ cta(info.cta) }}
   

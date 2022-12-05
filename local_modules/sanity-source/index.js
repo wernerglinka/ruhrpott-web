@@ -111,15 +111,11 @@ function initSanitySource(options) {
 
     const data = {};
 
-    console.log(contentTypes);
-
     // normalize Sanity json to markdown and resolve references for each page
     contentTypes.forEach(contentType => {
       iterate(contentType);
 
       if ( contentType.isPage ) {
-        //console.log(JSON.stringify(contentType,null, 4));
-        
         // add to page, Metalsmith need the contents to be there
         contentType.contents = Buffer.from('');
         contentType.mode = '0644';
@@ -127,8 +123,9 @@ function initSanitySource(options) {
 
         // add page to files object
         const fileKey = `${contentType.slug.current}.md`;
-        console.log(fileKey);
-        files[fileKey] = contentType
+        files[fileKey] = contentType;
+
+        //console.log(JSON.stringify(files,null, 4));
       } else {
         // add to metadata
 

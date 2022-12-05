@@ -25,7 +25,7 @@
                 <ul>
                   {% for child in menuItem.links %}
                     <li>
-                      <a href={{ menuItem.linkURL }}/{{ child.linkURL}} class="{{ child.linkClass }}">{{ child.label }}</a>
+                      <a href={{ menuItem.linkURL }}{{ child.linkURL }} class="{{ child.linkClass }}">{{ child.label }}</a>
                     </li>
                   {% endfor %}
                 </ul>

@@ -94,7 +94,9 @@
 
 // active path
 [pageName="home"] #main-menu .home,
-[pageName="other-page"] #main-menu .other-page,
+[pageName="cities"] #main-menu .cities,
+[pageName="cities-gelsenkirchen"] #main-menu .cities-gelsenkirchen,
+[pageName="football"] #main-menu .football,
 [pageName="blog"] #main-menu .blog {
   color: #666;
   pointer-events: none;

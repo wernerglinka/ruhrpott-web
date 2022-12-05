@@ -152,8 +152,8 @@ const modalVideo = (function() {
       }
 
       const videoId = modalVideoTriggers[0].dataset.videoid;
-      const startTime = modalVideoTriggers[0].dataset.startTime;
-      const endTime = modalVideoTriggers[0].dataset.endTime;
+      const startTime = modalVideoTriggers[0].dataset.starttime;
+      const endTime = modalVideoTriggers[0].dataset.endtime;
 
       // reference https://developers.google.com/youtube/player_parameters?playerVersion=HTML5
       const playerVars = {
