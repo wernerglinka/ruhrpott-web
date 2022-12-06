@@ -59,7 +59,7 @@ function initSanitySource(options) {
       Object.keys(obj).forEach(key => {
   
         // transform Portable Text to Markdown
-        if(key === "portableTextBody"){
+        if(key === "portableTextBody" || key === "blogContent") {
           obj[key] = BlocksToMarkdown(obj[key], {
             serializers: getSerializers(client),
             projectId: options.projectId,

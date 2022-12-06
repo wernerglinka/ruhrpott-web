@@ -432,6 +432,139 @@
             "title": "Gelsenkirchen"
         },
         {
+            "_createdAt": "2022-12-05T22:00:57Z",
+            "_id": "2bacede3-e979-4e13-ba49-0147f1b23a4b",
+            "_rev": "Cl390o3VFZFCLlrDCOAvvq",
+            "_type": "blog",
+            "_updatedAt": "2022-12-06T00:04:42Z",
+            "authorsList": [
+                {
+                    "_key": "59bdc5e39c45",
+                    "_ref": "380824f4-5a55-4000-ac7e-d12ccde4f0c6",
+                    "_type": "reference"
+                }
+            ],
+            "bodyClasses": "blogpost",
+            "categories": "apple",
+            "description": "Metalsmith is an extremely simple, pluggable static site generator for NodeJS.",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "asset": {
+                    "_ref": "image-528a585b70be19d53d755f8f4f58140cc805b6af-1198x346-png",
+                    "_type": "reference"
+                }
+            },
+            "isPage": true,
+            "layout": "sections.njk",
+            "publishedAt": "2022-01-01T22:00:00.000Z",
+            "sections": [
+                {
+                    "_key": "9f0a280788f8",
+                    "_type": "section",
+                    "disabled": false,
+                    "htmlTag": "section",
+                    "inContainer": false,
+                    "sectionBlocks": [
+                        {
+                            "_key": "5a0385742317",
+                            "_type": "blogHeaderBlock",
+                            "mainImage": {
+                                "_type": "image",
+                                "alt": "metalsmith logo",
+                                "asset": {
+                                    "_ref": "image-528a585b70be19d53d755f8f4f58140cc805b6af-1198x346-png",
+                                    "_type": "reference"
+                                }
+                            },
+                            "publishingDate": "2022-01-01T23:22:00.000Z",
+                            "title": "It starts with Metalsmith"
+                        }
+                    ],
+                    "sectionType": "blogPostHeader"
+                },
+                {
+                    "_key": "ce532149a094",
+                    "_type": "section",
+                    "disabled": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "c2d1bef9d51e",
+                            "_type": "blogContentBlock",
+                            "blogContent": [
+                                {
+                                    "_key": "fdae96f8668c",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "ab8adc2a58b80",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "A header is"
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "h3"
+                                },
+                                {
+                                    "_key": "4d46a600bedd",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "b6b1622d3eeb",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.\n\nCras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "8f2e264be6d9",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "d476c8c58f8c",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "47edf105d4a7",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "077eb0198295",
+                                            "_type": "span",
+                                            "marks": [
+                                                "strong"
+                                            ],
+                                            "text": "end of the content section"
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                }
+                            ]
+                        }
+                    ],
+                    "sectionType": "blogPostContent"
+                }
+            ],
+            "slug": {
+                "_type": "slug",
+                "current": "blog/2022/it-starts-with-metalsmith"
+            },
+            "title": "It starts with Metalsmith"
+        },
+        {
             "_createdAt": "2022-12-04T23:29:08Z",
             "_id": "2d5c1993-3116-472c-8d34-728868b850af",
             "_rev": "FXZkYQnlpevlnPWWEWK9pE",
@@ -2206,9 +2339,9 @@
         {
             "_createdAt": "2022-12-05T00:23:09Z",
             "_id": "f89b6e6d-6835-4aca-8c01-44d3c92a463d",
-            "_rev": "Cl390o3VFZFCLlrDCMGhHa",
+            "_rev": "FXZkYQnlpevlnPWWEYunf6",
             "_type": "page",
-            "_updatedAt": "2022-12-05T19:08:39Z",
+            "_updatedAt": "2022-12-05T19:10:34Z",
             "discoverable": true,
             "isPage": true,
             "layout": "sections.njk",
@@ -2401,7 +2534,7 @@
                                             "marks": [
                                                 "f98c31fa0765"
                                             ],
-                                            "text": "sanity studio schemas"
+                                            "text": "Sanity studio schemas"
                                         },
                                         {
                                             "_key": "fbe110cee831",
