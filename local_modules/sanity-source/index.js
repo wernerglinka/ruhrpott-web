@@ -126,6 +126,7 @@ function initSanitySource(options) {
         files[fileKey] = contentType;
 
         //console.log(JSON.stringify(files,null, 4));
+
       } else {
         // add to metadata
 

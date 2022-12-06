@@ -92,17 +92,16 @@ function msBuild() {
         token:'skBZ9yDZX8BXBSlvGkoediG80ICbD5C5V9aSm5yaVw69GhTx5o7Ja1snxVFNIUJJDVzjRKWmo20MCCCvibbzOpUxfjQ4u4zHs4Q5CJcBoxoaCjhFwJp5wVm6oVBZ0NPwq8lpshlJXd6MBgzmHvgIvPHaMlsIM0Ca7JsMqobdgw1mtTW4ioeS'
       })
     )
-/*
-    .use( (files, metalsmith, done) => {
-      console.log(metalsmith.metadata());
-      done();
-    })
-*/
 
     .use(
       collections({
         blog: {
-          pattern: "blog/*.md",
+          metadata: {
+            title: 'Our Blog',
+            description: 'Metalsmith and Sanity equals Ruhrpott',
+            slug: 'blog'
+          },
+          pattern: "blog/**/*.md",
           sortBy: "date",
           reverse: true,
           limit: 10,
@@ -138,6 +137,14 @@ function msBuild() {
       })
     )
     .use(postcss({ plugins: ["postcss-preset-env", "autoprefixer", "cssnano"], map: !isProduction }))
+
+    
+    .use( (files, metalsmith, done) => {
+      console.log(metalsmith.metadata().collections.blog);
+      //console.log(JSON.stringify(metalsmith.metadata(),null, 4));
+      done();
+    })
+
 
     .use(
       esbuild({

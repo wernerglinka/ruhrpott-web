@@ -1,6 +1,7 @@
 {% extends "layout.njk" %}
 
 {% from "./blocks/block.njk" import renderBlock %}
+{% from "./blocks/blogBlock.njk" import renderBlogBlock %}
 
 {% block body %}
   {% for section in sections %}
@@ -70,11 +71,17 @@
           {% for sectionBlock in section.sectionBlocks %}
 
             {# render individual blocks #}
+            {# name determines which block is rendered #}
             {% set name = sectionBlock._type %}
             {% set params = sectionBlock %}
 
-            {# name determines which block is rendered #}
-            {{ renderBlock(name, params, data) }}
+            {# get authors list if blogposts #}
+            {% if _type === "blog" %}
+              {{ renderBlogBlock(name, params, data, authorsList) }}
+            {% else %}
+              {{ renderBlock(name, params, data) }}
+            {% endif %}
+
           {% endfor %}
         </div> 
       </{{section.htmlTag}}>

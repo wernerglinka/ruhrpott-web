@@ -434,9 +434,9 @@
         {
             "_createdAt": "2022-12-05T22:00:57Z",
             "_id": "2bacede3-e979-4e13-ba49-0147f1b23a4b",
-            "_rev": "Cl390o3VFZFCLlrDCOAvvq",
+            "_rev": "1CkluJPz9V34pA3qdZlZY2",
             "_type": "blog",
-            "_updatedAt": "2022-12-06T00:04:42Z",
+            "_updatedAt": "2022-12-06T20:54:23Z",
             "authorsList": [
                 {
                     "_key": "59bdc5e39c45",
@@ -457,6 +457,30 @@
             },
             "isPage": true,
             "layout": "sections.njk",
+            "portableTextBody": [
+                {
+                    "_key": "e11df1060261",
+                    "_type": "block",
+                    "children": [
+                        {
+                            "_key": "decfa93bd03e0",
+                            "_type": "span",
+                            "marks": [
+                                "em"
+                            ],
+                            "text": "Metalsmith is a simple, pluggable static site generator"
+                        },
+                        {
+                            "_key": "decfa93bd03e1",
+                            "_type": "span",
+                            "marks": [],
+                            "text": ". In Metalsmith, all of the logic is handled by plugins - you chain them together. Since everything is a plugin, the core library is just an abstraction for manipulating a directory of files."
+                        }
+                    ],
+                    "markDefs": [],
+                    "style": "normal"
+                }
+            ],
             "publishedAt": "2022-01-01T22:00:00.000Z",
             "sections": [
                 {
@@ -473,7 +497,7 @@
                                 "_type": "image",
                                 "alt": "metalsmith logo",
                                 "asset": {
-                                    "_ref": "image-528a585b70be19d53d755f8f4f58140cc805b6af-1198x346-png",
+                                    "_ref": "image-a347fa9f72b7ffd789f32b3e620171b634b66657-1492x324-png",
                                     "_type": "reference"
                                 }
                             },
@@ -509,46 +533,66 @@
                                     "style": "h3"
                                 },
                                 {
-                                    "_key": "4d46a600bedd",
-                                    "_type": "block",
-                                    "children": [
-                                        {
-                                            "_key": "b6b1622d3eeb",
-                                            "_type": "span",
-                                            "marks": [],
-                                            "text": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.\n\nCras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper."
-                                        }
-                                    ],
-                                    "markDefs": [],
-                                    "style": "normal"
-                                },
-                                {
-                                    "_key": "8f2e264be6d9",
-                                    "_type": "block",
-                                    "children": [
-                                        {
-                                            "_key": "d476c8c58f8c",
-                                            "_type": "span",
-                                            "marks": [],
-                                            "text": ""
-                                        }
-                                    ],
-                                    "markDefs": [],
-                                    "style": "normal"
-                                },
-                                {
                                     "_key": "47edf105d4a7",
                                     "_type": "block",
                                     "children": [
                                         {
                                             "_key": "077eb0198295",
                                             "_type": "span",
-                                            "marks": [
-                                                "strong"
-                                            ],
-                                            "text": "end of the content section"
+                                            "marks": [],
+                                            "text": "Metalsmith benefits"
                                         }
                                     ],
+                                    "level": 1,
+                                    "listItem": "bullet",
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "dfa13f132bb8",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "187bf6866d88",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Diagram"
+                                        }
+                                    ],
+                                    "level": 1,
+                                    "listItem": "bullet",
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "092c8e0ce238",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "3086dae1e6bd",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "How pages are build"
+                                        }
+                                    ],
+                                    "level": 1,
+                                    "listItem": "bullet",
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "1f3457de594a",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "e98e33944f20",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "From Frontmatter to direct data injection.\n"
+                                        }
+                                    ],
+                                    "level": 1,
+                                    "listItem": "bullet",
                                     "markDefs": [],
                                     "style": "normal"
                                 }
@@ -1549,6 +1593,150 @@
                     "style": "normal"
                 }
             ]
+        },
+        {
+            "_createdAt": "2022-12-06T15:39:01Z",
+            "_id": "75a5ea0f-ca0c-418f-9fef-ea528b0ebe8d",
+            "_rev": "1AWADvK3zTmilqcayXMjaV",
+            "_type": "blog",
+            "_updatedAt": "2022-12-06T20:50:33Z",
+            "authorsList": [
+                {
+                    "_key": "130bd28f74e5",
+                    "_ref": "c33dc03f-3ef4-48c5-81ef-d3aec7676423",
+                    "_type": "reference"
+                }
+            ],
+            "categories": "orange",
+            "description": "Sanity is the platform for structured content that powers remarkable digital experiences.",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "asset": {
+                    "_ref": "image-57f2bc45ec006a0be0c61192e758964865cc61e4-1500x303-png",
+                    "_type": "reference"
+                }
+            },
+            "isPage": true,
+            "layout": "sections.njk",
+            "portableTextBody": [
+                {
+                    "_key": "882e6bb57cac",
+                    "_type": "block",
+                    "children": [
+                        {
+                            "_key": "92bc257818a9",
+                            "_type": "span",
+                            "marks": [],
+                            "text": "Sanity.io is the platform for structured content. It comes with an open-source editing environment called "
+                        },
+                        {
+                            "_key": "2c578b222e42",
+                            "_type": "span",
+                            "marks": [
+                                "15a6d44cd16c"
+                            ],
+                            "text": "Sanity Studio"
+                        },
+                        {
+                            "_key": "3b568cb74752",
+                            "_type": "span",
+                            "marks": [],
+                            "text": " that you can customize with JavaScript and a real-time hosted data store. Sanity has generously included quotas – so getting started is free."
+                        }
+                    ],
+                    "markDefs": [
+                        {
+                            "_key": "15a6d44cd16c",
+                            "_type": "link",
+                            "href": "https://www.sanity.io/studio"
+                        }
+                    ],
+                    "style": "normal"
+                }
+            ],
+            "publishedAt": "2022-02-01T15:35:00.000Z",
+            "sections": [
+                {
+                    "_key": "8a3b7b71a69e",
+                    "_type": "section",
+                    "disabled": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "7007491592d3",
+                            "_type": "blogHeaderBlock",
+                            "mainImage": {
+                                "_type": "image",
+                                "alt": "Sanity logo",
+                                "asset": {
+                                    "_ref": "image-57f2bc45ec006a0be0c61192e758964865cc61e4-1500x303-png",
+                                    "_type": "reference"
+                                }
+                            },
+                            "publishingDate": "2022-02-01T15:36:00.000Z",
+                            "title": "Structured Content from Sanity"
+                        }
+                    ],
+                    "sectionType": "blogPostHeader"
+                },
+                {
+                    "_key": "265b4a7ffebf",
+                    "_type": "section",
+                    "disabled": false,
+                    "htmlTag": "article",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "69dc586ca442",
+                            "_type": "blogContentBlock",
+                            "blogContent": [
+                                {
+                                    "_key": "3c07d385eda8",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "460491ce4631",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Sanity.io is the platform for structured content. It comes with an open-source editing environment called "
+                                        },
+                                        {
+                                            "_key": "51158e1ecce2",
+                                            "_type": "span",
+                                            "marks": [
+                                                "55409b75c23e"
+                                            ],
+                                            "text": "Sanity Studio"
+                                        },
+                                        {
+                                            "_key": "117dc50ff09a",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " that you can customize with JavaScript and a real-time hosted data store. Sanity has generously included quotas – so getting started is free."
+                                        }
+                                    ],
+                                    "markDefs": [
+                                        {
+                                            "_key": "55409b75c23e",
+                                            "_type": "link",
+                                            "href": "https://www.sanity.io/studio"
+                                        }
+                                    ],
+                                    "style": "normal"
+                                }
+                            ]
+                        }
+                    ],
+                    "sectionType": "blogPostContent"
+                }
+            ],
+            "slug": {
+                "_type": "slug",
+                "current": "blog/2022/structured-content-from-sanity"
+            },
+            "title": "Structured Content from Sanity"
         },
         {
             "_createdAt": "2022-12-02T16:49:36Z",

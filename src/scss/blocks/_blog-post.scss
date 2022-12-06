@@ -1,14 +1,11 @@
-.blog-header {
-  .columns.cols1 {
-    .column {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-  }
+[pagename="blog"] {
+  padding-top: 120px;
+}
 
-  h1, .sub-title {
-    text-align: center;
-  }
+.block-blog-header {
+  max-width: 800px;
+  margin: 0 auto;
+
   h1 + .sub-title {
     font-size: 1.5rem;
     font-style: italic;
@@ -16,8 +13,8 @@
   }
   .authors-date {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
 
     // construct the author and date string
     // By author, author and author on date
@@ -37,8 +34,13 @@
           padding-right: 0.2rem;
         }
         // except the first one
-        &.first:before {
-          content: "";
+        &.first{
+          padding-left: 5px;
+
+          &:before {
+            content: "";
+            border: none;
+          }
         }
         // and the last one
         &.last:before {
@@ -57,11 +59,7 @@
     margin-bottom: 3rem;
   }
 }
-.blog-content {
-  .columns.cols1 {
-    .column {
-      max-width: 700px;
-      margin: 0 auto;
-    }
-  }
+.block-blog-content {
+  max-width: 800px;
+  margin: 0 auto;
 }

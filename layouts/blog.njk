@@ -4,17 +4,18 @@
   <div class="container">
     <h1>My Blog</h1>
 
-    {{ contents | safe }}
+  {{ collections.blog }}
 
+  
     <ul class="blog-list">
     {% for blogPost in collections.blog %}
       
       <li>
-        <a href="/{{ blogPost.path }}">
-          <h2>{{ blogPost.blogTitle }}</h2>
-          <time datetime="{{ blogPost.date }}">{{ blogPost.date | blogDate }}</time>
+        <a href="/{{ blogPost.slug.current }}">
+          <h2>{{ blogPost.title }}</h2>
+          <time datetime="{{ blogPost.publishedAt }}">{{ blogPost.publishedAt | blogDate }}</time>
           <img class="blog-image" src="{{ blogPost.image }}" alt="{{ blogPost.blogTitle }}" />
-          <div>{{ blogPost.excerpt }}</div>
+          <div>{{ blogPost.portableTextBody }}</div>
         </a>
       </li>
 

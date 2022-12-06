@@ -1,0 +1,7 @@
+{#
+  renderBlogBlock is a nunjucks macro that uses the name parameter to compose the path of the target block macro. Since Nunjucks doesn't support dynamic macro names, we have to use a helper function to do this.
+  Other than the generic renderBlock macro, this macro also passes the authors list.
+#}
+{% macro renderBlogBlock(name, params, data, authorsList) %} 
+  {% include "../blocks/" + name + ".njk" ignore missing %}
+{% endmacro %}

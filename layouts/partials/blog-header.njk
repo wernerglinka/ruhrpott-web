@@ -1,6 +1,9 @@
 {% from "../partials/image.njk" import image %}
 
-{% macro blogHeader(info) %}
+{% macro blogHeader(info, data, authorsList) %}
+
+  {# get the blogpost author(s) from data.authors via the authors ref ion authorsList #}
+  {% set authors = data["authors"] | filterList(authorsList) %}
 
   {% if info.title %}
     <h1>{{ info.title }}</h1>
@@ -11,20 +14,21 @@
   {% endif %}
 
   <div class="authors-date">
+
     <ul>
-    {% if info.authors %}
-      {% set length = info.authors | length %}
-      {% for author in info.authors %}
+    {% if authors %}
+      {% set length = authors | length %}
+      {% for author in authors %}
         <li
           {% if (loop.index === 1) and (loop.index === length) %}class="first"{% endif %} 
           {% if (loop.index === 1) and (loop.index !== length) %}class="first"{% endif %}
           {% if (loop.index !== 1) and (loop.index === length) %}class="last"{% endif %}
-        ><a href="{{ author.slug }}">{{ author.name }}</a></li>
+        >{{ author.name }}</li>
       {% endfor %}
     {% endif %}
     </ul>
-    {% if info.published %}
-      <time datetime="{{ info.published }}">{{ info.published | blogDate }}</time>
+    {% if info.publishingDate %}
+      <time datetime="{{ info.publishingDate }}">{{ info.publishingDate | blogDate }}</time>
     {% endif %}
   </div>
 
