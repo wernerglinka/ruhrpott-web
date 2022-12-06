@@ -1,0 +1,7 @@
+{% macro blogContent(info) %}
+
+  {% if info.blogContent %}
+    <div class="prose">{{ info.blogContent | mdToHTML | safe }}</div>
+  {% endif %}
+
+{% endmacro %}

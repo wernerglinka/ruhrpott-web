@@ -1,4 +1,2 @@
-{% from "../partials/text.njk" import text %}
-
-{{ params | dump }}
-<div class="block block-blog-content">{{ text(params)}}</div>
+{% from "../partials/blog-content.njk" import blogContent %}
+<div class="block block-blog-content">{{ blogContent(params)}}</div>
