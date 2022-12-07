@@ -13,6 +13,7 @@ const htmlMinifier = require("metalsmith-html-minifier");
 const assets = require("metalsmith-static-files");
 const prism = require("metalsmith-prism");
 
+require("dotenv").config();
 const sanitySource = require("./local_modules/sanity-source");
 
 const marked = require("marked");
@@ -86,10 +87,10 @@ function msBuild() {
       sanitySource({
         // Config object for the @sanity/client package
         // See https://www.npmjs.com/package/@sanity/client
-        projectId: '349a1vg2', // required, else will throw
-        dataset: 'production', // defaults to 'production'
-        apiVersion: 'v2022-11-17', // use a UTC date string
-        token:'skBZ9yDZX8BXBSlvGkoediG80ICbD5C5V9aSm5yaVw69GhTx5o7Ja1snxVFNIUJJDVzjRKWmo20MCCCvibbzOpUxfjQ4u4zHs4Q5CJcBoxoaCjhFwJp5wVm6oVBZ0NPwq8lpshlJXd6MBgzmHvgIvPHaMlsIM0Ca7JsMqobdgw1mtTW4ioeS'
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: 'production',
+        apiVersion: 'v2022-11-17',
+        token: process.env.SANITY_TOKEN,
       })
     )
 

@@ -49,6 +49,7 @@
     "cssnano": "^5.1.13",
     "debug": "^4.3.4",
     "deepmerge": "^4.2.2",
+    "dotenv": "^16.0.3",
     "es6-promise": "^4.2.8",
     "groq": "^2.33.2",
     "isotope-layout": "^3.0.6",
