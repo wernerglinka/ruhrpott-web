@@ -1,12 +1,11 @@
+{% from "./partials/image.njk" import image %}
+
 {% extends "layout.njk" %}
 
 {% block body %}
   <div class="container">
     <h1>My Blog</h1>
 
-  {{ collections.blog }}
-
-  
     <ul class="blog-list">
     {% for blogPost in collections.blog %}
       
@@ -14,7 +13,9 @@
         <a href="/{{ blogPost.slug.current }}">
           <h2>{{ blogPost.title }}</h2>
           <time datetime="{{ blogPost.publishedAt }}">{{ blogPost.publishedAt | blogDate }}</time>
-          <img class="blog-image" src="{{ blogPost.image }}" alt="{{ blogPost.blogTitle }}" />
+          {% if blogPost.image %}
+            {{ image(blogPost.image) }}
+          {% endif %}
           <div>{{ blogPost.portableTextBody }}</div>
         </a>
       </li>
