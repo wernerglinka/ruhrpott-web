@@ -434,9 +434,9 @@
         {
             "_createdAt": "2022-12-05T22:00:57Z",
             "_id": "2bacede3-e979-4e13-ba49-0147f1b23a4b",
-            "_rev": "1CkluJPz9V34pA3qdZlZY2",
+            "_rev": "1CkluJPz9V34pA3qdcEiWL",
             "_type": "blog",
-            "_updatedAt": "2022-12-06T20:54:23Z",
+            "_updatedAt": "2022-12-07T02:14:04Z",
             "authorsList": [
                 {
                     "_key": "59bdc5e39c45",
@@ -451,7 +451,7 @@
             "image": {
                 "_type": "image",
                 "asset": {
-                    "_ref": "image-528a585b70be19d53d755f8f4f58140cc805b6af-1198x346-png",
+                    "_ref": "image-a347fa9f72b7ffd789f32b3e620171b634b66657-1492x324-png",
                     "_type": "reference"
                 }
             },

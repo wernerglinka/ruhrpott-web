@@ -11,11 +11,11 @@
       
       <li>
         <a href="/{{ blogPost.slug.current }}">
-          <h2>{{ blogPost.title }}</h2>
-          <time datetime="{{ blogPost.publishedAt }}">{{ blogPost.publishedAt | blogDate }}</time>
           {% if blogPost.image %}
             {{ image(blogPost.image) }}
           {% endif %}
+          <h2>{{ blogPost.title }}</h2>
+          <time datetime="{{ blogPost.publishedAt }}">{{ blogPost.publishedAt | blogDate }}</time>
           <div>{{ blogPost.portableTextBody }}</div>
         </a>
       </li>
