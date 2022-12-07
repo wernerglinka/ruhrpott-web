@@ -434,9 +434,9 @@
         {
             "_createdAt": "2022-12-05T22:00:57Z",
             "_id": "2bacede3-e979-4e13-ba49-0147f1b23a4b",
-            "_rev": "1CkluJPz9V34pA3qdcEiWL",
+            "_rev": "aWMDKNmYWvCuHCjaOH4UA9",
             "_type": "blog",
-            "_updatedAt": "2022-12-07T02:14:04Z",
+            "_updatedAt": "2022-12-07T18:17:46Z",
             "authorsList": [
                 {
                     "_key": "59bdc5e39c45",
@@ -1426,6 +1426,131 @@
             }
         },
         {
+            "_createdAt": "2022-12-07T18:38:37Z",
+            "_id": "4e8aedb6-12cd-427c-991e-d09a6c6f941a",
+            "_rev": "4G9h8JIVRqNCf9scUowMOu",
+            "_type": "blog",
+            "_updatedAt": "2022-12-07T21:27:34Z",
+            "authorsList": [
+                {
+                    "_key": "0f682e5899cf",
+                    "_ref": "1fb40275-bbca-4279-8772-5f9d2b1045e2",
+                    "_type": "reference"
+                }
+            ],
+            "categories": "cherry",
+            "description": "Use Sanity as the content source for Metalsmith",
+            "discoverable": true,
+            "image": {
+                "_type": "image",
+                "asset": {
+                    "_ref": "image-882ff2a27441acff8dee5c944936256bc7969d13-1380x300-png",
+                    "_type": "reference"
+                }
+            },
+            "isPage": true,
+            "layout": "sections.njk",
+            "portableTextBody": [
+                {
+                    "_key": "7896d4796a1d",
+                    "_type": "block",
+                    "children": [
+                        {
+                            "_key": "e5bb5e677e53",
+                            "_type": "span",
+                            "marks": [],
+                            "text": "A plugin that injects pages and metadata from Sanity directly into the Metalsmith build process."
+                        }
+                    ],
+                    "markDefs": [],
+                    "style": "normal"
+                }
+            ],
+            "publishedAt": "2022-03-01T18:40:00.000Z",
+            "sections": [
+                {
+                    "_key": "3b804844ffcd",
+                    "_type": "section",
+                    "background": {},
+                    "disabled": false,
+                    "hasBackground": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "84b8c8f99f22",
+                            "_type": "blogHeaderBlock",
+                            "mainImage": {
+                                "_type": "image",
+                                "asset": {
+                                    "_ref": "image-882ff2a27441acff8dee5c944936256bc7969d13-1380x300-png",
+                                    "_type": "reference"
+                                }
+                            },
+                            "publishingDate": "2022-03-01T18:45:00.000Z",
+                            "title": "A Metalsmith Sanity Source plugin"
+                        }
+                    ],
+                    "sectionType": "blogPostHeader"
+                },
+                {
+                    "_key": "93447536e5b4",
+                    "_type": "section",
+                    "disabled": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "c8065637428e",
+                            "_type": "blogContentBlock",
+                            "blogContent": [
+                                {
+                                    "_key": "8d868cc552a8",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "d8fa73bd1b060",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Metalsmith source plugin for pulling data from "
+                                        },
+                                        {
+                                            "_key": "d8fa73bd1b061",
+                                            "_type": "span",
+                                            "marks": [
+                                                "7b574ef8a996"
+                                            ],
+                                            "text": "Sanity.io"
+                                        },
+                                        {
+                                            "_key": "d8fa73bd1b062",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " into the Metalsmith build process"
+                                        }
+                                    ],
+                                    "markDefs": [
+                                        {
+                                            "_key": "7b574ef8a996",
+                                            "_type": "link",
+                                            "href": "https://www.sanity.io/"
+                                        }
+                                    ],
+                                    "style": "normal"
+                                }
+                            ]
+                        }
+                    ],
+                    "sectionType": "blogPostContent"
+                }
+            ],
+            "slug": {
+                "_type": "slug",
+                "current": "blog/2022/a-metalsmith-sanity-source-plugin"
+            },
+            "title": "A Metalsmith Sanity Source Plugin"
+        },
+        {
             "_createdAt": "2022-11-26T18:41:36Z",
             "_id": "66951b78-a197-4169-9781-91a2d61a4c65",
             "_rev": "mO4iUSsmI97FbWpGiI49Sj",
@@ -1467,139 +1592,11 @@
             }
         },
         {
-            "_createdAt": "2022-12-05T18:37:20Z",
-            "_id": "6e95967e-b644-4690-bcae-5c0e621d3234",
-            "_rev": "C7rctcfX2rVQiEHDjY36pY",
-            "_type": "authors",
-            "_updatedAt": "2022-12-05T18:41:54Z",
-            "discoverable": true,
-            "image": {
-                "_type": "image",
-                "asset": {
-                    "_ref": "image-a26c3ab33d2be81dfd0dd98b48355612d19fe8a0-440x550-jpg",
-                    "_type": "reference"
-                }
-            },
-            "name": "Barack Obama",
-            "portableTextBody": [
-                {
-                    "_key": "7adf312e7a1e",
-                    "_type": "block",
-                    "children": [
-                        {
-                            "_key": "83f253812f0f",
-                            "_type": "span",
-                            "marks": [],
-                            "text": "Barack Obama (born August 4, 1961, in Honolulu, Hawaii, U.S.) is an American politician who served as the 44th "
-                        },
-                        {
-                            "_key": "6813c71fcb95",
-                            "_type": "span",
-                            "marks": [
-                                "5ce155a14733"
-                            ],
-                            "text": "president of the United States"
-                        },
-                        {
-                            "_key": "e625b7a1e53e",
-                            "_type": "span",
-                            "marks": [],
-                            "text": " from 2009 to 2017. A member of the "
-                        },
-                        {
-                            "_key": "bf1b6b3d9eaf",
-                            "_type": "span",
-                            "marks": [
-                                "1f6f71d7c110"
-                            ],
-                            "text": "Democratic Party"
-                        },
-                        {
-                            "_key": "1e747a565994",
-                            "_type": "span",
-                            "marks": [],
-                            "text": ", Obama was the first African-American president of the United States. He previously served as a "
-                        },
-                        {
-                            "_key": "658570e17aa6",
-                            "_type": "span",
-                            "marks": [
-                                "8249f55b451d"
-                            ],
-                            "text": "U.S. senator"
-                        },
-                        {
-                            "_key": "b30d27f1aee6",
-                            "_type": "span",
-                            "marks": [],
-                            "text": " from "
-                        },
-                        {
-                            "_key": "9ec07f735196",
-                            "_type": "span",
-                            "marks": [
-                                "e6f1dd9fdf07"
-                            ],
-                            "text": "Illinois"
-                        },
-                        {
-                            "_key": "06373c900400",
-                            "_type": "span",
-                            "marks": [],
-                            "text": " from 2005 to 2008 and an "
-                        },
-                        {
-                            "_key": "e18321d9ca25",
-                            "_type": "span",
-                            "marks": [
-                                "c5011f26cbf7"
-                            ],
-                            "text": "Illinois state senator"
-                        },
-                        {
-                            "_key": "94c406b56322",
-                            "_type": "span",
-                            "marks": [],
-                            "text": " from 1997 to 2004, and he previously worked as a civil rights lawyer before entering politics."
-                        }
-                    ],
-                    "markDefs": [
-                        {
-                            "_key": "5ce155a14733",
-                            "_type": "link",
-                            "href": "https://en.wikipedia.org/wiki/President_of_the_United_States"
-                        },
-                        {
-                            "_key": "1f6f71d7c110",
-                            "_type": "link",
-                            "href": "https://en.wikipedia.org/wiki/Democratic_Party_(United_States)"
-                        },
-                        {
-                            "_key": "8249f55b451d",
-                            "_type": "link",
-                            "href": "https://en.wikipedia.org/wiki/U.S._senator"
-                        },
-                        {
-                            "_key": "e6f1dd9fdf07",
-                            "_type": "link",
-                            "href": "https://en.wikipedia.org/wiki/Illinois"
-                        },
-                        {
-                            "_key": "c5011f26cbf7",
-                            "_type": "link",
-                            "href": "https://en.wikipedia.org/wiki/Illinois_state_senator"
-                        }
-                    ],
-                    "style": "normal"
-                }
-            ]
-        },
-        {
             "_createdAt": "2022-12-06T15:39:01Z",
             "_id": "75a5ea0f-ca0c-418f-9fef-ea528b0ebe8d",
-            "_rev": "1AWADvK3zTmilqcayXMjaV",
+            "_rev": "4G9h8JIVRqNCf9scUoMoN0",
             "_type": "blog",
-            "_updatedAt": "2022-12-06T20:50:33Z",
+            "_updatedAt": "2022-12-07T18:17:37Z",
             "authorsList": [
                 {
                     "_key": "130bd28f74e5",

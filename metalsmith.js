@@ -103,7 +103,7 @@ function msBuild() {
             slug: 'blog'
           },
           pattern: "blog/**/*.md",
-          sortBy: "date",
+          sortBy: "publishedAt",
           reverse: true,
           limit: 10,
         },

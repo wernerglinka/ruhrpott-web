@@ -1,0 +1,17 @@
+@use "../variables" as *;
+
+[pagename="blog"] {
+  padding-top: 120px;
+}
+
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  li {
+    flex: 1 1 0px;
+    padding: 20px;
+    max-width: var(--max-card-width); 
+  }
+}

@@ -19,7 +19,7 @@
           <h3>{{ blogPost.title }}</h3>
           <time datetime="{{ blogPost.publishedAt }}">{{ blogPost.publishedAt | blogDate }}</time>
           {{ excerpt }}
-          <a href="{{ blogPost.slug.current }}">Read more</a>
+          <a class="read-more-link" href="/{{ blogPost.slug.current }}">Read more ></a>
         </div>
       </li>
 
