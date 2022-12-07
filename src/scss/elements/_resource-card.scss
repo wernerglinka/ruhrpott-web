@@ -1,0 +1,10 @@
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 300px;
+  text-decoration: none;
+  color: var(--color-black);
+  height: 400px;
+  overflow: hidden; 
+}

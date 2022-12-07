@@ -8,16 +8,19 @@
 
     <ul class="blog-list">
     {% for blogPost in collections.blog %}
-      
+
+      {% set excerpt = (blogPost.portableTextBody | mdToHTML | safe) %}
+
       <li>
-        <a href="/{{ blogPost.slug.current }}">
+        <div class="resource-card">
           {% if blogPost.image %}
             {{ image(blogPost.image) }}
           {% endif %}
-          <h2>{{ blogPost.title }}</h2>
+          <h3>{{ blogPost.title }}</h3>
           <time datetime="{{ blogPost.publishedAt }}">{{ blogPost.publishedAt | blogDate }}</time>
-          <div>{{ blogPost.portableTextBody }}</div>
-        </a>
+          {{ excerpt }}
+          <a href="{{ blogPost.slug.current }}">Read more</a>
+        </div>
       </li>
 
     {% else %}

@@ -140,7 +140,7 @@ function msBuild() {
 
     
     .use( (files, metalsmith, done) => {
-      console.log(metalsmith.metadata().collections.blog);
+      //console.log(metalsmith.metadata().blog);
       //console.log(JSON.stringify(metalsmith.metadata(),null, 4));
       done();
     })
