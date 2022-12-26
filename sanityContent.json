@@ -434,9 +434,9 @@
         {
             "_createdAt": "2022-12-05T22:00:57Z",
             "_id": "2bacede3-e979-4e13-ba49-0147f1b23a4b",
-            "_rev": "aWMDKNmYWvCuHCjaOH4UA9",
+            "_rev": "xrQOUk9ATwLyqARpQthZQa",
             "_type": "blog",
-            "_updatedAt": "2022-12-07T18:17:46Z",
+            "_updatedAt": "2022-12-26T23:54:12Z",
             "authorsList": [
                 {
                     "_key": "59bdc5e39c45",
@@ -519,28 +519,404 @@
                             "_type": "blogContentBlock",
                             "blogContent": [
                                 {
-                                    "_key": "fdae96f8668c",
+                                    "_key": "4f9630bf7db4",
                                     "_type": "block",
                                     "children": [
                                         {
-                                            "_key": "ab8adc2a58b80",
+                                            "_key": "89366ab1547f0",
                                             "_type": "span",
                                             "marks": [],
-                                            "text": "A header is"
+                                            "text": "This is the first in a series of posts about how to source content from Sanity for a Metalsmith site. I built a Metalsmith site, sourcing content from Sanity. This project is called Ruhrpott, the place in Germany where I grew up. I used images and prose from the Ruhrpott instead of greek text to make the site a little more appealing. The website is hosted on Netlify: "
+                                        },
+                                        {
+                                            "_key": "89366ab1547f1",
+                                            "_type": "span",
+                                            "marks": [
+                                                "721bdc640a66"
+                                            ],
+                                            "text": "https://ruhrpott.netlify.app/"
+                                        }
+                                    ],
+                                    "markDefs": [
+                                        {
+                                            "_key": "721bdc640a66",
+                                            "_type": "link",
+                                            "href": "https://ruhrpott.netlify.app/"
+                                        }
+                                    ],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "7f0648a587cb",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "154940a87ef30",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
                                         }
                                     ],
                                     "markDefs": [],
-                                    "style": "h3"
+                                    "style": "normal"
                                 },
                                 {
-                                    "_key": "47edf105d4a7",
+                                    "_key": "ef711ee210a1",
                                     "_type": "block",
                                     "children": [
                                         {
-                                            "_key": "077eb0198295",
+                                            "_key": "445a2d2e96e40",
                                             "_type": "span",
                                             "marks": [],
-                                            "text": "Metalsmith benefits"
+                                            "text": "It starts with Metalsmith"
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "h2"
+                                },
+                                {
+                                    "_key": "58be67b238a6",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "d665b3090aa50",
+                                            "_type": "span",
+                                            "marks": [
+                                                "44ef5bb0e063"
+                                            ],
+                                            "text": "Metalsmith"
+                                        },
+                                        {
+                                            "_key": "2336b62a7cd0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " is a flexible static site generator, agnostic to how a website is built. It can be used to create websites with either structured content, using the contents property or the metadata object to provide data for page components. It is designed to be highly extensible, allowing you to use a wide range of plugins to customize the build process to suit your needs. With Metalsmith, you can import content from external sources, transform and filter the data, and then render the data using templates to generate HTML files that a web server can serve."
+                                        }
+                                    ],
+                                    "markDefs": [
+                                        {
+                                            "_key": "44ef5bb0e063",
+                                            "_type": "link",
+                                            "href": "https://metalsmith.io"
+                                        }
+                                    ],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "3d3191f2fa26",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "ab356b31ee970",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "08cbecdc6e11",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "ffa70cc757480",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "The metadata object can be considered a data layer object available during page builds, which may be defined in the source page Frontmatter or external data from a headless CMS."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "bbf13468ad05",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "b02997678e110",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "4700987bf3ff",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "9baa98caeda00",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Instead of using Markdown for all content, a structured content model can be defined with YAML objects in the page Frontmatter, which can be used to build simple \"page builders.\" This approach often results in shorter page layout files, as the code is organized into smaller component files and can be easily reused on any page."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "f93620aa271a",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "83b5fa261dfe0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "cb555e40759e",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "a4382be7e1a90",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "A structured content model defines and organizes the content used in a specific context, such as a website or application. It identifies the types of content needed, arranges them logically, and defines the relationships between different pieces of content."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "c135f1cbf25a",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "712b957d849f0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "3f1247a0f19e",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "fe1d5d5e92140",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "An example of how to use a structured content model to build page section components with Metalsmith can be seen on the "
+                                        },
+                                        {
+                                            "_key": "90a9d3b9fe5d",
+                                            "_type": "span",
+                                            "marks": [
+                                                "622e8f9dbd82"
+                                            ],
+                                            "text": "Metalsmith Components website"
+                                        },
+                                        {
+                                            "_key": "93ad5712e14e",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "."
+                                        }
+                                    ],
+                                    "markDefs": [
+                                        {
+                                            "_key": "622e8f9dbd82",
+                                            "_type": "link",
+                                            "href": "https://metalsmith-components.netlify.app/"
+                                        }
+                                    ],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "a4bc3a57ba43",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "4161dbf0877a0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "f2773f44e1f1",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "147aabf75b710",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "We will look further into content modeling in the post Structured Content from Sanity."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "25663974b483",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "d929fcd113e50",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "A practical example"
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "h2"
+                                },
+                                {
+                                    "_key": "53dd2fbed97c",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "b7c6b3746c300",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "In this example, I use "
+                                        },
+                                        {
+                                            "_key": "dd7570509309",
+                                            "_type": "span",
+                                            "marks": [
+                                                "838e1c3f6191"
+                                            ],
+                                            "text": "Nunjucks"
+                                        },
+                                        {
+                                            "_key": "52fee85695a1",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " as the templating language, for it uses a syntax similar to that of Jinja or Twig, making it easy to learn and use. It supports "
+                                        },
+                                        {
+                                            "_key": "c69e0a2df8d2",
+                                            "_type": "span",
+                                            "marks": [
+                                                "code"
+                                            ],
+                                            "text": "includes"
+                                        },
+                                        {
+                                            "_key": "c030e79fa640",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " and "
+                                        },
+                                        {
+                                            "_key": "bf1d5fe40e1a",
+                                            "_type": "span",
+                                            "marks": [
+                                                "code"
+                                            ],
+                                            "text": "inheritance"
+                                        },
+                                        {
+                                            "_key": "3f2b583ae34b",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " and supports custom "
+                                        },
+                                        {
+                                            "_key": "3b7b00ef91f2",
+                                            "_type": "span",
+                                            "marks": [
+                                                "code"
+                                            ],
+                                            "text": "filters"
+                                        },
+                                        {
+                                            "_key": "86d9a9ec79d6",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ", "
+                                        },
+                                        {
+                                            "_key": "41ac3a621d30",
+                                            "_type": "span",
+                                            "marks": [
+                                                "code"
+                                            ],
+                                            "text": "tags"
+                                        },
+                                        {
+                                            "_key": "74168cfc3cee",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ", and "
+                                        },
+                                        {
+                                            "_key": "038f6b4ee0a9",
+                                            "_type": "span",
+                                            "marks": [
+                                                "code"
+                                            ],
+                                            "text": "functions"
+                                        },
+                                        {
+                                            "_key": "9cb2452cd6f1",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "."
+                                        }
+                                    ],
+                                    "markDefs": [
+                                        {
+                                            "_key": "838e1c3f6191",
+                                            "_type": "link",
+                                            "href": "https://mozilla.github.io/nunjucks/"
+                                        }
+                                    ],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "5c35d1dd07c4",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "2d10b741d8e70",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "204f53943674",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "4c1e3294ca8a0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "For our example, we will examine a Media section, a pattern one can find all over the web. It refers to a two-column box with an image on one side and related text on the other. Our media section is composed of three base components:"
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "020950c9e5a6",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "48ceb2200ab20",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Text"
                                         }
                                     ],
                                     "level": 1,
@@ -549,14 +925,14 @@
                                     "style": "normal"
                                 },
                                 {
-                                    "_key": "dfa13f132bb8",
+                                    "_key": "338b60708ff8",
                                     "_type": "block",
                                     "children": [
                                         {
-                                            "_key": "187bf6866d88",
+                                            "_key": "9b8411f9abef0",
                                             "_type": "span",
                                             "marks": [],
-                                            "text": "Diagram"
+                                            "text": "CTA"
                                         }
                                     ],
                                     "level": 1,
@@ -565,14 +941,14 @@
                                     "style": "normal"
                                 },
                                 {
-                                    "_key": "092c8e0ce238",
+                                    "_key": "fa3b7903f6c6",
                                     "_type": "block",
                                     "children": [
                                         {
-                                            "_key": "3086dae1e6bd",
+                                            "_key": "5b754aedcf360",
                                             "_type": "span",
                                             "marks": [],
-                                            "text": "How pages are build"
+                                            "text": "Image"
                                         }
                                     ],
                                     "level": 1,
@@ -581,18 +957,487 @@
                                     "style": "normal"
                                 },
                                 {
-                                    "_key": "1f3457de594a",
+                                    "_key": "a8c2cc2c378b",
                                     "_type": "block",
                                     "children": [
                                         {
-                                            "_key": "e98e33944f20",
+                                            "_key": "28fe8e5d33940",
                                             "_type": "span",
                                             "marks": [],
-                                            "text": "From Frontmatter to direct data injection.\n"
+                                            "text": "The example section is used to highlight a significant annual event in the Ruhr Valley, Germany, and is defined in the page  Frontmatter like this:"
                                         }
                                     ],
-                                    "level": 1,
-                                    "listItem": "bullet",
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "c9740f0742b1",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "7412617e2cfd0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "c7fcedb941d0",
+                                    "_type": "code",
+                                    "code": "sectionFields:\n\tsectionType: media\n\tdisabled: false\n\tcontainerID: \"\"\n\tcontainerClass: \"\"\n\tinContainer: true\n\taddSpacing:\n\t\tmargin:\n\t\t\ttop: false\n\t\t\tbottom: false\n\t\tpadding:\n\t\t\ttop: false\n\t\t\tbottom: false\n\thasBackground: false\n\t\tcolor: \"\"\n\t\timage: \"\"\n\t\tcssBackground: \"\"\n\t\tisDark: false\n\tblockOrder: imageRight\ntext:\n \ttitlePrefix: Upcoming Event\n  \ttitle: Ranger Kirmes\n  \theaderType: \"h2\"\n  \tsubTitle: Every first Friday of August, every year.\n  \tprose: \"Cranger Kirmes in Herne stands out with the 500-odd showmen and their roller coasters, ghost trains, games, and curios spread out over a 111,000-square-meter space. Originally founded in the 15th century as a horse market, Cranger Kirmes soon evolved into an entertainment event replete with jugglers and magicians. Today, the colorful funfair welcomes about 4 million visitors over 10 days starting the first Friday of August.\"\ncta:\n  \ttitle: Learn More\n  \tisExternalLink: true\n  \turl: \"https://cranger-kirmes.de/\"\n\tkind:\n  \t\tbutton: true\n\t\tlink: false\n  \tlinkType: \"primary\"\nimage:\n   src: \"https://cdn.sanity.io/images/349a1vg2/production/02a7429bfb4ee3ae930f0d487ee16a058a06353e-1280x939.jpg\"\n   alt: \"Cranger Kirmes Folk Festival Fair\"\n   caption: \"Cranger Kirmes Folk Festival Fair\"\n\tcredits: \"\"",
+                                    "language": "yaml"
+                                },
+                                {
+                                    "_key": "187c233e046b",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "10fe3a398c5c0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "7217ef3a5993",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "e38335f1dd6c0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "This is what the rendered section looks like"
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "64ef9325205c",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "16ce2a9f829b0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "758103955391",
+                                    "_type": "image",
+                                    "alt": "Event section for Cranger Kirmes",
+                                    "asset": {
+                                        "_ref": "image-0c85336361f74b4d8df1d480077f139494e97337-2934x948-png",
+                                        "_type": "reference"
+                                    }
+                                },
+                                {
+                                    "_key": "0083bcbf523a",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "5326bb7bf50c0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "\n"
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "ca1c4a912bc3",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "7809d531be7a0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Let's break down the section definition."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "62dfc4415fd7",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "3dc2f6b26a7e0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "The object "
+                                        },
+                                        {
+                                            "_key": "51bf40933193",
+                                            "_type": "span",
+                                            "marks": [
+                                                "code"
+                                            ],
+                                            "text": "sectionFields"
+                                        },
+                                        {
+                                            "_key": "3b78f32deb5c",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " contains a set of common fields shared by all page sections. These fields allow the section type to be defined, enable the section to be disabled or temporarily hidden, and provide the option to add attributes such as a container ID or class. Additionally, the "
+                                        },
+                                        {
+                                            "_key": "f41ef5e4a63e",
+                                            "_type": "span",
+                                            "marks": [
+                                                "code"
+                                            ],
+                                            "text": "addSpacing"
+                                        },
+                                        {
+                                            "_key": "367ed21cdfaa",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " field allows for customization of section spacing, while the "
+                                        },
+                                        {
+                                            "_key": "9a3e8ca0a0ea",
+                                            "_type": "span",
+                                            "marks": [
+                                                "code"
+                                            ],
+                                            "text": "background"
+                                        },
+                                        {
+                                            "_key": "e95847f20ca9",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " field allows for the application of a solid color, image, or CSS pattern as the section's background. The "
+                                        },
+                                        {
+                                            "_key": "7273c31613e4",
+                                            "_type": "span",
+                                            "marks": [
+                                                "code"
+                                            ],
+                                            "text": "isDark"
+                                        },
+                                        {
+                                            "_key": "b659573c05cc",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " field allows the text color to be changed from the default dark color to a light color, and the "
+                                        },
+                                        {
+                                            "_key": "5329577ac3c9",
+                                            "_type": "span",
+                                            "marks": [
+                                                "code"
+                                            ],
+                                            "text": "blockOrder"
+                                        },
+                                        {
+                                            "_key": "354ba9a2540c",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " field determines the position of the section's image in relation to the text (either on the left or right side)."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "df801ac5f83a",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "1d5ce35bdadd0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "01161aa62c60",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "1b4533a64af40",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "The common section fields are followed by the type-specific building blocks of the media section: "
+                                        },
+                                        {
+                                            "_key": "043a071c63d7",
+                                            "_type": "span",
+                                            "marks": [
+                                                "code"
+                                            ],
+                                            "text": "text"
+                                        },
+                                        {
+                                            "_key": "0645cebbba5d",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ", "
+                                        },
+                                        {
+                                            "_key": "f5327778fac5",
+                                            "_type": "span",
+                                            "marks": [
+                                                "code"
+                                            ],
+                                            "text": "cta"
+                                        },
+                                        {
+                                            "_key": "08876ac349fc",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ", and "
+                                        },
+                                        {
+                                            "_key": "24229617f143",
+                                            "_type": "span",
+                                            "marks": [
+                                                "code"
+                                            ],
+                                            "text": "image"
+                                        },
+                                        {
+                                            "_key": "2733c7be9c79",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ". One can see the relationship between the example code with the rendered section by matching the values of the various fields with their visual representation."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "8b92813d6b56",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "a8e60426e4b1",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "517c9ef4e33c",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "1deab463b7130",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "During the Metalsmith build process, the Frontmatter YAML object is added to the metadata layer and becomes available to plugins. The plugins don’t care where the metadata comes from; they may as well be inserted dynamically with another plugin, allowing a CMS to provide content information without source files."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "9479477524f8",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "bd1882954e1f0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "7cab8c07ae75",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "92bd79c91e560",
+                                            "_type": "span",
+                                            "marks": [
+                                                "em"
+                                            ],
+                                            "text": "We will explore that route in the following blog post."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "11d890f5afc8",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "7be71a151fef0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "d02262cd2720",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "77b0de5ac2dd0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "A template to build the section may look like this:"
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "e87542527767",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "5b68a90c138e0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "d7d82cc4443a",
+                                    "_type": "code",
+                                    "code": "{% from \"../partials/cta.njk\" import cta %}\n{% from \"../partials/image.njk\" import image %}\n\n{% macro media(info) %}\n\n  {% if info.titlePrefix %}\n    <p class=\"prefix\">{{ info.titlePrefix }}</p>\n  {% endif %}\n\n  {% if info.title %}\n    {% if info.headerType === \"h1\" %}\n      <h1 class=\"page-heading\">{{ info.title }}</h1>\n    {% elif info.headerType === \"h2\" %}\n      <h2 class=\"section-heading\">{{ info.title }}</h2>\n    {% else %}\n      <h3 class=\"section-heading\">{{ info.title }}</h3>\n    {% endif %}\n  {% endif %}\n\n  {% if info.subTitle %}\n    <p class=\"sub-title\">{{ info.subTitle }}</p>\n  {% endif %}\n\n  {% if info.image %}\n    {{ image(info.image) }}\n  {% endif %}\n\n  {% if info.prose %}\n    <div class=\"prose\">{{ info.prose | mdToHTML | safe }}</div>\n  {% endif %}\n  \n  {% if info.cta %}\n    {{ cta(info.cta) }}\n  {% endif %}\n\n{% endmacro %}\n",
+                                    "language": "javascript"
+                                },
+                                {
+                                    "_key": "de0bf1e06595",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "3e05f6639afc",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "095c5f7e1552",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "6aaff8d99f230",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Here we use a "
+                                        },
+                                        {
+                                            "_key": "e37f47ed77db",
+                                            "_type": "span",
+                                            "marks": [
+                                                "code"
+                                            ],
+                                            "text": "macro"
+                                        },
+                                        {
+                                            "_key": "f2904dc3e33b",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": " to isolate the section fields from the global scope so other sections which use the same fields cannot be overwritten."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "97fc0497bde9",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "ef3b64747f760",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "The result is shown in the above image."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "139b9e349813",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "fa6c800b836b0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": ""
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "954a8652ac89",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "89f047acd9e70",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "This example is based on a source file with all content fields defined in the file's Formatter. Next, we will explore how to do the same thing but the content coming from Sanity CMS."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "99ee9a6473fc",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "cba4a832f4020",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "\n"
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "cb7bce9c98b3",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "4a7021ab66750",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "\n"
+                                        }
+                                    ],
                                     "markDefs": [],
                                     "style": "normal"
                                 }
@@ -2520,6 +3365,475 @@
                 "isExternal": true,
                 "linkLabel": "Website"
             }
+        },
+        {
+            "_createdAt": "2022-11-18T20:19:09Z",
+            "_id": "drafts.35435220-92c7-4eff-9f95-8309efef67b3",
+            "_rev": "fc0f2c22-2ee1-473a-a593-4b06c557ac51",
+            "_type": "page",
+            "_updatedAt": "2022-12-24T20:10:41Z",
+            "description": "Home page description",
+            "discoverable": true,
+            "isPage": true,
+            "layout": "sections.njk",
+            "sections": [
+                {
+                    "_key": "49574dc0a907",
+                    "_type": "section",
+                    "addSpacing": false,
+                    "disabled": false,
+                    "hasBackground": false,
+                    "htmlTag": "section",
+                    "inContainer": false,
+                    "sectionBlocks": [
+                        {
+                            "_key": "aacd704183d4",
+                            "_type": "imageSliderBlock",
+                            "slides": [
+                                {
+                                    "_key": "74046ab5634b",
+                                    "_type": "imageSlide",
+                                    "scrollTarget": "section1",
+                                    "slideImage": {
+                                        "_type": "imageBlock",
+                                        "alt": "Essen - Zeche Zollverein UNESCO Weltkulturerbe",
+                                        "asset": {
+                                            "_ref": "image-9888bb69c056401d821c5f074352ae0253ce4fe3-3452x2540-jpg",
+                                            "_type": "reference"
+                                        },
+                                        "caption": "Essen - Zeche Zollverein UNESCO Weltkulturerbe",
+                                        "credits": "Image by [Daniel Mennerich](https://www.flickr.com/photos/danielmennerich/). Licensed under [Creative Commons](https://creativecommons.org/licenses/by-nc-nd/2.0/)"
+                                    },
+                                    "slideText": {
+                                        "_type": "textBlock",
+                                        "cta": {
+                                            "_type": "cta",
+                                            "isExternal": false
+                                        },
+                                        "headerType": "h1",
+                                        "portableTextBody": [
+                                            {
+                                                "_key": "0a52715bdf68",
+                                                "_type": "block",
+                                                "children": [
+                                                    {
+                                                        "_key": "007444629cf30",
+                                                        "_type": "span",
+                                                        "marks": [],
+                                                        "text": "Geologically, the region is defined by coal-bearing layers from the upper Carboniferous period. The coal seams reach the surface in a strip along the river Ruhr and dip downward from the river to the north. Beneath the Lippe, the coal seams lie at a depth of 2,000 to 2,600 ft."
+                                                    }
+                                                ],
+                                                "markDefs": [],
+                                                "style": "normal"
+                                            }
+                                        ],
+                                        "title": "Ruhrpott"
+                                    }
+                                },
+                                {
+                                    "_key": "79879b32ef74",
+                                    "_type": "imageSlide",
+                                    "scrollTarget": "section1",
+                                    "slideImage": {
+                                        "_type": "imageBlock",
+                                        "alt": "Gelsenkirchen - Horst - Zeche Nordstern",
+                                        "asset": {
+                                            "_ref": "image-13f00f38fd3b09f655c4cad681a5814abe293497-1600x1067-jpg",
+                                            "_type": "reference"
+                                        },
+                                        "caption": "Gelsenkirchen - Horst - Zeche Nordstern",
+                                        "credits": "Image by [Daniel Mennerich](https://www.flickr.com/photos/danielmennerich/). Licensed under [Creative Commons](https://creativecommons.org/licenses/by-nc-nd/2.0/)"
+                                    },
+                                    "slideText": {
+                                        "_type": "textBlock",
+                                        "headerType": "h1",
+                                        "portableTextBody": [
+                                            {
+                                                "_key": "03d359f63f42",
+                                                "_type": "block",
+                                                "children": [
+                                                    {
+                                                        "_key": "c212501dcb230",
+                                                        "_type": "span",
+                                                        "marks": [],
+                                                        "text": "Once known for its belching steelworks and filthy coal mines, the Ruhrgebiet – a sprawling post-industrial region of 53 cities – is considered part of the larger Rhine-Ruhr metropolitan region, which is among the largest in Europe, behind only London and Paris."
+                                                    }
+                                                ],
+                                                "markDefs": [],
+                                                "style": "normal"
+                                            }
+                                        ],
+                                        "title": "Ruhrpott"
+                                    }
+                                },
+                                {
+                                    "_key": "38da4431c1e4",
+                                    "_type": "imageSlide",
+                                    "scrollTarget": "section1",
+                                    "slideImage": {
+                                        "_type": "imageBlock",
+                                        "alt": "Dortmund - Zeche Gneisenau",
+                                        "asset": {
+                                            "_ref": "image-9a161bba4117af5707f0a2b3b5342b077dcbaad7-1024x767-jpg",
+                                            "_type": "reference"
+                                        },
+                                        "caption": "Dortmund - Zeche Gneisenau",
+                                        "credits": "Image by [Daniel Mennerich](https://www.flickr.com/photos/danielmennerich/). Licensed under [Creative Commons](https://creativecommons.org/licenses/by-nc-nd/2.0/)"
+                                    },
+                                    "slideText": {
+                                        "_type": "textBlock",
+                                        "headerType": "h1",
+                                        "portableTextBody": [
+                                            {
+                                                "_key": "1680784fb16d",
+                                                "_type": "block",
+                                                "children": [
+                                                    {
+                                                        "_key": "d3f7d7ca35c70",
+                                                        "_type": "span",
+                                                        "marks": [],
+                                                        "text": "The Ruhrpott is a former industrial area centrally located in North Rhine Westphalia. The region takes its name partly from the river Ruhr and the word “Pott” which comes from “Kohlenpott” (meaning “coal pot”) alluding to the area’s coal-mining past."
+                                                    }
+                                                ],
+                                                "markDefs": [],
+                                                "style": "normal"
+                                            }
+                                        ],
+                                        "title": "Ruhrpott"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "sectionType": "imageSlider"
+                },
+                {
+                    "_key": "95c9d7e89194",
+                    "_type": "section",
+                    "addSpacing": true,
+                    "containerId": "section1",
+                    "disabled": false,
+                    "hasBackground": false,
+                    "htmlTag": "aside",
+                    "inContainer": true,
+                    "margin": {
+                        "bottom": true,
+                        "top": true
+                    },
+                    "padding": {
+                        "bottom": false,
+                        "top": false
+                    },
+                    "sectionBlocks": [
+                        {
+                            "_key": "8679b22f56db",
+                            "_type": "logosListBlock",
+                            "cta": {
+                                "_type": "cta",
+                                "internalLink": "/ciites",
+                                "isExternal": false,
+                                "kind": "button",
+                                "linkType": "primary",
+                                "title": "Learn more bout the Ruhrpott cities"
+                            },
+                            "headerType": "h3",
+                            "listSource": "cities",
+                            "logoWidth": 150,
+                            "logosCity": [
+                                {
+                                    "_key": "c9aa28f1dc04",
+                                    "_ref": "c4e042e5-26e0-43df-a5e6-cb80a7fd54f2",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "7870fb2dfe14",
+                                    "_ref": "35ddc5d7-0284-46a0-8d7b-ecef2ed0aa34",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "9123fed17f33",
+                                    "_ref": "45da4531-6958-4fb6-a06d-2114e38bc603",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "cc9f13e30a81",
+                                    "_ref": "66951b78-a197-4169-9781-91a2d61a4c65",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "59e975d9aabf",
+                                    "_ref": "0d661b46-2c52-42bc-9281-674e415ebe93",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "7249ab0a4073",
+                                    "_ref": "11a335d3-45cc-461d-a079-e4ae5c2f8b32",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "625833dece54",
+                                    "_ref": "49447c8e-e42e-4d47-83ec-8df5be71588a",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "bd1c6a161eeb",
+                                    "_ref": "99568473-514f-47ad-b9f0-fa2e40d50df1",
+                                    "_type": "reference"
+                                },
+                                {
+                                    "_key": "db49374d314a",
+                                    "_ref": "9873dc53-7094-46b9-a8ca-92b22e9b449f",
+                                    "_type": "reference"
+                                }
+                            ],
+                            "scope": "all",
+                            "subTitle": "Not all of them, just the larger ones",
+                            "title": "Ruhrpott cities"
+                        }
+                    ],
+                    "sectionType": "logosList"
+                },
+                {
+                    "_key": "e062d237f8a8",
+                    "_type": "section",
+                    "addSpacing": false,
+                    "disabled": false,
+                    "hasBackground": false,
+                    "htmlTag": "article",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "cc22d56a4dae",
+                            "_type": "mediaBlock",
+                            "blockOrder": "imageRight",
+                            "cta": {
+                                "_type": "cta",
+                                "externalLink": "https://cranger-kirmes.de/",
+                                "isExternal": true,
+                                "kind": "button",
+                                "linkType": "primary",
+                                "title": "Learn More"
+                            },
+                            "headerType": "h2",
+                            "mediaImage": {
+                                "_type": "imageBlock",
+                                "alt": "Cranger Kirmes Folk Festival Fair",
+                                "asset": {
+                                    "_ref": "image-02a7429bfb4ee3ae930f0d487ee16a058a06353e-1280x939-jpg",
+                                    "_type": "reference"
+                                },
+                                "caption": "Cranger Kirmes Folk Festival Fair"
+                            },
+                            "portableTextBody": [
+                                {
+                                    "_key": "88d504bf7d13",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "ec2768208f780",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "Cranger Kirmes in Herne stands out with the 500-odd showmen and their roller coasters, ghost trains, games, and curios spread out over an 111,000-square-meter space. Originally founded in the 15th century as a horse market, Cranger Kirmes soon evolved into an entertainment event replete with jugglers and magicians. Today, the colorful funfair welcomes about 4 million visitors over 10 days starting the first Friday of August."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                }
+                            ],
+                            "subTitle": "Every first Friday of August, every year.",
+                            "title": "Cranger Kirmes",
+                            "titlePrefix": "Upcoming Event"
+                        }
+                    ],
+                    "sectionType": "media"
+                },
+                {
+                    "_key": "f3e046c0c904",
+                    "_type": "section",
+                    "disabled": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "02b2cc10ebc5",
+                            "_type": "mediaBlock",
+                            "blockOrder": "imageLeft",
+                            "cta": {
+                                "_type": "cta",
+                                "externalLink": "https://medium.com/german-city-profiles/ruhrpott-the-former-industrial-region-is-a-popular-destination-for-visitors-c5fd6fa1ffba",
+                                "isExternal": true,
+                                "kind": "button",
+                                "linkType": "primary",
+                                "title": "Read this Medium Article"
+                            },
+                            "headerType": "h2",
+                            "mediaImage": {
+                                "_type": "imageBlock",
+                                "alt": "The Ruhrpott's Industrial Past",
+                                "asset": {
+                                    "_ref": "image-5663e7aa6091bc43df9856599dd1fd87750fd33d-520x422-jpg",
+                                    "_type": "reference"
+                                }
+                            },
+                            "portableTextBody": [
+                                {
+                                    "_key": "5d7cf103e82e",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "351bcb20e498",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "In the past, the coal-dust-covered center of German industry, the Ruhrpott has undergone a transformation into a melting pot of cultures and making the area a popular destination for visitors. This reinvention led to the Ruhr area becoming the first region to be named a European Capital of Culture in 2010. The Ruhrpott cities and communities form one vibrant and diverse metropolis today, with numerous historical and cultural attractions for visitors to enjoy."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                }
+                            ],
+                            "title": "The Industrial Center of Germany",
+                            "titlePrefix": "The Ruhrpott's past"
+                        }
+                    ],
+                    "sectionType": "media"
+                },
+                {
+                    "_key": "1c91a68bdfcc",
+                    "_type": "section",
+                    "addSpacing": true,
+                    "disabled": false,
+                    "hasBackground": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "margin": {
+                        "bottom": true
+                    },
+                    "sectionBlocks": [
+                        {
+                            "_key": "711571eabafc",
+                            "_type": "mediaBlock",
+                            "blockOrder": "imageRight",
+                            "cta": {
+                                "_type": "cta",
+                                "externalLink": "https://www.dw.com/en/the-ruhr-valley-touring-germanys-industrial-past/a-1081956",
+                                "isExternal": true,
+                                "kind": "button",
+                                "linkType": "primary",
+                                "title": "Read More on dw.com"
+                            },
+                            "headerType": "h2",
+                            "mediaImage": {
+                                "_type": "imageBlock",
+                                "alt": "Gelsenkirchen-Horst Nordstern Park",
+                                "asset": {
+                                    "_ref": "image-8240985481ee3eb4957dc3e45eab3fcb5cc58afc-800x602-jpg",
+                                    "_type": "reference"
+                                },
+                                "caption": "Gelsenkirchen-Horst Nordstern Park"
+                            },
+                            "portableTextBody": [
+                                {
+                                    "_key": "2a5522d0bcb5",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "8d6a6beae66e0",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "After its mining and steel industries fell into decline in the 1970s, the Ruhr Valley decided on an unusual strategy for economic renewal: turning the dying industrial landscape into a giant history and technology museum, as well as a top recreation destination."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                },
+                                {
+                                    "_key": "cb3704fd2180",
+                                    "_type": "block",
+                                    "children": [
+                                        {
+                                            "_key": "d106df12eae00",
+                                            "_type": "span",
+                                            "marks": [],
+                                            "text": "The gambit appears to have worked. With its mixture of museums, parks, and unique historic industrial sites, The Industrial Heritage route, which officially opened in 1999, helped attract some three million visitors to the Ruhr Valley in 2001, with the numbers on the rise, according to tourism authorities."
+                                        }
+                                    ],
+                                    "markDefs": [],
+                                    "style": "normal"
+                                }
+                            ],
+                            "title": "A Mecca of History and Culture",
+                            "titlePrefix": "The Ruhrpott Present and Future"
+                        }
+                    ],
+                    "sectionType": "media"
+                },
+                {
+                    "_key": "52bc88f48afe",
+                    "_type": "section",
+                    "addSpacing": true,
+                    "background": {
+                        "color": "#707070",
+                        "cssBg": "pattern2",
+                        "isDark": true
+                    },
+                    "containerClass": "cta-banner",
+                    "disabled": false,
+                    "hasBackground": true,
+                    "htmlTag": "aside",
+                    "inContainer": false,
+                    "padding": {
+                        "bottom": true,
+                        "top": true
+                    },
+                    "sectionBlocks": [
+                        {
+                            "_key": "44a9db60f593",
+                            "_type": "textBlock",
+                            "cta": {
+                                "_type": "cta",
+                                "externalLink": "https://en.wikipedia.org/wiki/Ruhr",
+                                "isExternal": true,
+                                "kind": "button",
+                                "linkType": "secondary",
+                                "title": "To Wikipedia"
+                            },
+                            "headerType": "h3",
+                            "subTitle": "More interesting details",
+                            "title": "Checkout the \"Ruhrgebiet\" Wikipedia Page"
+                        }
+                    ],
+                    "sectionType": "text"
+                },
+                {
+                    "_key": "4225009ef917",
+                    "_type": "section",
+                    "disabled": false,
+                    "htmlTag": "section",
+                    "inContainer": true,
+                    "sectionBlocks": [
+                        {
+                            "_key": "2fb746e90626",
+                            "_type": "videoBlock",
+                            "videoID": "h2EdyvFazzk",
+                            "videoSource": "youtube",
+                            "videoThumbnail": {
+                                "_type": "imageBlock",
+                                "alt": "Ruhrgebiet Video",
+                                "asset": {
+                                    "_ref": "image-2a361f4bdc3cb9617666f76fc59caf832257dd58-1600x1066-jpg",
+                                    "_type": "reference"
+                                }
+                            }
+                        }
+                    ],
+                    "sectionType": "video"
+                }
+            ],
+            "slug": {
+                "_type": "slug",
+                "current": "index"
+            },
+            "title": "Home"
         },
         {
             "_createdAt": "2022-12-05T00:23:09Z",
