@@ -1,7 +1,7 @@
-import schemaContentTypes from './contentTypes';
-import schemaElements from './elements/index';
-import schemaPageSections from './pageSections/index';
-import schemaSectionBlocks from './sectionBlocks/index';
+import schemaContentTypes from './contentTypes/index.js';
+import schemaElements from './elements/index.js';
+import schemaPageSections from './pageSections/index.js';
+import schemaSectionBlocks from './sectionBlocks/index.js';
 
 export const schemaTypes = [
   ...schemaContentTypes,
