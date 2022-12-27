@@ -2,8 +2,7 @@ import cta from './cta.js';
 import imageSlide from './imageSlide.js';
 import link from './link.js';
 import menuLink from './menuLink.js';
-
-import simpleBlockContent from './simpleBlockContent';
+import simpleBlockContent from './simpleBlockContent.js';
 
 const schemaElements = [
   cta, 
