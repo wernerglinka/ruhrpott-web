@@ -1,4 +1,4 @@
-import section from './section';
+import section from './section.js';
 
 const schemaPageSections = [section];
 

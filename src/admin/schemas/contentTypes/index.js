@@ -1,10 +1,10 @@
-import authors from './authors'
-import blog from './blog'
-import page from './page';
-import cities from './cities';
-import footballClubs from './footballClubs';
-import navigation from './navigation';
-import siteSettings from './siteSettings';
+import authors from './authors.js'
+import blog from './blog.js'
+import page from './page.js';
+import cities from './cities.js';
+import footballClubs from './footballClubs.js';
+import navigation from './navigation.js';
+import siteSettings from './siteSettings.js';
 
 const schemaContentTypes = [
   authors,
