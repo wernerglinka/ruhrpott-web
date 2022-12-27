@@ -77,6 +77,7 @@ function msBuild() {
     .source("./src/content")
     .destination("./build")
     .clean(true)
+    .ignore('admin')
     .metadata({
       msVersion: dependencies.metalsmith,
       nodeVersion: process.version,
