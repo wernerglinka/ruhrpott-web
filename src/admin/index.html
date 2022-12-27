@@ -19,29 +19,32 @@
   <body>
     <div id="app"></div> 
     <script type="module">
-      import { defineConfig, renderStudio } from "https://esm.sh/sanity?alias=lodash:lodash-es"
-      import { deskTool } from "https://esm.sh/sanity/desk?alias=lodash:lodash-es"
+      import { defineConfig, renderStudio } from "https://esm.sh/sanity?alias=lodash:lodash-es";
+      import { deskTool } from "https://esm.sh/sanity/desk?alias=lodash:lodash-es";
+      import {schemaTypes} from './schemas';
 
       const config = defineConfig({
-        plugins: [deskTool()],
-        projectId: "349a1vg2",
-        dataset: "production",
+        name: 'default',
+        title: 'ruhrpott-studio',
+        projectId: '349a1vg2',
+        dataset: 'production',
+        plugins: [
+          deskTool(),
+          codeInput()
+        ],
         schema: {
-          types: [
-            {
-              type: "document",
-              name: "post",
-              title: "Post",
-              fields: [
-                {
-                  type: "string",
-                  name: "title",
-                  title: "Title"
-                }
-              ]
+          types: schemaTypes,
+        },
+        document: {
+          newDocumentOptions: (prev, context) =>
+            prev.filter(document => !singleEdits.includes(document.templateId)),
+          actions: (prev, { schemaType }) => {
+            if (singleEdits.includes(schemaType)) {
+              return prev.filter(prevAction => prevAction.action == 'publish');
             }
-          ]
-        }
+            return prev;
+          },
+        },
       });
       renderStudio(document.getElementById("app"), config);
     </script>
