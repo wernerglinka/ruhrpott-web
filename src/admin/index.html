@@ -21,7 +21,6 @@
     <script type="module">
       import { defineConfig, renderStudio } from "https://esm.sh/sanity?alias=lodash:lodash-es";
       import { deskTool } from "https://esm.sh/sanity/desk?alias=lodash:lodash-es";
-      import { codeInput } from "https://esm.sh/sanity/desk/codeInput?alias=lodash:lodash-es";
       import { schemaTypes } from '/admin/schemas/index.js';
 
       const config = defineConfig({
@@ -31,7 +30,7 @@
         dataset: 'production',
         plugins: [
           deskTool(),
-          codeInput()
+          //codeInput()
         ],
         schema: {
           types: schemaTypes,
