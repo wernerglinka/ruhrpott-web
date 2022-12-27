@@ -41,6 +41,7 @@ node_modules/
 # metalsmith files
 .cache/
 build/
+sanityContent.json
 
 # Mac files
 .DS_Store
