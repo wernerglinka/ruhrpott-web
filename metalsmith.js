@@ -131,6 +131,13 @@ function msBuild() {
     )
 
     .use(
+      assets({
+        source: "src/admin/",
+        destination: "admin/",
+      })
+    )
+
+    .use(
       sass({
         entries: {
           "src/scss/styles.scss": "assets/styles.css",
