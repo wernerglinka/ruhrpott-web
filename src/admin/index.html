@@ -35,16 +35,6 @@
         schema: {
           types: schemaTypes,
         },
-        document: {
-          newDocumentOptions: (prev, context) =>
-            prev.filter(document => !singleEdits.includes(document.templateId)),
-          actions: (prev, { schemaType }) => {
-            if (singleEdits.includes(schemaType)) {
-              return prev.filter(prevAction => prevAction.action == 'publish');
-            }
-            return prev;
-          },
-        },
       });
       renderStudio(document.getElementById("app"), config);
     </script>
