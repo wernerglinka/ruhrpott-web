@@ -1,6 +1,7 @@
-.block-blog-header {
+.block.block-blog-header {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0;
 
   h1 + .sub-title {
     font-size: 1.5rem;
@@ -61,7 +62,12 @@
     margin-bottom: 3rem;
   }
 }
-.block-blog-content {
+.block.block-blog-content {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 0 40px;
+
+  p code {
+    color: var(--color-code);
+  }
 }
