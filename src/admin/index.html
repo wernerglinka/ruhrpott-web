@@ -1,42 +1,34 @@
-<html>
-  <head>
-    <style>
-      html {
-        -webkit-text-size-adjust: 100%;
-        text-size-adjust: 100%;
-        -webkit-tap-highlight-color: transparent;
-        -webkit-font-smoothing: antialiased;
-      }
-      html,
-      body,
-      #app {
-        height: 100%;
-        margin: 0;
-        overflow: hidden;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="app"></div> 
-    <script type="module">
-      import { defineConfig, renderStudio } from "https://esm.sh/sanity?alias=lodash:lodash-es";
-      import { deskTool } from "https://esm.sh/sanity/desk?alias=lodash:lodash-es";
-      import { schemaTypes } from '/admin/schemas/index.js';
+<!doctype html>
+<html class="no-js" lang="">
 
-      const config = defineConfig({
-        name: 'default',
-        title: 'ruhrpott-studio',
-        projectId: '349a1vg2',
-        dataset: 'production',
-        plugins: [
-          deskTool(),
-          //codeInput()
-        ],
-        schema: {
-          types: schemaTypes,
-        },
-      });
-      renderStudio(document.getElementById("app"), config);
-    </script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <style>
+    iframe {
+      position:fixed; 
+      top:0; 
+      left:0; 
+      bottom:0; 
+      right:0; 
+      width:100%; 
+      height:100%; 
+      border:none;
+    }
+  </style>
+
+  <iframe id="metalsmith-studio"
+    title="Content editing for this metalsmith site"
+    src="https://ruhrpott-studio.netlify.app/">
+  </iframe>
+
+  
+</body>
+
 </html>
