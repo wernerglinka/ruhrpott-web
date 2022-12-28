@@ -5,7 +5,7 @@ import schemaSectionBlocks from './sectionBlocks/index.js';
 
 export const schemaTypes = [
   ...schemaContentTypes,
-  ...schemaElements,
-  ...schemaPageSections,
-  ...schemaSectionBlocks,
+  //...schemaElements,
+  //...schemaPageSections,
+  //...schemaSectionBlocks,
 ];

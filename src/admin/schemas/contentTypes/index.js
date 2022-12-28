@@ -7,13 +7,13 @@ import navigation from './navigation.js';
 import siteSettings from './siteSettings.js';
 
 const schemaContentTypes = [
-  authors,
+  //authors,
   blog,
-  cities, 
-  footballClubs,
-  navigation,
-  siteSettings,
-  page
+  //cities, 
+  //footballClubs,
+  //navigation,
+  //siteSettings,
+  //page
 ];
 
 export default schemaContentTypes;
