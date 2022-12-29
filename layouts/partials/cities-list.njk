@@ -35,7 +35,7 @@
     {% for city in citiesList %}
       <li class="grid-item {{ city.size }}">
         <p class="city-name">{{ city.name }}</p>
-        <a href="{{ city.websiteLink.href }}">
+        <a href="{{ city.websiteLink.href }}" target="_blank" rel="noopener noreferrer">
           {{ image(city.image, data) }}
         </a>
       </li>
