@@ -52,11 +52,15 @@
       transition: color 0.5s ease-in-out;
       font-weight: 500;
 
+      .icon-wrapper {
+        padding-right: 10px;
+      }
+
       svg {
         stroke: var(--color-link-inactive);
         width: 24px;
         height: 24px;
-        stroke: color 0.5s ease-in-out;
+        transition: stroke 0.5s ease-in-out;
       }
 
       &:hover {
