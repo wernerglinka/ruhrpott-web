@@ -1,12 +1,8 @@
-
 require('es6-promise/auto');
 const sanityClient = require('@sanity/client');
-const BlocksToMarkdown = require('@sanity/block-content-to-markdown');
-const imageUrl = require('@sanity/image-url');
 const queries = require('./queries');
-const getSerializers = require('./get-serializers');
-// node-json-db for caching Sanity content in development
-const { JsonDB, Config } = require('node-json-db');
+const { JsonDB, Config } = require('node-json-db'); // node-json-db for caching Sanity content in development
+const iterate = require('./iterate');
 
 /**
  * @typedef Options
@@ -15,10 +11,10 @@ const { JsonDB, Config } = require('node-json-db');
 
 /** @type {Options} */
 const defaults = {
-  projectId: '',             // required
-  dataset: 'production',  
+  projectId: '',
+  dataset: 'production',
   apiVersion: '2022-10-19',  // use a UTC date string
-  token: '',                 
+  token: '',
   useCdn: false,
 };
 
@@ -54,35 +50,7 @@ function initSanitySource(options) {
     // initialize Sanity client
     const client = sanityClient(options);
 
-    // function to normalize Sanity json to markdown and resolve references
-    const iterate = obj => {
-      Object.keys(obj).forEach(key => {
-  
-        // transform Portable Text to Markdown
-        if(key === "portableTextBody" || key === "blogContent") {
-          obj[key] = BlocksToMarkdown(obj[key], {
-            serializers: getSerializers(client),
-            projectId: options.projectId,
-            dataset: options.dataset,
-          });
-        }
-
-        // transform image reference to image url
-        if(key == "asset" && obj[key]._ref.startsWith("image-")){
-          const imageBuilder = imageUrl(client);
-          const image = imageBuilder.image(obj[key]);
-          obj["imageURL"] = image.url();
-        }
-    
-        if (typeof obj[key] === 'object' && obj[key] !== null) {
-          iterate(obj[key])
-        }
-      })
-    };
-
     let contentTypes;
-
-    //const startTime = new Date().getTime();
 
     // Try using content cache during development. In production always fetch from Sanity.
     // NOTE: To delete the cache, delete the file "sanity<projectID>.json"in the project root.
@@ -100,36 +68,27 @@ function initSanitySource(options) {
       };
     } else {
       // fetch all content types from Sanity
-      const rawContentTypes = client.fetch(queries.allContent);
-      contentTypes = await rawContentTypes;
+      contentTypes = await client.fetch(queries.allContent);
     };
-    
-    //const endTime = new Date().getTime();
-    //const duration = endTime - startTime;
-
-    //console.log(duration);
 
     const data = {};
-
-    // normalize Sanity json to markdown and resolve references for each page
-    contentTypes.forEach(contentType => {
-      iterate(contentType);
+    contentTypes.forEach((contentType) => {
+      // transform Sanity portable text blocks to markdown and resolve references
+      iterate(contentType, client, options);
 
       if ( contentType.isPage ) {
-        // add to page, Metalsmith need the contents to be there
+        // Metalsmith needs contents otherwise it will skip the file
         contentType.contents = Buffer.from('');
         contentType.mode = '0644';
         contentType.stats = {};
 
         // add page to files object
         const fileKey = `${contentType.slug.current}.md`;
+        // add all properties of contentType to files[fileKey]
         files[fileKey] = contentType;
 
-        //console.log(JSON.stringify(files,null, 4));
-
       } else {
-        // add to metadata
-
+        // if content type is not a page then it is a data file, add to metadata
         // if a contentType._type array is not already in data, add it
         if ( !data[contentType._type] ) {
           data[contentType._type] = [];
