@@ -77,9 +77,6 @@ function initSanitySource(options) {
       iterate(contentType, client, options);
 
       if ( contentType.isPage ) {
-
-        console.log(JSON.stringify(contentType,null, 4));
-
         // Metalsmith needs contents otherwise it will skip the file
         contentType.contents = Buffer.from('');
         contentType.mode = '0644';
