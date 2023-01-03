@@ -1,4 +1,4 @@
-const BlocksToMarkdown = require('@sanity/block-content-to-markdown');
+const blocksToMarkdown = require('@sanity/block-content-to-markdown');
 const imageUrl = require('@sanity/image-url');
 const getSerializers = require('./get-serializers');
 
@@ -15,7 +15,7 @@ const iterate = (obj, client, options) => {
 
     // transform Portable Text to Markdown
     if(key === "portableTextBody" || key === "blogContent") {
-      obj[key] = BlocksToMarkdown(obj[key], {
+      obj[key] = blocksToMarkdown(obj[key], {
         serializers: getSerializers(client),
         projectId: options.projectId,
         dataset: options.dataset,
