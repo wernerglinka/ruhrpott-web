@@ -22,7 +22,7 @@
       list-style: none;
 
       &:before {
-        content: "By";
+        content: "By ";
       }
       li {
         padding: 0;
@@ -54,7 +54,7 @@
 
       &:before {
         content: ", on";
-        padding: 0 0.2rem 0 0.5rem;
+        padding: 0 5px 0 0;
       }
     }
   }
