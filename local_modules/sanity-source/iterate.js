@@ -15,6 +15,9 @@ const iterate = (obj, client, options) => {
 
     // transform Portable Text to Markdown
     if(key === "portableTextBody" || key === "blogContent") {
+
+      //console.log(JSON.stringify(obj[key],null, 4));
+
       obj[key] = blocksToMarkdown(obj[key], {
         serializers: getSerializers(client),
         projectId: options.projectId,
@@ -34,5 +37,6 @@ const iterate = (obj, client, options) => {
     }
   })
 };
+
 
 module.exports = iterate;
