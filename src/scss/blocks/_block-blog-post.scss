@@ -43,7 +43,8 @@
         }
         // and the last one
         &.last:before {
-          content: " and ";
+          content: "and";
+          padding: 0 5px;
           border: none;
         }
       }
