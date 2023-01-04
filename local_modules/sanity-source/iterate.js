@@ -4,7 +4,7 @@ const getSerializers = require('./get-serializers');
 
 /**
  * iterate
- * Transform Sanity portable text blocks to markdown and resolve references
+ * Transform Sanity portable text blocks to markdown and resolve image references
  * 
  * @param {*} obj 
  * @param {*} client 
@@ -15,9 +15,6 @@ const iterate = (obj, client, options) => {
 
     // transform Portable Text to Markdown
     if(key === "portableTextBody" || key === "blogContent") {
-
-      //console.log(JSON.stringify(obj[key],null, 4));
-
       obj[key] = blocksToMarkdown(obj[key], {
         serializers: getSerializers(client),
         projectId: options.projectId,
@@ -25,7 +22,8 @@ const iterate = (obj, client, options) => {
       });
     }
 
-    // transform image reference to image url
+    // get image url from Sanity image object
+    // and add it to the object
     if(key == "asset" && obj[key]._ref.startsWith("image-")){
       const imageBuilder = imageUrl(client);
       const image = imageBuilder.image(obj[key]);
