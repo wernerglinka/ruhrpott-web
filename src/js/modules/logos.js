@@ -2,7 +2,7 @@
 
 /**
  * Manage logo display
- * If logos list fits on viewwport width its static, if not logos will rotate automatically
+ * If logos list fits on viewport width its static, if not logos will rotate automatically
  * @params {*} none
  * @return {function} initializes a logo display
  */

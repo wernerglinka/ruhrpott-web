@@ -1,5 +1,5 @@
 require('es6-promise/auto');
-const sanityClient = require('@sanity/client');
+const { createClient } = require('@sanity/client');
 const queries = require('./queries');
 const { JsonDB, Config } = require('node-json-db'); // node-json-db for caching Sanity content in development
 const iterate = require('./iterate');
@@ -48,7 +48,7 @@ function initSanitySource(options) {
     debug('Running with options: %O', options);
 
     // initialize Sanity client
-    const client = sanityClient(options);
+    const client = createClient(options);
 
     let contentTypes;
 
